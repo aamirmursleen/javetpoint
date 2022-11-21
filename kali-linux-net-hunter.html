@@ -1,0 +1,962 @@
+ <!DOCTYPE html><html lang="en"><!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Kali Linux net hunter - javatpoint</title><link rel="SHORTCUT ICON" href="../static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="../static.javatpoint.com/linkf731.css?v=5.0" async /><link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Kali Linux net hunter - javatpoint" /><meta property="og:description" content="Kali Linux net hunter with What is Kali Linux, Install Kali Linux, Update Kali Linux, Install Kali Linux on Windows, Kali Linux, virtual box, Kali Linux Commands, Kali Linux Tools etc." />
+<meta name="keywords" content="kali linux, kali, what is kali linux, install kali linux, update kali linux, install kali linux on windows, kali linux commands, kali linux tools" /><meta name="description" content="Kali Linux net hunter with What is Kali Linux, Install Kali Linux, Update Kali Linux, Install Kali Linux on Windows, Kali Linux, virtual box, Kali Linux Commands, Kali Linux Tools etc." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="kali-linux-net-hunter.html" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Kali Linux net hunter - javatpoint" /><meta name="twitter:description" property="og:description" content="Kali Linux net hunter with What is Kali Linux, Install Kali Linux, Update Kali Linux, Install Kali Linux on Windows, Kali Linux, virtual box, Kali Linux Commands, Kali Linux Tools etc." /><meta property="og:url" content="kali-linux-net-hunter.html" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../delivery.adrecover.com/37784/adRecoverb466.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+
+<script data-cfasync="false" type="text/javascript">
+(function (w, d) {
+  var siteId = "37780";
+  var targetElement =
+    d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+  var s = d.createElement("script");
+  s.src = "//cdn.adpushup.com/" + siteId + "/adpushup.js";
+  s.crossOrigin = "anonymous";
+  s.type = "text/javascript";
+  s.async = true;
+  targetElement.appendChild(s);
+  function sendErrorLog(log) {
+    var eventName = "script_error";
+    log.siteId = siteId;
+    var data = btoa(JSON.stringify(log));
+    var img = document.createElement("img");
+    img.src =
+      "https://aplogger.adpushup.com/log?event=HC_" + eventName + "&data=" + data;
+  }
+  var searchParams =
+    typeof URLSearchParams === "function" &&
+    new URLSearchParams(window.location.search);
+  if (searchParams) {
+    var isDebugModeOn = searchParams.has("apDebug");
+  }
+  w.addEventListener("error", function (event) {
+    try {
+      var filename = event.filename || "";
+      if (filename.indexOf("/" + siteId + "/adpushup.js") === -1) {
+        return;
+      }
+      var error = event.error;
+      if (error) {
+        var message = error.message;
+        var stack = error.stack;
+      }
+      message = message || event.message;
+      var log = {
+        message: message,
+        stack: stack || "",
+        timestamp: Math.floor(event.timeStamp),
+        type: "uncaughterror",
+      };
+      sendErrorLog(log);
+      !isDebugModeOn && event.preventDefault();
+    } catch (error) {}
+  });
+  w.addEventListener("unhandledrejection", function (event) {
+    var reason = event.reason;
+    if (typeof reason === "object") reason = JSON.stringify(reason);
+    var log = {
+      message: reason || "no reason found",
+      timestamp: Math.floor(event.timeStamp),
+      type: "unhandledrejection",
+    };
+    sendErrorLog(log);
+    !isDebugModeOn && event.preventDefault();
+  });
+  var ga = d.createElement("script");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z0TZ7TDHS1";
+  ga.type = "text/javascript";
+  ga.async = true;
+  targetElement.appendChild(ga);
+  w.dataLayer = window.dataLayer || [];
+  w.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  w.gtag("js", new Date());
+  w.gtag("config", "G-Z0TZ7TDHS1", {
+    custom_map: { dimension1: "siteid" },
+  });
+  w.gtag("event", "script-call", {
+    send_to: "G-Z0TZ7TDHS1",
+    siteid: siteId,
+  });
+  s.onerror = function (msg) {
+    w.gtag("event", "ad-block", {
+      send_to: "G-Z0TZ7TDHS1",
+      siteid: siteId,
+    });
+  };
+})(window, document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<button onclick="topFunction()" id="myBtn">&#8679; SCROLL TO TOP</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="index.html"><img src="../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="index.html"><img src="images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="java-tutorial.html">Java</a></li>
+<li><a href="kali-linux.html" class="selected">Kali Linux</a></li>
+<li><a href="ethical-hacking-tutorial.html">Ethical Hacking</a></li>
+<li><a href="linux-tutorial.html">Linux</a></li>
+<li><a href="shell-scripting-tutorial.html">Shell Scripting</a></li>
+<li><a href="c-programming-language-tutorial.html">C</a></li>
+<li><a href="sql-tutorial.html">SQL</a></li>
+<li><a href="html-tutorial.html">HTML</a></li>
+<li><a href="css-tutorial.html">CSS</a></li>
+<li><a href="javascript-tutorial.html">JavaScript</a></li>
+<li><a href="xml-tutorial.html">XML</a></li>
+<li><a href="ajax-tutorial.html">Ajax</a></li>
+<li><a href="python-tutorial.html">Python</a></li>
+<li><a href="android-tutorial.html">Android</a></li>
+<li><a href="examaccess.html">Quiz</a></li>
+<li><a href="free-java-projects.html">Projects</a></li>
+<li><a href="corejava-interview-questions.html">Interview Q</a></li>
+<li><a href="forum.html">Forum</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+<ins class="adPushupAds" data-adpControl="hqdgs" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV8zMDB4MjUwX01vYl8xNC85IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MzAwcHg7aGVpZ2h0OjI1MHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjcwMTQyNzI1MTkiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Kali Linux Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="kali-linux.html">Kali Linux Tutorial</a>
+<a href="kali-linux-installation.html">Install Kali Linux</a>
+<a href="configuring-kali-linux.html">Configuring &amp; Updating</a>
+<a href="kali-linux-commands.html">Kali Linux Commands</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Kali Linux Tools</span></h2>
+</div>
+<div class="leftmenu">
+<a href="kali-linux-information-gathering-tools.html">Information Gathering Tools</a>
+<a href="kali-linux-vulnerability-analysis-tools.html">Vulnerability Analysis Tools</a>
+<a href="kali-linux-exploitation-tools.html">Exploitation Tools</a>
+<a href="kali-linux-wireless-attack-tools.html">Wireless Attack Tools</a>
+<a href="kali-linux-forensic-tools.html">Forensic Tools</a>
+<a href="kali-linux-web-application-tools.html">Web Application Tools</a>
+<a href="kali-linux-stress-testing-tools.html">Stress Testing Tools</a>
+<a href="kali-linux-sniffing-and-spoofing-tools.html">Sniffing &amp; Spoofing Tools</a>
+<a href="kali-linux-password-attack-tools.html">Password Attack Tools</a>
+<a href="kali-linux-maintaining-access-tools.html">Maintaining Access Tools</a>
+<a href="kali-linux-reverse-engineering-tools.html">Reverse Engineering Tools</a>
+<a href="kali-linux-hardware-hacking-tools.html">Hardware Hacking Tools</a>
+<a href="kali-linux-reporting-tools.html">Reporting Tools</a>
+<a href="hacking-wifi-using-kali-linux.html">Hacking Wifi using Kali Linux</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Misc.</span></h2>
+</div>
+<div class="leftmenu">
+<a href="kali-linux-latest-version.html">Kali Linux Latest Version</a>
+<a href="kali-linux-net-hunter.html">Kali Linux net hunter</a>
+<a href="making-a-kali-bootable-usb-drive.html">Making a Kali Bootable USB Drive</a>
+<a href="kali-linux-terminal.html">Kali Linux - Terminal</a>
+<a href="kali-linux-root-password-reset.html">Kali Linux root password reset</a>
+<a href="enable-root-user-in-kali-linux.html">Enable Root User in Kali Linux</a>
+<a href="how-to-hack-a-facebook-account-using-kali-linux.html">How to hack a Facebook account using Kali Linux</a>
+<a href="how-to-install-xampp-in-kali-linux.html">How to Install XAMPP in Kali Linux</a>
+<a href="how-to-run-a-java-program-on-kail-linux.html">How to run a java program on Kail Linux</a>
+<a href="how-to-install-xdm-on-kali-linux.html">How to install XDM on Kali Linux</a>
+<a href="features-of-kali-linux.html">Features of Kali Linux</a>
+<a href="use-of-kali-linux.html">Use of Kali Linux</a>
+<a href="how-to-install-vpnbook-on-kali-linux.html">How to install VPNbook on Kali Linux</a>
+<a href="how-to-check-kali-linux-version.html">How to Check Kali Linux Version</a>
+<a href="kali-linux-system-requirements.html">Kali Linux System Requirements</a>
+<a href="advantages-and-disadvantages-of-kali-linux.html">Advantages and Disadvantages of Kali Linux</a>
+<a href="kali-linux-tools-list.html">Kali Linux Tools List</a>
+<a href="how-to-install-anydesk-on-kali-linux.html">How to install AnyDesk on Kali Linux</a>
+<a href="best-wifi-adapters-for-kali-linux.html">Best WiFi Adapters for Kali Linux</a>
+<a href="install-mozilla-firefox-in-kali-linux.html">Install Mozilla Firefox In Kali Linux</a>
+<a href="kali-linux-vs-fedora.html">Kali Linux vs Fedora</a>
+<a href="sqlmap-in-kali-linux.html">Sqlmap in Kali Linux</a>
+<a href="skipfish-in-kali-linux.html">Skipfish in Kali Linux</a>
+<a href="kali-linux-basic-commands.html">Kali Linux Basic Commands</a>
+<a href="kali-linux-shortcut-keys.html">Kali Linux Shortcut Keys</a>
+<a href="how-to-take-screenshot-in-kali-linux.html">How to take Screenshot in Kali Linux</a>
+<a href="how-to-update-kali-linux.html">How to Update Kali Linux</a>
+<a href="how-to-change-time-in-kali-kinux.html">How to Change Time in Kali Linux</a>
+<a href="kill-process.html">Kill Process</a>
+<a href="social-engineering-in-kali-linux.html">Social Engineering in Kali Linux</a>
+<a href="crunch-kali-linux.html">Crunch Kali Linux</a>
+<a href="kali-linux-tree-command.html">Kali Linux Tree Command</a>
+<a href="how-to-install-google-chrome-in-kali-linux.html">How to Install Google Chrome in Kali Linux</a>
+<a href="how-to-install-pip3-in-kali-linux.html">How to Install pip3 in Kali Linux</a>
+<a href="top-5-tools-for-sniffing-and-spoofing.html">Top 5 Tools for Sniffing and Spoofing</a>
+<a href="install-libreoffice-in-kali-linux.html">Install LibreOffice in Kali Linux</a>
+<a href="nmap-commands-in-kali-linux.html">Nmap Commands in Kali Linux</a>
+<a href="regular-updates-and-cleaning-kali-linux-system.html">Regular Updates and Cleaning Kali Linux System</a>
+<a href="how-to-secure-our-kali-linux-to-ensure-our-protection.html">How to Secure Our Kali Linux to Ensure Our Protection</a>
+<a href="kali-linux-web-penetration-testing-tools.html">Kali Linux - Web Penetration Testing Tools</a>
+<a href="top-10-kali-linux-tools-for-hacking.html">Top 10 Kali Linux Tools for Hacking</a>
+<a href="pwnxss-automated-xss-vulnerability-scanner-tool-in-kali-linux.html">PwnXSS-Automated XSS Vulnerability Scanner Tool in Kali Linux</a>
+<a href="red-hawk-information-gathering-and-vulnerability-scanning-tool-in-kali-linux.html">Red Hawk-Information Gathering and Vulnerability Scanning Tool in Kali Linux</a>
+<a href="sitadel-web-application-security-scanner-in-kali-linux.html">Sitadel-Web Application Security Scanner in Kali Linux</a>
+<a href="grim-information-gathering-tool-in-kali-linux.html">Grim-Information Gathering Tool in Kali Linux</a>
+<a href="vulnerability-scanning-in-kali-linux.html">Vulnerability Scanning in Kali Linux</a>
+<a href="yuki-chan-automated-penetration-testing-and-auditing-tool-in-kali-linux.html">Yuki Chan-Automated Penetration Testing and Auditing Tool in Kali Linux</a>
+<a href="dmitry-tool-in-kali-linux.html">Dmitry Tool in Kali Linux</a>
+<a href="infosploit-information-gathering-tool-in-kali-linux.html">InfoSploit-Information Gathering Tool in Kali Linux</a>
+<a href="playing-games-on-kali-linux.html">Playing Games on Kali Linux</a>
+<a href="how-to-install-dropbox-on-kali-linux.html">How to Install Dropbox on Kali Linux</a>
+<a href="how-to-install-gobuster-tool-on-kali-linux.html">How to Install Gobuster Tool on Kali Linux</a>
+<a href="quasar-tool-in-kali-linux.html">Quasar Tool in Kali Linux</a>
+<a href="recon-ng-information-gathering-tool-in-kali-linux.html">Recon-ng Information Gathering Tool in Kali Linux</a>
+<a href="how-to-install-arduino-software-on-kali-linux.html">How to Install Arduino Software (IDE) on Kali Linux</a>
+<a href="how-to-install-zoom-on-kali-linux.html">How to Install Zoom on Kali Linux</a>
+<a href="netnoob-tool-in-kali-linux.html">Netnoob Tool in Kali Linux</a>
+<a href="tidos-framework-offensive-web-application-penetration-testing-framework.html">TIDoS-Framework-Offensive Web Application Penetration Testing Framework</a>
+<a href="fsociety-tool-in-kali-linux.html">Fsociety Tool in Kali Linux</a>
+<a href="kithack-hacking-tools-pack-in-kali-linux.html">KitHack-Hacking Tools Pack in Kali Linux</a>
+<a href="tor-browser-kali-linux.html">Tor Browser Kali Linux</a>
+<a href="kali-linux-books.html">Kali Linux Books</a>
+<a href="parsero-tool-in-kali-linux.html">Parsero Tool in Kali Linux</a>
+<a href="arch-linux-vs-kali-linux.html">Arch Linux vs Kali Linux</a>
+<a href="best-bluetooth-adapter-for-kali-linux.html">Best Bluetooth Adapter for Kali Linux</a>
+<a href="hawkscan-reconnaissance-and-information-gathering-tool-in-kali-linux.html">HawkScan-Reconnaissance and Information Gathering Tool in Kali Linux</a>
+<a href="best-ddos-tools-for-kali-linux.html">Best DDOS Tools for Kali Linux</a>
+<a href="database-assessment-tools-for-kali-linux.html">Database Assessment Tools for Kali Linux</a>
+<a href="clamav-and-clamtk-antivirus-scanner-tool-for-kali-linux.html">ClamAV and ClamTK Antivirus Scanner Tool for Kali Linux</a>
+<a href="how-to-install-sqlninja-in-kali-linux.html">How to Install Sqlninja in Kali Linux</a>
+<a href="sherlock-tool-in-kali-linux.html">Sherlock Tool in Kali Linux</a>
+<a href="best-vpn-kali-linux.html">Best VPN Kali Linux</a>
+<a href="how-to-install-vlc-on-kali-linux.html">How to Install VLC on Kali Linux</a>
+<a href="best-video-player-for-kali-linux.html">Best Video Player for Kali Linux</a>
+<a href="wps-office-for-kali-linux.html">WPS Office for Kali Linux</a>
+<a href="how-to-install-opera-in-kali-linux.html">How to Install Opera in Kali Linux</a>
+<a href="kali-linux-course.html">Kali Linux Course</a>
+<a href="phishing-tools-for-kali-linux.html">Phishing Tools for Kali Linux</a>
+<a href="best-chromebook-for-kali-linux.html">Best Chromebook for Kali Linux</a>
+<a href="best-kali-linux-alternatives.html">Best Kali Linux Alternatives</a>
+<a href="best-virtual-machines-for-kali-linux.html">Best Virtual Machines for Kali Linux</a>
+<a href="best-android-emulator-for-kali-linux.html">Best Android Emulator for Kali Linux</a>
+<a href="kali-linux-usb-sticks.html">Kali Linux USB Sticks</a>
+<a href="best-office-suites-for-kali-linux.html">Best Office Suites for Kali Linux</a>
+<a href="best-note-taking-apps-for-kali-linux.html">Best Note-Taking Apps for Kali Linux</a>
+<a href="best-photo-editors-for-kali-linux.html">Best Photo Editors for Kali Linux</a>
+<a href="best-text-editor-for-kali-linux.html">Best Text Editor for Kali Linux</a>
+<a href="kali-linux-video-editing-software.html">Kali Linux Video Editing Software</a>
+<a href="best-open-source-paint-tool-for-kali-linux.html">Best Open-source Paint Tool for Kali Linux</a>
+<a href="scylla-tool-in-kali-linux.html">Scylla Tool in Kali Linux</a>
+<a href="spiderfoot-a-automate-osint-framework-in-kali-linux.html">SpiderFoot- A Automate OSINT Framework in Kali Linux</a>
+<a href="webkiller-tool-in-kali-linux.html">Webkiller Tool in Kali Linux</a>
+<a href="best-file-manager-for-kali-linux.html">Best File Manager for Kali Linux</a>
+<a href="nuubi-tool-in-kali-linux.html">Nuubi Tool in Kali Linux</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Interview Questions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="kali-linux-interview-questions.html">Kali Linux Interview</a>
+</div>
+<img src="wh.jpg" alt="JavaTpoint" />
+<br />
+<div id="leftad" style="margin-left:20px">
+
+<div id="17c09743-0b89-427c-ba64-e09f6a1745a2" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("17c09743-0b89-427c-ba64-e09f6a1745a2");
+		});
+	</script>
+</div>
+</div>
+</div>
+<div class="onlycontent">
+
+<div class="onlycontentad">
+<div id="9bbcb75d-b5e2-40e1-a811-e7680d1f59a4" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("9bbcb75d-b5e2-40e1-a811-e7680d1f59a4");
+		});
+	</script>
+</div>
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="making-a-kali-bootable-usb-drive.html">next &rarr;</a>
+<a class="next" href="kali-linux-latest-version.html">&larr; prev</a>
+</div>
+<h1 class="h1">Kali Linux net hunter</h1>
+<p>Kali Linux <strong>NetHunter</strong> is defined as a free and open-source platform that provides mobile penetrating testing utility for android devices. This platform is specifically based on Kali Linux. There are several Android devices for which Kali NetHunter is available that we will discuss further in the tutorial. However, in short, we can say that this platform supports almost all kinds of android devices available in the market, even for several premium devices such as OnePlus, Samsung, and Google Nexus. The Kali Nethunter platform is usually maintained by a community consisting of volunteers, and its project funding is done by Offensive security.</p>
+<p>In this tutorial, we will learn all about NetHunter in detail. Therefore to understand the Nethunter, we will focus on the following given points:</p>
+<ol class="points">
+<li><a href="https://www.kali.org/docs/nethunter/#overview" rel="nofollow" target="_blank">Overview</a></li>
+<li><a href="https://www.kali.org/docs/nethunter/#1-0-nethunter-editions" rel="nofollow" target="_blank">NetHunter Editions</a></li>
+<li><a href="https://www.kali.org/docs/nethunter/#2-0-nethunter-supported-devices-and-roms" rel="nofollow" target="_blank">NetHunter Supported Devices and ROMs</a></li>
+<li><a href="https://www.kali.org/docs/nethunter/#3-0-downloading-nethunter" rel="nofollow" target="_blank">Downloading NetHunter</a></li>
+<li><a href="https://www.kali.org/docs/nethunter/#5-0-installing-nethunter-on-top-of-and-android" rel="nofollow" target="_blank">Installing NetHunter on the top of Android</a></li>
+<li><a href="https://www.kali.org/docs/nethunter/#7-0-kali-nethunter-attacks-and-features" rel="nofollow" target="_blank">Kali NetHunter Attacks and Features</a></li>
+</ol>
+<h3 class="h3">I. Overview:</h3>
+<p>Kali NetHunter is available for both rooted and unrooted devices as its different versions or editions are exist. Therefore, we can use "Nethunter Rootless" for unrooted devices, and for rooted devices that also have a custom recovery, we can use "Nethunter Lite". However, there is also the third edition of kali Nethunter that we will discuss later.</p>
+<p>Let see the core of the Kali Net Hunter, which is included in all three editions. It generally contains the following components: </p>
+<ul class="points">
+<li><strong>Kali Linux container:</strong> It includes all the tools and applications that Kali Linux provides.</li>
+<li><strong>Kali NetHunter App Store:</strong> Kali NetHunter App Store can be accessed through the dedicated client app or via the web interface. It usually contains dozens of purpose-built security apps.</li>
+<li><strong>Android client:</strong> it is used to access the Kali NetHunter App Store</li>
+<li><strong>Kali NetHunter Desktop Experience (KeX):</strong> It is used to run full Kali Linux desktop sessions with support for screen mirroring via HDMI or wireless screen casting.</li>
+</ul>
+<h3 class="h3">II. NetHunter Editions</h3>
+<p>Let's have a look at all three editions of Kali NetHunter:</p>
+<table class="alt">
+<tr>
+<th>Edition</th>
+<th>Usage</th>
+</tr>
+<tr>
+<td>NetHunter Rootless</td>
+<td>The core of NetHunter for unrooted (or unmodified devices).</td>
+</tr>
+<tr>
+<td>NetHunter Lite</td>
+<td>The full NetHunter package for rooted devices (or phones) without a custom kernel.</td>
+</tr>
+<tr>
+<td>NetHunter</td>
+<td>The full NetHunter package with custom kernel for supported devices.</td>
+</tr>
+</table>
+<p>As you can see in the above-given table, there are two separate versions for rooted devices. The "NetHunter Lite " is for the rooted device that has custom recovery, and the "NetHunter" for the rooted devices with the custom recovery for which a nethunter-specific kernel is available. However, both editions that are for the rooted device also provide some additional tools and services. Still, these functionalities can also further extended through a custom kernel by adding network and USB gadgets.</p>
+<p>In addition to the penetration testing tools included in <a href="kali-linux.html">Kali Linux</a>, NetHunter also supports a number of additional classes. For example, HID Keyboard Attacks, BadUSB attacks, and many more.</p>
+<p>As we have discussed above, these three versions are different from each other in many aspects; hence, their functionalities also differ. So, let's take a look at them to see how they provide different types of functionality and which of them suits us.</p>
+<table class="alt">
+<tr>
+<th>Features</th>
+<th>NetHunter Rootless</th>
+<th>NetHunter Lite</th>
+<th>NetHunter</th>
+</tr>
+<tr>
+<td>App Store</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Kali cli</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>All Kali packages</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>KeX</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Metasploit w/o DB</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Metasploit with DB</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>NetHunter App</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Requires TWRP</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Requires Root</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>WiFi Injection</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>HID attacks</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</table>
+<p>If we carefully look at the above-given table, we can easily notice that the "NetHunter" contains almost all features. Therefore it can be considered as most suitable among all three editions. Still, it depends on the user and his requirements, to which version(or edition) of the Nethunter he wants to choose. To understand it in more detail, you can consider the following given example.</p>
+<p><strong>Example</strong></p>
+<p> If a user has a rooted device, then there is no doubt that "NetHunter" is the best or most suitable option for him. However, if the user has a non-rooted device and wants to install Kali NetHunter so he has to choose the "NetHunter Rootless" even though he knows that "NetHunter" can provide him many more functionality and tools if he can root his device.</p>
+<h3 class="h3">III.	NetHunter Supported Devices and ROMs</h3>
+<p>One of the most significant advantages of the NEtHunter Lite is that it can be installed on all most all Android Phones that are rooted and has custom recovery. If you want to experience the full Nethunter environment, you will need such a device that has a specific kernel that has been purpose-built for Kail Net Hunter. However, it is not that rare because the Net Hunter GitLab repository contains more the 164 kernels of over 65 devices.</p>
+<h3 class="h3">IV. Downloading NetHunter</h3>
+<p> You can download the Official release NetHunter images or any particular edition for your specific supported device from the following given link.</p>
+<p>Link= <a href="https://www.offensive-security.com/kali-linux-nethunter-download/" rel="nofollow" target="_blank">offensive-security.com/kali-linux-nethunter-download/</a></p>
+<p>Once you downloaded the zip file, don not forget to verify the "SHA256" sum of the NetHunter zip image against the values on the Offensive Security NetHunter download page. In most cases, these values usually do not mismatch, but if the SHA256 sums do not match, please do not attempt to continue with the installation procedure.</p>
+<h3 class="h3">V. Installing NetHunter on top of Android</h3>
+<p>To prepare your device for installing the Kali NetHunter, you can follow the following given instructions.</p>
+<ul class="points">
+<li><strong>unlock</strong> your device and <strong>update it to stock</strong> AOSP or LineageOS (CM). (Checkpoint 2.0 for supported ROMs)</li>
+<li>
+<strong>Kali App Store: To download the kali app store on your phone, open the web browser and types the "kali app store", or you can also download it by clicking on the given link.</strong><br>
+<strong>https://store.nethunter.com/en/</strong>
+<ul class="points">
+<li>
+Once you downloaded the Kali App Store and installed it. The first view after opening it may look similar to the given image.<br>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter1.png" alt="Kali Linux net hunter" />
+</li>
+</ul>
+</li>
+<li>
+Now download and install the following apps one by one as shown below:
+<ol class="points">
+<li><strong>Termux</strong></li>
+<li><strong>NetHunter Kex</strong></li>
+<li><strong>Hacker's keyboard</strong></li>
+</ol>
+</li>
+</ul>
+<ul class="points">
+<li><strong>Termux</strong></li>
+</ul>
+<p>You can download the "termux" from the kali app store. Otherwise, it is also available on the google play store. Now let's see how to download <strong>Termux</strong> from the Kali app store:</p>
+<ul class="points">
+<li>Open the kali app store, type <strong>"Termux"</strong> in the search box, and tap on the search button:<br>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter2.png" alt="Kali Linux net hunter" />
+</li>
+<li>
+Once the search gets complete, select the first suggestion and click on the install button:<br>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter3.jpg" alt="Kali Linux net hunter" />
+</li>
+<li>As you can see in the given image, it is already installed on my device.</li>
+</ul>
+<ul class="points">
+<li><strong>Nethunter Kex</strong></li>
+</ul>
+<p>To download Nethunter kex, the process is also the same. Open the kali app store and type "Nethunter Kex" in the search box as shown below:</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter4.jpg" alt="Kali Linux net hunter" />
+<ul class="points">
+<li>
+Now select the "NetHunter Kex" on the list, click on the "install" button, and wait until downloading and installation process gets completed.<br>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter5.jpg" alt="Kali Linux net hunter" /><br>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter6.jpg" alt="Kali Linux net hunter" />
+</li>
+<li>You can also download the hacker's keyboard using the same procedure.</li>
+</ul>
+<p><strong>Installing Nethunter</strong></p>
+<p>Now our device is ready to install kali Nethunter. To install the kali Nethunter, follow the given instruction very carefully. So let get started:</p>
+<p><strong>1.</strong> Open the "Termux" app by clicking on its icon form the main menu.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter7.jpg" alt="Kali Linux net hunter" />
+<p><strong>2.</strong> Now type the following command:</p>
+<div class="codeblock"><textarea name="code" class="xml">
+termux-setup-storage
+</textarea></div>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter8.jpg" alt="Kali Linux net hunter" />
+<p><strong>3.</strong> Click on the enter button to execute this command. However, while executing this command, it may ask you to grant storage permission, so just allow it.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter9.jpg" alt="Kali Linux net hunter" />
+<p><strong>4.</strong> Now, type the following command to download the <strong>"wget"</strong> package, which we will need in the installation of NetHunter.</p>
+<p><strong>Command</strong></p>
+<div class="codeblock"><textarea name="code" class="xml">
+pkg install wget
+</textarea></div>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter10.png" alt="Kali Linux net hunter" />
+<p>While installing the "wget" package, it may ask you some permission to make changes. Therefore, you can allow it by typing "y" and click the enter button to resume the downloading process.</p>
+<p><strong>5.</strong> In this step, we will install Nethunter by typing the " following command:</p>
+<p><strong>Command</strong></p>
+<div class="codeblock"><textarea name="code" class="xml">
+wget -O install-nethunter-termux https://offs.ec/2MceZWr
+</textarea></div>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter11.jpg" alt="Kali Linux net hunter" />
+<p><strong>6.</strong> In the previous step, we have downloaded a file by using the command "wget -O install-nethunter-termux https://offs.ec/2MceZWr ". To see that file type the "ls" command and hit enter button. It will display that file and all other files that are located in the "Home" directory.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter12.jpg" alt="Kali Linux net hunter" />
+<p>Now we have to provide this file-specific permission to which we will use the following command:</p>
+<p><strong>Command</strong></p>
+<div class="codeblock"><textarea name="code" class="xml">
+chmod +x install-nethunter-termux
+</textarea></div>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter13.jpg" alt="Kali Linux net hunter" />
+<p>As you can see in the above-given image that we have successfully provided the necessary permission to that file. You can also see that its color is changed to green which also means the same.</p>
+<p><strong>7.</strong> This is the final step and most important step. In this step, we are going to download and install the actual file of kali Nethunter by using the following given command.</p>
+<p><strong>Command</strong></p>
+<div class="codeblock"><textarea name="code" class="xml">
+./install-nethunter-termux
+</textarea></div>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter14.jpg" alt="Kali Linux net hunter" />
+<p><strong>8.</strong> Once executing process gets begin, it will download a fresh image file of kali Nethunter, which about 1.5GB. Therefore it may take some time. However, if your internet speed is good enough, it will not take that long.</p>
+<p><strong>9.</strong> In case if you get failed in the first attempt, you can again execute this command, and you also do not have to start from the beginning. Although in the next attempt, it may ask you to delete the previous file, or you want to continue without deleting it. So in such types of cases, you have to type "y" and allow to download the fresh file. It may take a little more of your internet data, but it is definitely worth it.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter15.jpg" alt="Kali Linux net hunter" />
+<p><strong>10.</strong> Once the downloading process gets completed, it will automatically start extracting and then installing the process. So now, all you have to do is to sit tight and wait until it gets completed. In some cases, it may also ask for some specific permissions, so you have to allow it by typing "y" to continue the installation process. Otherwise, it will be paused until you respond. Once the installation process gets completed, its first look may be similar to the given image.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter16.jpg" alt="Kali Linux net hunter" />
+<p><strong>11.</strong> Finally, the Nethunter is installed successfully, as you can also see in the above-given image. Now to start it, type the following command and press enter button as shown below:</p>
+<p><strong>Command</strong></p>
+<p>Nethuner</p>
+<p><strong>Output</strong></p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter17.jpg" alt="Kali Linux net hunter" />
+<p>Now type "kex passwd" to set password, and press enter. After entering the password, it will ask you to enter your password again, so just type your password again and press the enter button again. It may be quite annoying but don't worry, and you have to do this only for once.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter18.png" alt="Kali Linux net hunter" />
+<p>To start kex, type "kex" and press enter.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter19.jpg" alt="Kali Linux net hunter" />
+<p>In the above image, you can see that the Nethunter kex server has successfully started. Therefore, now you can open the Nethunter Kex app that we have download from the kali app store.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter20.jpg" alt="Kali Linux net hunter" />
+<p>Here all work is done, and once you click on the connect button, your kali Nethnter will be ready to use.</p>
+<img src="../static.javatpoint.com/tutorial/kali-linux/images/kali-linux-net-hunter21.jpg" alt="Kali Linux net hunter" />
+<h3 class="h3">Kali NetHunter Attacks and Features</h3>
+<p>Now let us have a look at what types of features are usually provided in the Kali Net Hunter.</p>
+<ul class="points">
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-home-screen/" rel="nofollow" target="_blank">Home Screen</a></strong> - It is a general information panel that displays network interfaces, and HID device status, and other general information.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-chroot-manager/" rel="nofollow" target="_blank">Kali Chroot Manager</a></strong> - It is used for managing to chroot meta-package installations.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-kali-services/" rel="nofollow" target="_blank">Kali Services</a></strong> - It is used to Start/stop various chrooted services to Enable or disable them at boot time.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-custom-commands/" rel="nofollow" target="_blank">Custom Commands</a></strong> - It allows you to add your own custom commands and functions to the launcher.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-mac-changer/" rel="nofollow" target="_blank">MAC Changer</a></strong> - It is used to change your WiFi MAC address (only on certain devices).</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-kex-manager/" rel="nofollow" target="_blank">X Manager</a></strong> - It allows you to set up an instant VNC session with your Kali chroot.</li>
+<li>USB Arsenal - It helps in controlling the USB gadget configurations.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-mana-wireless/" rel="nofollow" target="_blank">MANA Wireless Toolkit</a></strong> - It is used to set up a malicious Access Point at the click of a button.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-mitmf/" rel="nofollow" target="_blank">MITM Framework</a></strong> - It allows to Inject binary backdoors into downloaded executables on the fly.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-nmap/" rel="nofollow" target="_blank">NMap Scan</a></strong> - Quick Nmap scanner interface.</li>
+<li><strong><a href="https://www.kali.org/docs/nethunter/nethunter-mpg/" rel="nofollow" target="_blank">Metasploit Payload Generator</a></strong> - It is used to Generate Metasploit payloads in no time.</li>
+</ul>
+<hr />
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="making-a-kali-bootable-usb-drive.html">#</a></span>
+</div>
+
+<br /><br />
+<div id="bottomnext">
+<a style="float:left" class="next" href="kali-linux-latest-version.html">&larr; prev</a>
+<a style="float:right" class="next" href="making-a-kali-bootable-usb-drive.html">next &rarr;</a>
+</div>
+<br /><br />
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d8bebdbdbcbab9bbb398b2b9aeb9aca8b7b1b6acf6bbb7b5">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/kali-linux-net-hunter"><img src="images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/kali-linux-net-hunter"><img src="images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/kali-linux-net-hunter"><img src="images/pinterest32.png" alt="pinterest" /></a>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="5022809933" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="splunk.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="spss.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="swagger.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="t-sql.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="tumblr.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="regex.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="reinforcement-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="r-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="rxjs.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="react-native-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="python-design-pattern.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="python-pillow.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="python-turtle-programming.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="keras.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="aptitude/quantitative.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="reasoning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="verbal-ability.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="interview-questions-and-answers.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="company-interview-questions-and-recruitment-process.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="artificial-intelligence-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence Tutorial" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="aws-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="selenium-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="cloud-computing-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing tutorial" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="hadoop-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="data-science.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="angular-7-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="blockchain-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="git.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="machine-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+ </a>
+<a href="devops.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="dbms-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="data-structure-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="daa-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="os-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System tutorial" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="computer-network-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="compiler-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="computer-organization-and-architecture-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="discrete-mathematics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="ethical-hacking-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking Tutorial" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+ <a href="computer-graphics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="software-engineering-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering Tutorial" />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="html-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="cyber-security-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="automata-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="c-programming-language-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="cpp-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="java-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="net-framework.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="python-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="programs-list.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+ </a>
+<a href="control-system-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="data-mining.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="data-warehouse.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br /><div class="mobilemenu" style="clear:both">
+<ins class="adPushupAds" data-adpControl="jrfe7" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByZXNwb25zaXZlbW9iaWxlZm9vdGVyIC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTpibG9jayIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI4MjIyODY2MzE4IgogICAgIGRhdGEtYWQtZm9ybWF0PSJhdXRvIgogICAgIGRhdGEtZnVsbC13aWR0aC1yZXNwb25zaXZlPSJ0cnVlIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div></div>
+<div id="right">
+<div id="e59d93b5-7231-4043-a19e-e7ec340efd1f" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("e59d93b5-7231-4043-a19e-e7ec340efd1f");
+		});
+	</script>
+</div>
+<br /><br />
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br /><br />
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<br />
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a4ccd6e4cec5d2c5d0d4cbcdcad08ac7cbc9">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="68001a2802091e091c180701061c460b070546">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="java-tutorial.html">Learn Java</a><a href="data-structure-tutorial.html">Learn Data Structures</a><a href="c-programming-language-tutorial.html">Learn C Programming</a><a href="cpp-tutorial.html">Learn C++ Tutorial</a><a href="c-sharp-tutorial.html">Learn C# Tutorial</a><a href="php-tutorial.html">Learn PHP Tutorial</a><a href="html-tutorial.html">Learn HTML Tutorial</a><a href="javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="jquery-tutorial.html">Learn jQuery Tutorial</a><a href="spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="contact-us.html">Contact Us</a> <a href="subscribe.html">Subscribe Us</a> <a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.xml">Sitemap</a><br><a href="sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+
+</div></div>
+
+<script>
+        const redirectButton = document.querySelector('#redirect');
+        redirectButton.addEventListener('click', () => {
+          const form = document.createElement('form');
+          form.method = 'POST';
+          const textArea = document.createElement('textarea');
+          const language = document.querySelector('#jtp_compiler').classList[0];
+          textArea.name = 'code';
+          textArea.value = document.querySelector('#jtp_compiler').textContent;
+          form.appendChild(textArea);
+          document.body.appendChild(form);
+          form.action = `https://onlinecompiler.javatpoint.com/`;
+          form.submit();
+        });
+      </script>
+<script src="../static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="../static.javatpoint.com/lazysizes.min.js" async></script>
+</body> </html> 

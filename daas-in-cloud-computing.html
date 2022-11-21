@@ -1,0 +1,785 @@
+ <!DOCTYPE html><html lang="en"><!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>DaaS in Cloud Computing - javatpoint</title><link rel="SHORTCUT ICON" href="../static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="../static.javatpoint.com/linkf731.css?v=5.0" async /><link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="DaaS in Cloud Computing - javatpoint" /><meta property="og:description" content="DaaS in Cloud Computing with Introduction, Advantages, Disadvantages, history of cloud computing, virtualization, software virtualization, hardware virtualization etc." />
+<meta name="keywords" content="cloud, computing, tutorial, introduction, basics, beginners, professionals, cloud computing tutorial, advantages of cloud computing, disadvantages of cloud computing, history of cloud computing, types of cloud, virtualization, software virtualization, hardware virtualization" /><meta name="description" content="DaaS in Cloud Computing with Introduction, Advantages, Disadvantages, history of cloud computing, virtualization, software virtualization, hardware virtualization etc." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="daas-in-cloud-computing.html" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="DaaS in Cloud Computing - javatpoint" /><meta name="twitter:description" property="og:description" content="DaaS in Cloud Computing with Introduction, Advantages, Disadvantages, history of cloud computing, virtualization, software virtualization, hardware virtualization etc." /><meta property="og:url" content="daas-in-cloud-computing.html" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../delivery.adrecover.com/37784/adRecoverb466.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+
+<script data-cfasync="false" type="text/javascript">
+(function (w, d) {
+  var siteId = "37780";
+  var targetElement =
+    d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+  var s = d.createElement("script");
+  s.src = "//cdn.adpushup.com/" + siteId + "/adpushup.js";
+  s.crossOrigin = "anonymous";
+  s.type = "text/javascript";
+  s.async = true;
+  targetElement.appendChild(s);
+  function sendErrorLog(log) {
+    var eventName = "script_error";
+    log.siteId = siteId;
+    var data = btoa(JSON.stringify(log));
+    var img = document.createElement("img");
+    img.src =
+      "https://aplogger.adpushup.com/log?event=HC_" + eventName + "&data=" + data;
+  }
+  var searchParams =
+    typeof URLSearchParams === "function" &&
+    new URLSearchParams(window.location.search);
+  if (searchParams) {
+    var isDebugModeOn = searchParams.has("apDebug");
+  }
+  w.addEventListener("error", function (event) {
+    try {
+      var filename = event.filename || "";
+      if (filename.indexOf("/" + siteId + "/adpushup.js") === -1) {
+        return;
+      }
+      var error = event.error;
+      if (error) {
+        var message = error.message;
+        var stack = error.stack;
+      }
+      message = message || event.message;
+      var log = {
+        message: message,
+        stack: stack || "",
+        timestamp: Math.floor(event.timeStamp),
+        type: "uncaughterror",
+      };
+      sendErrorLog(log);
+      !isDebugModeOn && event.preventDefault();
+    } catch (error) {}
+  });
+  w.addEventListener("unhandledrejection", function (event) {
+    var reason = event.reason;
+    if (typeof reason === "object") reason = JSON.stringify(reason);
+    var log = {
+      message: reason || "no reason found",
+      timestamp: Math.floor(event.timeStamp),
+      type: "unhandledrejection",
+    };
+    sendErrorLog(log);
+    !isDebugModeOn && event.preventDefault();
+  });
+  var ga = d.createElement("script");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z0TZ7TDHS1";
+  ga.type = "text/javascript";
+  ga.async = true;
+  targetElement.appendChild(ga);
+  w.dataLayer = window.dataLayer || [];
+  w.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  w.gtag("js", new Date());
+  w.gtag("config", "G-Z0TZ7TDHS1", {
+    custom_map: { dimension1: "siteid" },
+  });
+  w.gtag("event", "script-call", {
+    send_to: "G-Z0TZ7TDHS1",
+    siteid: siteId,
+  });
+  s.onerror = function (msg) {
+    w.gtag("event", "ad-block", {
+      send_to: "G-Z0TZ7TDHS1",
+      siteid: siteId,
+    });
+  };
+})(window, document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<button onclick="topFunction()" id="myBtn">&#8679; SCROLL TO TOP</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="index.html"><img src="../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="index.html"><img src="images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul><li><a href="index.html">Home</a></li>
+<li><a href="cloud-computing-tutorial.html" class="selected">Cloud Computing</a></li>
+<li><a href="c-programming-language-tutorial.html">C</a></li>
+<li><a href="python-tutorial.html">Python</a></li>
+<li><a href="java-tutorial.html">Java</a></li>
+<li><a href="sql-tutorial.html">SQL</a></li>
+<li><a href="android-tutorial.html">Android</a></li>
+<li><a href="javascript-tutorial.html">JavaScript</a></li>
+<li><a href="ajax-tutorial.html">AJAX</a></li>
+<li><a href="design-patterns-in-java.html">Design Pattern</a></li>
+<li><a href="examaccess.html">Quiz</a></li> <li><a href="free-java-projects.html">Projects</a></li>
+<li><a href="corejava-interview-questions.html">Interview Q</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+<ins class="adPushupAds" data-adpControl="hqdgs" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV8zMDB4MjUwX01vYl8xNC85IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MzAwcHg7aGVpZ2h0OjI1MHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjcwMTQyNzI1MTkiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Cloud Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-computing-tutorial.html">Cloud Computing</a>
+<a href="advantages-and-disadvantages-of-cloud-computing.html">Advantage &amp; Disadvantage</a>
+<a href="history-of-cloud-computing.html">History of Cloud</a>
+<a href="cloud-computing-architecture.html">Cloud Computing Architecture</a>
+<a href="cloud-computing-technologies.html">Cloud Computing Technologies</a>
+<a href="cloud-computing-vs-grid-computing.html">Cloud Computing vs Grid Computing</a>
+<a href="how-does-cloud-computing-work.html">How Cloud work</a>
+<a href="cloud-computing-applications.html">Cloud Computing Applications</a>
+<a href="security-risks-of-cloud-computing.html">Security Risks of Cloud Computing</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Types of Cloud</span></h2>
+</div>
+<div class="leftmenu">
+<a href="types-of-cloud.html">Types of Cloud</a>
+<a href="public-cloud.html">Public Cloud</a>
+<a href="private-cloud.html">Private Cloud</a>
+<a href="hybrid-cloud.html">Hybrid Cloud</a>
+<a href="community-cloud.html">Community Cloud</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Cloud Service Models</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-service-models.html">Cloud Service Models</a>
+<a href="infrastructure-as-a-service.html">IaaS Layer</a>
+<a href="platform-as-a-service.html">PaaS Layer</a>
+<a href="software-as-a-service.html">SaaS Layer</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Virtualization</span></h2>
+</div>
+<div class="leftmenu">
+<a href="virtualization-in-cloud-computing.html">What is Virtualization</a>
+<a href="cloud-computing-data-virtualization.html">Data Virtualization</a>
+<a href="hardware-virtualization.html">Hardware Virtualization</a>
+<a href="software-virtualization.html">Software Virtualization</a>
+<a href="server-virtualization.html">Server Virtualization</a>
+<a href="storage-virtualization.html">Storage Virtualization</a>
+<a href="os-virtualization.html">OS Virtualization</a>
+<a href="linux-virtualization.html">Linux Virtualization</a>
+<a href="windows-virtualization.html">Windows Virtualization</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Cloud Service Providers</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-service-provider-companies.html">Cloud Service Provider Companies</a>
+<a href="how-to-create-amazon-ec2-window.html">Amazon EC2</a>
+<a href="aws-vs-azure-vs-google-cloud-platform.html">AWS vs Azure vs GCP</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Miscellaneous</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-server.html">Cloud Server</a>
+<a href="cloud-deployment-model.html">Cloud Deployment Model</a>
+<a href="cloud-hypervisor.html">Cloud Hypervisor</a>
+<a href="cloud-computing-examples.html">Cloud Computing Examples</a>
+<a href="cloud-computing-jobs.html">Cloud Computing Jobs</a>
+<a href="features-of-cloud-computing.html">Features of Cloud Computing</a>
+<a href="multitenancy-in-cloud-computing.html">Multitenancy in Cloud computing</a>
+<a href="grid-computing.html">Grid Computing</a>
+<a href="aneka-in-cloud-computing.html">Aneka in Cloud Computing</a>
+<a href="scaling-in-cloud-computing.html">Scaling in Cloud Computing</a>
+<a href="how-does-multi-cloud-differ-from-a-hybrid-cloud.html">How Does Multi-Cloud Differ from A Hybrid Cloud</a>
+<a href="rapid-elasticity-in-cloud-computing.html">Rapid Elasticity in Cloud Computing</a>
+<a href="fog-computing-vs-cloud-computing.html">Fog computing vs Cloud computing</a>
+<a href="strategy-of-multi-cloud.html">Strategy of Multi-Cloud</a>
+<a href="service-level-agreements-in-cloud-computing.html">Service level agreements in Cloud Computing</a>
+<a href="xaas-in-cloud-computing.html">Xaas in Cloud Computing</a>
+<a href="resource-pooling-in-cloud-computing.html">Resource pooling in Cloud Computing</a>
+<a href="load-balancing-in-cloud-computing.html">Load Balancing in Cloud Computing</a>
+<a href="daas-in-cloud-computing.html">DaaS in Cloud Computing</a>
+<a href="what-is-cloud-computing-replacing.html">What is Cloud Computing Replacing</a>
+<a href="cloud-computing-vs-internet-of-things.html">Cloud computing vs Internet of Things</a>
+<a href="web-services-in-cloud-computing.html">Web Services in Cloud Computing</a>
+<a href="container-as-a-service-in-cloud-computing.html">CaaS in Cloud Computing</a>
+<a href="fault-tolerance-in-cloud-computing.html">Fault Tolerance in Cloud Computing</a>
+<a href="principles-of-cloud-computing.html">Principles of Cloud Computing</a>
+<a href="what-are-roots-of-cloud-computing.html">What are Roots of Cloud Computing</a>
+<a href="what-is-data-center-in-cloud-computing.html">What is Data Center in Cloud Computing</a>
+<a href="resiliency-in-cloud-computing.html">Resiliency in Cloud Computing</a>
+<a href="cloud-computing-security-architecture.html">Cloud Computing Security Architecture</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Cloud Computing MCQ</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-computing-mcq.html">Cloud Computing MCQ</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="cloud-computing-interview-questions.html">Interview Questions</a>
+</div>
+<img src="wh.jpg" alt="JavaTpoint" />
+<br />
+<div id="leftad" style="margin-left:20px">
+
+<div id="17c09743-0b89-427c-ba64-e09f6a1745a2" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("17c09743-0b89-427c-ba64-e09f6a1745a2");
+		});
+	</script>
+</div>
+</div>
+</div>
+<div class="onlycontent">
+
+<div class="onlycontentad">
+<div id="9bbcb75d-b5e2-40e1-a811-e7680d1f59a4" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("9bbcb75d-b5e2-40e1-a811-e7680d1f59a4");
+		});
+	</script>
+</div>
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="what-is-cloud-computing-replacing.html">next &rarr;</a>
+<a class="next" href="load-balancing-in-cloud-computing.html">&larr; prev</a>
+</div>
+<h1 class="h1">DaaS in Cloud Computing</h1>
+<p>Desktop as a Service (DaaS) is a cloud computing offering where a service provider distributes virtual desktops to end-users over the Internet, licensed with a per-user subscription.</p>
+<p>The provider takes care of backend management for small businesses that find their virtual desktop infrastructure to be too expensive or resource-consuming. This management usually includes maintenance, backup, updates, and data storage. Cloud service providers can also handle security and applications for the desktop, or users can manage these service aspects individually.</p>
+<p><strong>There are two types of desktops available in DaaS - persistent and non-persistent.</strong></p>
+<ul class="points">
+<li><strong>Persistent Desktop</strong>: Users can customize and save a desktop from looking the same as each user logs on. Permanent desktops require more storage than non-permanent desktops, making them more expensive.</li>
+<li><strong>Non-persistent desktop</strong>: The desktop is erased whenever the user logs out-they're just a way to access shared cloud services. Cloud providers can allow customers to choose from both, allowing workers with specific needs access to a permanent desktop and providing access to temporary or occasional workers through a non-permanent desktop.</li>
+</ul>
+<h2 class="h2">Benefits of Desktop as a Service (DaaS)</h2>
+<p>Desktop as a Service (DaaS) offers some clear advantages over the traditional desktop model. With DaaS, it is faster and less expensive to deploy or deactivate active end users.</p>
+<p><strong>Rapid deployment and decommissioning of active end</strong>-users: the desktop is already configured; it needs to be connected to a new device. DAAs can save a lot of time and money for seasonal businesses that experience frequent spikes and declines in demand or employees.</p>
+<p><strong>Reduced Downtime for IT Support</strong>: Desktop as a Service allows companies to provide remote IT support to their employees, reducing downtime.</p>
+<p><strong>Cost savings</strong>: Because DAAS devices require much less computing power than a traditional desktop machine or laptop, they are less expensive and use less power.</p>
+<p><strong>Increased device flexibility:</strong> DaaS runs on various operating systems and device types, supporting the tendency of users to bring their own devices into the office and shifting the burden of supporting desktops across those devices to the cloud service provider Is.</p>
+<p><strong>Enhanced Security</strong>: The security risks are significantly lower as the data is stored in the data center with DaaS. If a laptop or mobile device is stolen, it can be disconnected from service. Since no data remains on that stolen device, the risk of a thief accessing sensitive data is minimal. Security patches and updates are also easier to install in a DaaS environment as all desktops can be updated simultaneously from a remote location.</p>
+<h2 class="h2">How does Desktop as a Service (DaaS) work?</h2>
+<p>With Desktop as a Service (DaaS), the cloud service provider hosts the infrastructure, network resources, and storage in the cloud and streams the virtual desktop to the user's device. The user can access the desktop's data and applications through a web browser or other software. Organizations can purchase as many virtual desktops as they want through the subscription model.</p>
+<p>Because desktop applications stream from a centralized server over the Internet, graphics-intensive applications have historically been difficult to use with DaaS.</p>
+<p>New technology has changed this, and applications such as Computer-Aided Design (CAD) that require a lot of computer power to display quickly can now easily run on DaaS.</p>
+<p>When the workload on a server becomes too high, IT administrators can move a running virtual machine from one physical server to another in seconds, allowing graphics-accelerated or GPU-accelerated applications to run seamlessly. Meets.</p>
+<p>GPU-accelerated Desktop as a Service (<strong>GPU-DaaS</strong>) has implications for any industry that requires 3D modeling, high-end graphics, simulation, or video production. The engineering and design, broadcast, and architecture industries can benefit from this technology.</p>
+<h2 class="h2">How is DaaS different from VDI?</h2>
+<p>Both DaaS and VDI offer a similar result: bringing virtual applications and desktops from a centralized data center to users' endpoints. However, these offerings differ in setup, architecture, controls, cost impact, and agility, as summarized below:</p>
+<table class="alt">
+<tr>
+<th>Specialty</th>
+<th>Slave</th>
+<th>VDI</th>
+</tr>
+<tr>
+<td><strong>Setup</strong></td>
+<td>The cloud provider hosts all of the organization's IT infrastructure, including compute, networking, and storage.<br>The provider handles all hardware monitoring, availability, troubleshooting, and upgrade issues.<br>It also manages the VMs that run the OS. Some providers also provide technical support.</td>
+<td>With VDI, you manage all IT resources on-premises or yourself in a colocation facility. VDI is used for servers, networking, storage, licenses, endpoints, etc.<br>More about this source textSource text required for additional translation information<br>Send feedback<br>Side panels<br>History<br>Saved<br>Contribute</td>
+</tr>
+<tr>
+<td><strong>Architecture</strong></td>
+<td>Most DaaS offerings take advantage of the multi-tenancy architecture. Under this model, a single instance of an application-hosted by a server or datacenter-serves multiple "tenants" or customers.<br>The DaaS provider differentiates each customer's services and provides them dynamically. Resource consumption or security of other clients may affect you with multi-tenant architecture if services are compromised.</td>
+<td>Most VDI offerings are single-tenant solutions where customers operate in a completely dedicated environment.<br>Leveraging the single-tenant architecture in VDI allows IT administrators to gain complete control over its IT resource distribution and configuration.<br>You also don't have to worry about the overuse of resources and any other organization causing service disruption.</td>
+</tr>
+<tr>
+<td><strong>Control</strong></td>
+<td>The cloud vendor controls all of its IT infrastructure, including monitoring, configuration, and storage. You may not have complete knowledge of these aspects.<br>Internet connectivity is required to access the control plane of DAAs, making it more vulnerable to breaches and cyber attacks.</td>
+<td>With VDI deployment, the organization has complete control over its IT resources. Since most VDI solutions leverage a single-tenant architecture, IT administrators can ensure that only permitted users access virtual desktops and applications.</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>There is almost no upfront cost with DaaS offerings as it is subscription-based. The pay-as-you-go pricing structure allows companies to dynamically scale their operations and pay only for the resources consumed.<br>DaaS offerings can be cheaper for small to medium-sized businesses (SMBs) with fluctuating needs.</td>
+<td>VDI requires a real capital expenditure (CapEx) to purchase or upgrade a server. it is suitable for<br>Enterprise-level organizations that have projected growth and resource requirements.</td>
+</tr>
+<tr>
+<td><strong>Agility</strong></td>
+<td>DaaS deployments provide excellent flexibility.<br>For example, you can provision virtual desktops and applications immediately and accommodate temporary or seasonal employees.<br>You can also reduce the resources easily. With DaaS solutions, you can support new technological trends such as the latest GPUs or CPUs or CPU or software innovations.</td>
+<td>VDI requires considerable efforts to set up and build and maintain complex infrastructure. For example, adding new features can take days or even weeks. Budget can also limit the organization if it wants to buy new hardware to handle the scalability.</td>
+</tr>
+</table>
+<h2 class="h2">What are the use cases for DaaS?</h2>
+<p>Organizations can leverage <strong>DaaS</strong> to address various use cases and scenarios such as:</p>
+<ul class="points">
+<li><strong>Users with multiple endpoints.</strong> A user can access multiple virtual desktops on a single PC instead of switching between multiple devices or multiple OSes. Some roles, such as software development, may require the user to work from multiple devices.</li>
+<li><strong>Contract or seasonal workers</strong>. DaaS can help you provision virtual desktops within minutes for seasonal or contract workers. You can also quickly close such desktops when the employee leaves the organization.</li>
+<li><strong>Mobile and remote worker</strong>. DaaS provides secure access to corporate resources anywhere, anytime, and any device. Mobile and remote employees can take advantage of these features to increase productivity in the organization.</li>
+<li><strong>Mergers and acquisition.</strong> DaaS simplifies the provision and deployment of new desktops to new employees, allowing IT administrators to quickly integrate the entire organization's network following a merger or acquisition.</li>
+<li><strong>Educational institutions</strong>. IT administrators can provide each teacher or student with an individual virtual desktop with the necessary privileges. When such users leave the organization, their desktops become inactive with just a few clicks.</li>
+<li><strong>Healthcare professionals</strong>. Privacy is a major concern in many health care settings. It allows individual access to each healthcare professional's virtual desktop, allowing access only to relevant patient information. With DaaS, IT administrators can easily customize desktop permissions and rules based on the user.</li>
+</ul>
+<h2 class="h2">How to Choose a DaaS Provider</h2>
+<p>There are multiple DaaS providers to choose from, including major vendors such as Azure and managed service providers (MSPs). Because of the many options, selecting the appropriate provider can be a challenge.</p>
+<ul class="points">
+<li>An appropriate DaaS solution meets all the organization's users' requirements, including GPU-intensive applications. Here are some tips to help you choose the right seller:</li>
+<li>If you implement a DaaS solution for an organization with hundreds or thousands of users, make sure it is scalable. A scalable DaaS offering allows you to get on and offboard new users easily.</li>
+<li>A great DaaS provider allows you to provision resources based on current workload demands. You don't want to overpay when workload demands vary depending on the day or time of day.</li>
+<li><strong>Datacenter</strong> Choosing a DaaS provider whose data center is close to the employee results in optimized network infrastructure with low latency. On the other hand, poor location can lead to unstable connections and efficiency challenges.</li>
+<li><strong>Security and compliance.</strong> If you are in an industry that must comply with prevailing laws and regulations, choose a DaaS provider that meets all security and compliance requirements.</li>
+<li>An intuitive and easy-to-use DaaS solution allows employees to get work done. It also frees you from many IT administration responsibilities related to OS and application management.</li>
+<li>Like all cloud-based services, DaaS migrates CapEx to an operating expense (OpEx) consumption model. However, not all DaaS providers are created equal when comparing services versus price. Therefore, you should compare the cost with the value of different DaaS providers to get the best service.</li>
+</ul>
+<h2 class="h2">Top Providers of DaaS in Cloud Computing</h2>
+<p>Working with DaaS providers is the best option for most organizations as it provides access to managed services and support. Below are the three largest DaaS providers currently available.</p>
+<h3 class="h3">Amazon Workspace</h3>
+<p>Amazon Workspace is an AWS desktop as a service product that you can use to access a Linux or Windows desktop. When using this service, you can choose from various software and hardware configurations and multiple billing types. You can use workstations in multiple AWS regions.</p>
+<p>Workstations operate on a server-based model. You enumerate predefined OS, storage, and resource bundles when using the Services. The bundle you choose determines the maximum performance you expect and your costs.</p>
+<p>For example, in one of the standard bundles, you can use <strong>Windows 7 or 10</strong>, two CPUs, 4GB of memory, and <strong>100GB</strong> of storage for <strong>$44</strong> per month.</p>
+<p>The workspace also includes bringing in existing Windows licenses and applications.</p>
+<p>With this option, you can import your existing Windows VM images and play those images on dedicated hardware. The caveat to fetch your license is that it is only available for Windows 7 SP1 and select Windows 10 editions. Additionally, you will need to purchase at least 200 desktops.</p>
+<p>Learn more about the <strong>AWS DaaS</strong> offering in our guide.</p>
+<h3 class="h3">VMware Horizon Cloud</h3>
+<p>VMware Horizon Cloud is a DaaS offering available as a server- or client-based option. These services are provided from a VMware-hosted control plane that enables you to manage and deploy your desktop and applications centrally.</p>
+<p>With Horizon Cloud, you can access fully managed desktops in three configurations:</p>
+<ul class="points">
+<li><strong>Session desktops</strong> are ephemeral desktops in which multiple users share resources on a single server.</li>
+<li><strong>Dedicated</strong> Desktop-Continuous desktop resources are provided to a single user. This option uses a client-based model.</li>
+<li><strong>Floating</strong> Desktop-Non-persistent desktop associated with a single user. These desktops can provide users with a consistent experience through Horizon Cloud features, such as the User Environment Manager, enabling administrators to maintain settings and user data. This option uses a client-based model.</li>
+</ul>
+<h2 class="h2">Challenges of data as a service</h2>
+<p>While DaS offers many benefits, it also poses special challenges.</p>
+<ul class="points">
+<li><strong>Unique security considerations</strong>: Because DaaS requires organizations to move data to cloud infrastructure and to transfer data over a network, it can pose a security risk that would not exist if the data was persisted on local, behind-the-firewall infrastructure. These challenges can be mitigated by using encryption for data in transit.</li>
+<li><strong>Additional compliance steps</strong>: For some organizations, compliance challenges can arise when sensitive data is moved to a cloud environment. It does not mean that data cannot be integrated or managed in the cloud, but companies subject to special data compliance requirements should meet those requirements with their DaaS solutions. For example, they may need to host their DaS on cloud servers in a specific country to remain compliant.</li>
+<li><strong>Potentially Limited Capabilities</strong>: In some cases, DaaS platforms may limit the number of devices available to work with the data. Users can only work with tools that are hosted on or compatible with their DaaS platform instead of being able to use any tool of their choice to set up their data-processing solution. Choosing a DaaS solution that offers maximum flexibility in device selection mitigates this challenge.</li>
+<li><strong>Data transfer timing</strong>: Due to network bandwidth limitations, it may take time to transfer large amounts of data to the DaaS platform. Depending on how often your organization needs to move data across the DaaS platform, this may or may not be a serious challenge.</li>
+</ul>
+<p>Data compression and edge computing strategies can help accelerate transfer speeds. Successful DaaS Adoption:</p>
+<p>DaaS solutions have been slow to catch on compared to SaaS and other traditional cloud-based services. However, as DaaS matures and the cloud becomes central to modern business operations, many organizations successfully leverage DaaS.</p>
+<ul class="points">
+<li><strong>Pointbet uses DaaS to scale quickly while remaining compliant:</strong> Point bet uses cloud-based data solutions to manage its unique compliance and scaling requirements. The company can easily adjust its operations to meet the fluctuating demand for online gaming and ensure that it operates within local and international government regulations.</li>
+<li><strong>DMD Marketing accelerates data operations with DaaS:</strong> DMD Marketing Corp. has adopted a cloud-first approach to data management to give its users faster access to their data and, by extension, reduce data processing time. The company can refresh data faster thanks to cloud-based data management, giving them an edge over competitors.</li>
+</ul>
+<h2 class="h2">How to get started with Data as a Service</h2>
+<p>Although getting started with DaaS may seem intimidating, as DaaS is still a relatively new solution, the process is simple.</p>
+<p>This is particularly simple because DaaS eliminates most of the setup and preparation work of building an on-premises data processing solution. And because of the simplicity of deploying a DaaS solution and the availability of technical support services from DaaS providers, your company does not need to have specialized personnel for this process.</p>
+<p><strong>The main steps to get started with DaS include:</strong></p>
+<ul class="points">
+<li><strong>Choose a DaaS Solution:</strong> Factors to consider when selecting a DaaS offering include price, scalability, reliability, flexibility, and how easy it is to integrate DaaS with existing workflows and ingest data.</li>
+<li><strong>Migrate data to a DaaS solution.</strong> Depending on how much data you need to migrate and the network connection speed between your local infrastructure and your DaaS, data migration may or may not require a lot of time.</li>
+<li><strong>Start leveraging the DaaS platform</strong> to deliver faster, more reliable data integration and insights.</li>
+</ul>
+<hr />
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="what-is-cloud-computing-replacing.html">What is Cloud Computing Replacing</a></span>
+</div>
+
+<br /><br />
+<div id="bottomnext">
+<a style="float:left" class="next" href="load-balancing-in-cloud-computing.html">&larr; prev</a>
+<a style="float:right" class="next" href="what-is-cloud-computing-replacing.html">next &rarr;</a>
+</div>
+<br /><br />
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ff999a9a9b9d9e9c94bf959e899e8b8f9096918bd19c9092">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/daas-in-cloud-computing"><img src="images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/daas-in-cloud-computing"><img src="images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/daas-in-cloud-computing"><img src="images/pinterest32.png" alt="pinterest" /></a>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="5022809933" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="splunk.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="spss.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="swagger.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="t-sql.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="tumblr.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="regex.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="reinforcement-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="r-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="rxjs.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="react-native-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="python-design-pattern.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="python-pillow.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="python-turtle-programming.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="keras.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="aptitude/quantitative.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="reasoning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="verbal-ability.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="interview-questions-and-answers.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="company-interview-questions-and-recruitment-process.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="artificial-intelligence-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence Tutorial" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="aws-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="selenium-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="cloud-computing-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing tutorial" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="hadoop-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="data-science.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="angular-7-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="blockchain-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="git.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="machine-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="devops.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="dbms-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="data-structure-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="daa-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="os-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System tutorial" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="computer-network-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="compiler-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+ <a href="computer-organization-and-architecture-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="discrete-mathematics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="ethical-hacking-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking Tutorial" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="computer-graphics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="software-engineering-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering Tutorial" />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="html-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="cyber-security-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="automata-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="c-programming-language-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="cpp-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="java-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="net-framework.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="python-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="programs-list.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="control-system-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="data-mining.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="data-warehouse.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br /><div class="mobilemenu" style="clear:both">
+<ins class="adPushupAds" data-adpControl="jrfe7" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByZXNwb25zaXZlbW9iaWxlZm9vdGVyIC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTpibG9jayIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI4MjIyODY2MzE4IgogICAgIGRhdGEtYWQtZm9ybWF0PSJhdXRvIgogICAgIGRhdGEtZnVsbC13aWR0aC1yZXNwb25zaXZlPSJ0cnVlIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div></div>
+<div id="right">
+<div id="e59d93b5-7231-4043-a19e-e7ec340efd1f" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("e59d93b5-7231-4043-a19e-e7ec340efd1f");
+		});
+	</script>
+</div>
+<br /><br />
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br /><br />
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<br />
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="fe968cbe949f889f8a8e9197908ad09d9193">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="204852604a41564154504f494e540e434f4d0e">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="java-tutorial.html">Learn Java</a><a href="data-structure-tutorial.html">Learn Data Structures</a><a href="c-programming-language-tutorial.html">Learn C Programming</a><a href="cpp-tutorial.html">Learn C++ Tutorial</a><a href="c-sharp-tutorial.html">Learn C# Tutorial</a><a href="php-tutorial.html">Learn PHP Tutorial</a><a href="html-tutorial.html">Learn HTML Tutorial</a><a href="javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="jquery-tutorial.html">Learn jQuery Tutorial</a><a href="spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="contact-us.html">Contact Us</a> <a href="subscribe.html">Subscribe Us</a> <a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.xml">Sitemap</a><br><a href="sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+
+</div></div>
+
+<script>
+        const redirectButton = document.querySelector('#redirect');
+        redirectButton.addEventListener('click', () => {
+          const form = document.createElement('form');
+          form.method = 'POST';
+          const textArea = document.createElement('textarea');
+          const language = document.querySelector('#jtp_compiler').classList[0];
+          textArea.name = 'code';
+          textArea.value = document.querySelector('#jtp_compiler').textContent;
+          form.appendChild(textArea);
+          document.body.appendChild(form);
+          form.action = `https://onlinecompiler.javatpoint.com/`;
+          form.submit();
+        });
+      </script>
+<script src="../static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="../static.javatpoint.com/lazysizes.min.js" async></script>
+</body> </html> 

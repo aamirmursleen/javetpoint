@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mizoram Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Mizoram Pin Code, Mizoram Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="mizoram-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Mizoram Pin Code, Mizoram Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="mizoram-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Mizoram Pin Code</h1>
+<p>Mizoram Pin Code: Postal Index Number or PIN or Pin Code of Mizoram is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Mizoram Pin Code is the actual digit provided to the individual post offices. The 1st digit of Mizoram Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>MIZORAM has total <strong>8 districts</strong> and <strong>406 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Mizoram Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../mammit/ailawng-pin-code.html'>AILAWNG</a></td><td>Reiek</td><td> Mammit</td><td>MIZORAM</td><td> 796501</td></tr><tr><td><a href='../aizawl/bawngkawn-pin-code.html'>BAWNGKAWN</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796014</td></tr><tr><td><a href='../kolasib/bilkhawthlir-pin-code.html'>BILKHAWTHLIR</a></td><td>Bilkhawthlir</td><td> Kolasib</td><td>MIZORAM</td><td> 796091</td></tr><tr><td><a href='../aizawl/changzawl-pin-code.html'>CHANGZAWL</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../saiha/chapui-pin-code.html'>CHAPUI</a></td><td>Saiha</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../aizawl/chhingchhip-pin-code.html'>CHHINGCHHIP</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../aizawl/cti-sesawng-pin-code.html'>CTI SESAWNG</a></td><td>Thingsulthliah (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796017</td></tr><tr><td><a href='../lunglei/darngawn-.html' w'-pin-code'>DARNGAWN 'W'</a></td><td>West Bunghmun</td><td> Lunglei</td><td>MIZORAM</td><td> 796710</td></tr><tr><td><a href='../lunglei/demagiri-pin-code.html'>DEMAGIRI</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796751</td></tr><tr><td><a href='../aizawl/dinthar-pin-code.html'>DINTHAR</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796009</td></tr><tr><td><a href='../lunglei/haulawng-pin-code.html'>HAULAWNG</a></td><td>Zotlang</td><td> Lunglei</td><td>MIZORAM</td><td> 796691</td></tr><tr><td><a href='../champhai/hmunhmeltha-pin-code.html'>HMUNHMELTHA</a></td><td>Khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../aizawl/hriphaw-pin-code.html'>HRIPHAW</a></td><td>Zawlnuam</td><td> Aizawl</td><td>MIZORAM</td><td> 796471</td></tr><tr><td><a href='../champhai/kawlkulh-pin-code.html'>KAWLKULH</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../mammit/kawrtethawveng-pin-code.html'>KAWRTETHAWVENG</a></td><td>Mamit</td><td> Mammit</td><td>MIZORAM</td><td> 796441</td></tr><tr><td><a href='../champhai/kelkang-pin-code.html'>KELKANG</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../kolasib/kolasib-pin-code.html'>KOLASIB</a></td><td>North Thingdawl</td><td> Kolasib</td><td>MIZORAM</td><td> 796081</td></tr><tr><td><a href='../saiha/laki-pin-code.html'>LAKI</a></td><td>Tuipang</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../mammit/lallen-pin-code.html'>LALLEN</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../lawngtlai/lawngtlai-pin-code.html'>LAWNGTLAI</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../champhai/leisenzo-pin-code.html'>LEISENZO</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../mammit/lungdar-.html' w'-pin-code'>LUNGDAR 'W'</a></td><td>Reiek</td><td> Mammit</td><td>MIZORAM</td><td> 796501</td></tr><tr><td><a href='../lunglei/lunglei-pin-code.html'>LUNGLEI</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/lungsen-pin-code.html'>LUNGSEN</a></td><td>Lungsen</td><td> Lunglei</td><td>MIZORAM</td><td> 796730</td></tr><tr><td><a href='../lawngtlai/lungtian-pin-code.html'>LUNGTIAN</a></td><td>Sangau</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../aizawl/maite-pin-code.html'>MAITE</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../mammit/marpara-pin-code.html'>MARPARA</a></td><td>West Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../lunglei/muallianpui-pin-code.html'>MUALLIANPUI</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../lunglei/mualthuam-.html' n'-pin-code'>MUALTHUAM 'N'</a></td><td>Zotlang</td><td> Lunglei</td><td>MIZORAM</td><td> 796691</td></tr><tr><td><a href='../champhai/murlen-pin-code.html'>MURLEN</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../serchhip/n-vanlaiphai-pin-code.html'>N VANLAIPHAI</a></td><td>E. Lungdar</td><td> Serchhip</td><td>MIZORAM</td><td> 796184</td></tr><tr><td><a href='../mammit/nchhippui-pin-code.html'>NCHHIPPUI</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../champhai/nkhawbung-pin-code.html'>NKHAWBUNG</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../serchhip/nvanlaiphai-pin-code.html'>NVANLAIPHAI</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../lawngtlai/new-jagnasury-pin-code.html'>NEW JAGNASURY</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../aizawl/new-vervek-pin-code.html'>NEW VERVEK</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../aizawl/ptc-lungverh-pin-code.html'>PTC LUNGVERH</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796410</td></tr><tr><td><a href='../aizawl/sabualkawn-pin-code.html'>SABUALKAWN</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../mammit/saithah-pin-code.html'>SAITHAH</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../aizawl/sihphir-pin-code.html'>SIHPHIR</a></td><td>Sihphir</td><td> Aizawl</td><td>MIZORAM</td><td> 796014</td></tr><tr><td><a href='../serchhip/thenzawl-pin-code.html'>THENZAWL</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796186</td></tr><tr><td><a href='../lunglei/thingfal-pin-code.html'>THINGFAL</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/thingsai-pin-code.html'>THINGSAI</a></td><td>Thingsai</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../lunglei/tiperaghat-pin-code.html'>TIPERAGHAT</a></td><td>Demagiri</td><td> Lunglei</td><td>MIZORAM</td><td> 796751</td></tr><tr><td><a href='../lunglei/tuichawng-pin-code.html'>TUICHAWNG</a></td><td>Lungsen</td><td> Lunglei</td><td>MIZORAM</td><td> 796730</td></tr><tr><td><a href='../saiha/tuipang-pin-code.html'>TUIPANG</a></td><td>Tuipang</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../champhai/vangchhia-pin-code.html'>VANGCHHIA</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../lunglei/vanhne-pin-code.html'>VANHNE</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/bualpui-h-pin-code.html'>BUALPUI H</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796581</td></tr><tr><td><a href='../lunglei/buarpui-pin-code.html'>BUARPUI</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../aizawl/buhban-pin-code.html'>BUHBAN</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../saiha/chakhang-pin-code.html'>CHAKHANG</a></td><td>Saiha</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../aizawl/chawlhhmun-pin-code.html'>CHAWLHHMUN</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796009</td></tr><tr><td><a href='../lunglei/darzo-pin-code.html'>DARZO</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../kolasib/diakkawn-pin-code.html'>DIAKKAWN</a></td><td>Kolasib</td><td> Kolasib</td><td>MIZORAM</td><td> 796082</td></tr><tr><td><a href='../champhai/dulte-pin-code.html'>DULTE</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../aizawl/hualtu-pin-code.html'>HUALTU</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../lawngtlai/kamalanagar-lawngtl-pin-code.html'>KAMALANAGAR LAWNGTL</a></td><td>Chawngte</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796770</td></tr><tr><td><a href='../serchhip/keitum-pin-code.html'>KEITUM</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../aizawl/lamchhip-pin-code.html'>LAMCHHIP</a></td><td>Aibawk</td><td> Aizawl</td><td>MIZORAM</td><td> 796190</td></tr><tr><td><a href='../saiha/lawngban-pin-code.html'>LAWNGBAN</a></td><td>Tuipang</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../aizawl/lungdai-pin-code.html'>LUNGDAI</a></td><td>Bawngkawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796014</td></tr><tr><td><a href='../serchhip/lungdar-pin-code.html'>LUNGDAR</a></td><td>Lungdar</td><td> Serchhip</td><td>MIZORAM</td><td> 796370</td></tr><tr><td><a href='../lawngtlai/mampui-pin-code.html'>MAMPUI</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../aizawl/mauchar-pin-code.html'>MAUCHAR</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../champhai/maulkawi-pin-code.html'>MAULKAWI</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../champhai/mimbung-pin-code.html'>MIMBUNG</a></td><td>Ngopa</td><td> Champhai</td><td>MIZORAM</td><td> 796290</td></tr><tr><td><a href='../lawngtlai/mualbukawn-pin-code.html'>MUALBUKAWN</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../aizawl/muthi-pin-code.html'>MUTHI</a></td><td>Bawngkawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796014</td></tr><tr><td><a href='../kolasib/nchawnpui-pin-code.html'>NCHAWNPUI</a></td><td>Vairengte</td><td> Kolasib</td><td>MIZORAM</td><td> 796101</td></tr><tr><td><a href='../champhai/ngur-pin-code.html'>NGUR</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../mammit/parvatui-pin-code.html'>PARVATUI</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../mammit/pukzing-pin-code.html'>PUKZING</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../lunglei/ralvawng-pin-code.html'>RALVAWNG</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/rangte-pin-code.html'>RANGTE</a></td><td>Lungsen</td><td> Lunglei</td><td>MIZORAM</td><td> 796730</td></tr><tr><td><a href='../saiha/rawmibawk-pin-code.html'>RAWMIBAWK</a></td><td>Saiha</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../lunglei/rawpui-pin-code.html'>RAWPUI</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../champhai/riangtlei-pin-code.html'>RIANGTLEI</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../mammit/rulpuihlim-pin-code.html'>RULPUIHLIM</a></td><td>Reiek</td><td> Mammit</td><td>MIZORAM</td><td> 796501</td></tr><tr><td><a href='../kolasib/saikhawthlir-pin-code.html'>SAIKHAWTHLIR</a></td><td>Kolasib</td><td> Kolasib</td><td>MIZORAM</td><td> 796081</td></tr><tr><td><a href='../champhai/samthang-pin-code.html'>SAMTHANG</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../serchhip/sialsir-pin-code.html'>SIALSIR</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../mammit/silsury-pin-code.html'>SILSURY</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../aizawl/suangpuilawn-pin-code.html'>SUANGPUILAWN</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../lunglei/tawipui-.html' n'-pin-code'>TAWIPUI 'N'</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/tawipui-.html' s'-pin-code'>TAWIPUI 'S'</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/theiriat-pin-code.html'>THEIRIAT</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lunglei/thiltlang-pin-code.html'>THILTLANG</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../aizawl/thingsat-pin-code.html'>THINGSAT</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../aizawl/thingsulthliah-pin-code.html'>THINGSULTHLIAH</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../aizawl/tlungvel-pin-code.html'>TLUNGVEL</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../aizawl/tualbung-pin-code.html'>TUALBUNG</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../mammit/tuidam-pin-code.html'>TUIDAM</a></td><td>Mamit</td><td> Mammit</td><td>MIZORAM</td><td> 796441</td></tr><tr><td><a href='../saiha/tuipuiferry-pin-code.html'>TUIPUIFERRY</a></td><td>Saiha</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../lawngtlai/tuithumhnar-pin-code.html'>TUITHUMHNAR</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../lawngtlai/udalthana-pin-code.html'>UDALTHANA</a></td><td>Chawngte</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796770</td></tr><tr><td><a href='../champhai/vanchengpui-pin-code.html'>VANCHENGPUI</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../kolasib/vengthar-pin-code.html'>VENGTHAR</a></td><td>North Thingdawl</td><td> Kolasib</td><td>MIZORAM</td><td> 796081</td></tr><tr><td><a href='../aizawl/zawngin-pin-code.html'>ZAWNGIN</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../aizawl/zemabawk-pin-code.html'>ZEMABAWK</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796017</td></tr><tr><td><a href='../aizawl/zohmun-pin-code.html'>ZOHMUN</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../champhai/zote-.html' e'-pin-code'>ZOTE 'E'</a></td><td>Khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../aizawl/aiduzawl-pin-code.html'>AIDUZAWL</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../aizawl/aizawl-pin-code.html'>AIZAWL</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796001</td></tr><tr><td><a href='../aizawl/armed-veng-pin-code.html'>ARMED VENG</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796007</td></tr><tr><td><a href='../aizawl/baktawng-pin-code.html'>BAKTAWNG</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../mammit/boraibazar-pin-code.html'>BORAIBAZAR</a></td><td>Zawlnuam</td><td> Mammit</td><td>MIZORAM</td><td> 796471</td></tr><tr><td><a href='../lawngtlai/bungtlang-.html' s'-pin-code'>BUNGTLANG 'S'</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../mammit/dapchhuah-pin-code.html'>DAPCHHUAH</a></td><td>Sairang</td><td> Mammit</td><td>MIZORAM</td><td> 796410</td></tr><tr><td><a href='../lunglei/diblibagh-pin-code.html'>DIBLIBAGH</a></td><td>Demagiri</td><td> Lunglei</td><td>MIZORAM</td><td> 796751</td></tr><tr><td><a href='../lunglei/hrangchalkawn-pin-code.html'>HRANGCHALKAWN</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../champhai/hruaikawn-pin-code.html'>HRUAIKAWN</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../kolasib/kawnpui-pin-code.html'>KAWNPUI</a></td><td>North Thingdawl</td><td> Kolasib</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../champhai/khuangleng-pin-code.html'>KHUANGLENG</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../aizawl/khumtung-pin-code.html'>KHUMTUNG</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../lunglei/kikawn-pin-code.html'>KIKAWN</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../saiha/latawh-pin-code.html'>LATAWH</a></td><td>Tuipang</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../lunglei/leite-pin-code.html'>LEITE</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../champhai/leithum-pin-code.html'>LEITHUM</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../lunglei/lunglawn-pin-code.html'>LUNGLAWN</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../serchhip/lungpho-pin-code.html'>LUNGPHO</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../champhai/lungtan-pin-code.html'>LUNGTAN</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../aizawl/missionvengthlang-pin-code.html'>MISSIONVENGTHLANG</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../champhai/mualcheng-pin-code.html'>MUALCHENG</a></td><td>East Lungdar (Part)</td><td> Champhai</td><td>MIZORAM</td><td> 796370</td></tr><tr><td><a href='../aizawl/muallungthu-pin-code.html'>MUALLUNGTHU</a></td><td>Kulikawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../aizawl/nebualpui-pin-code.html'>NEBUALPUI</a></td><td>Phullen</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../aizawl/nhlimen-pin-code.html'>NHLIMEN</a></td><td>Chandmary</td><td> Aizawl</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../aizawl/nserzawl-pin-code.html'>NSERZAWL</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../aizawl/nisapui-pin-code.html'>NISAPUI</a></td><td>Chanmary</td><td> Aizawl</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../lunglei/pangzawl-pin-code.html'>PANGZAWL</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../aizawl/pawlrang-pin-code.html'>PAWLRANG</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../mammit/phaileng-pin-code.html'>PHAILENG</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../kolasib/phainuam-pin-code.html'>PHAINUAM</a></td><td>Vairengte</td><td> Kolasib</td><td>MIZORAM</td><td> 796101</td></tr><tr><td><a href='../mammit/rawpuichhip-pin-code.html'>RAWPUICHHIP</a></td><td>Sairang</td><td> Mammit</td><td>MIZORAM</td><td> 796410</td></tr><tr><td><a href='../aizawl/ruallung-pin-code.html'>RUALLUNG</a></td><td>Phullen</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../lunglei/schawilung-pin-code.html'>SCHAWILUNG</a></td><td>Demagiri</td><td> Lunglei</td><td>MIZORAM</td><td> 796751</td></tr><tr><td><a href='../champhai/skhawbung-pin-code.html'>SKHAWBUNG</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../saiha/saiha-pin-code.html'>SAIHA</a></td><td>Tuipang</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../aizawl/sailam-pin-code.html'>SAILAM</a></td><td>Aibawk</td><td> Aizawl</td><td>MIZORAM</td><td> 796190</td></tr><tr><td><a href='../mammit/sairang-pin-code.html'>SAIRANG</a></td><td>Sairang</td><td> Mammit</td><td>MIZORAM</td><td> 796410</td></tr><tr><td><a href='../lawngtlai/saizawh-pin-code.html'>SAIZAWH</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796770</td></tr><tr><td><a href='../lunglei/serkawn-pin-code.html'>SERKAWN</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796691</td></tr><tr><td><a href='../champhai/sesih-pin-code.html'>SESIH</a></td><td>Champhai</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../serchhip/sialhawk-pin-code.html'>SIALHAWK</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796370</td></tr><tr><td><a href='../aizawl/thentlang-pin-code.html'>THENTLANG</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../champhai/vaikhawtlang-pin-code.html'>VAIKHAWTLANG</a></td><td>Ngopa</td><td> Champhai</td><td>MIZORAM</td><td> 796290</td></tr><tr><td><a href='../aizawl/vanbawng-pin-code.html'>VANBAWNG</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../champhai/vangtlang-pin-code.html'>VANGTLANG</a></td><td>Khawzawl</td><td> Champhai</td><td>MIZORAM</td><td> 796310</td></tr><tr><td><a href='../lunglei/aithur-pin-code.html'>AITHUR</a></td><td>Hnahthial</td><td> Lunglei</td><td>MIZORAM</td><td> 796571</td></tr><tr><td><a href='../kolasib/bairabi-pin-code.html'>BAIRABI</a></td><td>North Thingdawl</td><td> Kolasib</td><td>MIZORAM</td><td> 796081</td></tr><tr><td><a href='../lawngtlai/balhlakawn-pin-code.html'>BALHLAKAWN</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../aizawl/bungkawn-pin-code.html'>BUNGKAWN</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../lawngtlai/chamdur-pin-code.html'>CHAMDUR</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../lunglei/changpui-pin-code.html'>CHANGPUI</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../lawngtlai/cheural-pin-code.html'>CHEURAL</a></td><td>Sangau</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../champhai/chhawkhlei-pin-code.html'>CHHAWKHLEI</a></td><td>Khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../serchhip/chhiahtlang-pin-code.html'>CHHIAHTLANG</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../saiha/chhuarlung-pin-code.html'>CHHUARLUNG</a></td><td>Saiha</td><td> Saiha</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../mammit/dampui-pin-code.html'>DAMPUI</a></td><td>Mamit</td><td> Mammit</td><td>MIZORAM</td><td> 796441</td></tr><tr><td><a href='../champhai/dungtlang-pin-code.html'>DUNGTLANG</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../aizawl/govt-complex-pin-code.html'>GOVT COMPLEX</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796009</td></tr><tr><td><a href='../lunglei/hauruang-pin-code.html'>HAURUANG</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../aizawl/hmuntha-pin-code.html'>HMUNTHA</a></td><td>Thingsulthliah</td><td> Aizawl</td><td>MIZORAM</td><td> 796161</td></tr><tr><td><a href='../mammit/hnahva-pin-code.html'>HNAHVA</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../champhai/kawlbem-pin-code.html'>KAWLBEM</a></td><td>Ngopa</td><td> Champhai</td><td>MIZORAM</td><td> 796290</td></tr><tr><td><a href='../mammit/kawrthah-pin-code.html'>KAWRTHAH</a></td><td>Mamit</td><td> Mammit</td><td>MIZORAM</td><td> 796441</td></tr><tr><td><a href='../aizawl/kepran-pin-code.html'>KEPRAN</a></td><td>Zemabawk</td><td> Aizawl</td><td>MIZORAM</td><td> 796017</td></tr><tr><td><a href='../aizawl/khawchhete-pin-code.html'>KHAWCHHETE</a></td><td>Kulikawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../champhai/khawkawn-pin-code.html'>KHAWKAWN</a></td><td>Ngopa</td><td> Champhai</td><td>MIZORAM</td><td> 796290</td></tr><tr><td><a href='../champhai/khawnuam-pin-code.html'>KHAWNUAM</a></td><td>Khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../mammit/khawrihnim-pin-code.html'>KHAWRIHNIM</a></td><td>Reiek</td><td> Mammit</td><td>MIZORAM</td><td> 796501</td></tr><tr><td><a href='../champhai/khuangthing-pin-code.html'>KHUANGTHING</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../aizawl/kulikawn-pin-code.html'>KULIKAWN</a></td><td>Kulikawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../aizawl/luangpawn-pin-code.html'>LUANGPAWN</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../lunglei/lungchem-pin-code.html'>LUNGCHEM</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796701</td></tr><tr><td><a href='../serchhip/lungkawlh-pin-code.html'>LUNGKAWLH</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../aizawl/lungpher-.html' n'-pin-code'>LUNGPHER 'N'</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../lunglei/lungrang-.html' s'-pin-code'>LUNGRANG 'S'</a></td><td>Lungsen</td><td> Lunglei</td><td>MIZORAM</td><td> 796730</td></tr><tr><td><a href='../aizawl/maubuang-pin-code.html'>MAUBUANG</a></td><td>Aibawk</td><td> Aizawl</td><td>MIZORAM</td><td> 796190</td></tr><tr><td><a href='../mammit/mualkhang-pin-code.html'>MUALKHANG</a></td><td>Sairang</td><td> Mammit</td><td>MIZORAM</td><td> 796410</td></tr><tr><td><a href='../aizawl/mualmawi-pin-code.html'>MUALMAWI</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796005</td></tr><tr><td><a href='../kolasib/mualvum-pin-code.html'>MUALVUM</a></td><td>Kawnpui</td><td> Kolasib</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../aizawl/nchaltlang-pin-code.html'>NCHALTLANG</a></td><td>Chandmary</td><td> Aizawl</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../aizawl/nkhawlek-pin-code.html'>NKHAWLEK</a></td><td>Saitual</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../lawngtlai/paithar-pin-code.html'>PAITHAR</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../aizawl/palsang-pin-code.html'>PALSANG</a></td><td>Darlawn</td><td> Aizawl</td><td>MIZORAM</td><td> 796111</td></tr><tr><td><a href='../lawngtlai/pangkhua-pin-code.html'>PANGKHUA</a></td><td>Sangau</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796901</td></tr><tr><td><a href='../lawngtlai/parva-pin-code.html'>PARVA</a></td><td>Lawngtlai</td><td> Lawngtlai</td><td>MIZORAM</td><td> 796891</td></tr><tr><td><a href='../mammit/phuldungsei-pin-code.html'>PHULDUNGSEI</a></td><td>Phaileng</td><td> Mammit</td><td>MIZORAM</td><td> 796431</td></tr><tr><td><a href='../lunglei/puankhai-pin-code.html'>PUANKHAI</a></td><td>Demagiri</td><td> Lunglei</td><td>MIZORAM</td><td> 796751</td></tr><tr><td><a href='../lunglei/ramlaitui-pin-code.html'>RAMLAITUI</a></td><td>Lunglei</td><td> Lunglei</td><td>MIZORAM</td><td> 796691</td></tr><tr><td><a href='../aizawl/ramthar-pin-code.html'>RAMTHAR</a></td><td>Tlangnuam (Part)</td><td> Aizawl</td><td>MIZORAM</td><td> 796007</td></tr><tr><td><a href='../lunglei/rualalung-pin-code.html'>RUALALUNG</a></td><td>Lungsen</td><td> Lunglei</td><td>MIZORAM</td><td> 796730</td></tr><tr><td><a href='../champhai/ruantlang-pin-code.html'>RUANTLANG</a></td><td>Khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796321</td></tr><tr><td><a href='../lunglei/sachan-pin-code.html'>SACHAN</a></td><td>Bunghmun</td><td> Lunglei</td><td>MIZORAM</td><td> 796710</td></tr><tr><td><a href='../aizawl/saitual-pin-code.html'>SAITUAL</a></td><td>Phullen</td><td> Aizawl</td><td>MIZORAM</td><td> 796261</td></tr><tr><td><a href='../champhai/sazep-pin-code.html'>SAZEP</a></td><td>S.khawbung</td><td> Champhai</td><td>MIZORAM</td><td> 796320</td></tr><tr><td><a href='../serchhip/serchhip-pin-code.html'>SERCHHIP</a></td><td>Serchhip</td><td> Serchhip</td><td>MIZORAM</td><td> 796181</td></tr><tr><td><a href='../aizawl/serkhan-pin-code.html'>SERKHAN</a></td><td>Chandmary</td><td> Aizawl</td><td>MIZORAM</td><td> 796070</td></tr><tr><td><a href='../aizawl/sesawng-pin-code.html'>SESAWNG</a></td><td>Zemabawk</td><td> Aizawl</td><td>MIZORAM</td><td> 796017</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="85edf7c5efe4f3e4f1f5eaecebf1abe6eae8">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="6e061c2e040f180f1a1e0107001a400d010340">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

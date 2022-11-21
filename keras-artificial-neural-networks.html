@@ -1,0 +1,1004 @@
+ <!DOCTYPE html><html lang="en"><!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Artificial Neural Networks - Javatpoint</title><link rel="SHORTCUT ICON" href="../static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="../static.javatpoint.com/linkf731.css?v=5.0" async /><link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Artificial Neural Networks - Javatpoint" /><meta property="og:description" content="Artificial Neural Networks with What is Keras, Keras Backend, Models, Functional API, Pooling Layers, Merge Layers, Sequence Preprocessing, Metrics, Optimizers, Backend, Visualization etc." />
+<meta name="keywords" content="keras tutorial, keras, what is keras, keras backend, keras models, keras functional api, core layer, pooling layers, merge layers, sequence preprocessing, metrics, optimizers, backend, visualization" /><meta name="description" content="Artificial Neural Networks with What is Keras, Keras Backend, Models, Functional API, Pooling Layers, Merge Layers, Sequence Preprocessing, Metrics, Optimizers, Backend, Visualization etc." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="keras-artificial-neural-networks.html" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Artificial Neural Networks - Javatpoint" /><meta name="twitter:description" property="og:description" content="Artificial Neural Networks with What is Keras, Keras Backend, Models, Functional API, Pooling Layers, Merge Layers, Sequence Preprocessing, Metrics, Optimizers, Backend, Visualization etc." /><meta property="og:url" content="keras-artificial-neural-networks.html" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../delivery.adrecover.com/37784/adRecoverb466.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+
+<script data-cfasync="false" type="text/javascript">
+(function (w, d) {
+  var siteId = "37780";
+  var targetElement =
+    d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+  var s = d.createElement("script");
+  s.src = "//cdn.adpushup.com/" + siteId + "/adpushup.js";
+  s.crossOrigin = "anonymous";
+  s.type = "text/javascript";
+  s.async = true;
+  targetElement.appendChild(s);
+  function sendErrorLog(log) {
+    var eventName = "script_error";
+    log.siteId = siteId;
+    var data = btoa(JSON.stringify(log));
+    var img = document.createElement("img");
+    img.src =
+      "https://aplogger.adpushup.com/log?event=HC_" + eventName + "&data=" + data;
+  }
+  var searchParams =
+    typeof URLSearchParams === "function" &&
+    new URLSearchParams(window.location.search);
+  if (searchParams) {
+    var isDebugModeOn = searchParams.has("apDebug");
+  }
+  w.addEventListener("error", function (event) {
+    try {
+      var filename = event.filename || "";
+      if (filename.indexOf("/" + siteId + "/adpushup.js") === -1) {
+        return;
+      }
+      var error = event.error;
+      if (error) {
+        var message = error.message;
+        var stack = error.stack;
+      }
+      message = message || event.message;
+      var log = {
+        message: message,
+        stack: stack || "",
+        timestamp: Math.floor(event.timeStamp),
+        type: "uncaughterror",
+      };
+      sendErrorLog(log);
+      !isDebugModeOn && event.preventDefault();
+    } catch (error) {}
+  });
+  w.addEventListener("unhandledrejection", function (event) {
+    var reason = event.reason;
+    if (typeof reason === "object") reason = JSON.stringify(reason);
+    var log = {
+      message: reason || "no reason found",
+      timestamp: Math.floor(event.timeStamp),
+      type: "unhandledrejection",
+    };
+    sendErrorLog(log);
+    !isDebugModeOn && event.preventDefault();
+  });
+  var ga = d.createElement("script");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z0TZ7TDHS1";
+  ga.type = "text/javascript";
+  ga.async = true;
+  targetElement.appendChild(ga);
+  w.dataLayer = window.dataLayer || [];
+  w.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  w.gtag("js", new Date());
+  w.gtag("config", "G-Z0TZ7TDHS1", {
+    custom_map: { dimension1: "siteid" },
+  });
+  w.gtag("event", "script-call", {
+    send_to: "G-Z0TZ7TDHS1",
+    siteid: siteId,
+  });
+  s.onerror = function (msg) {
+    w.gtag("event", "ad-block", {
+      send_to: "G-Z0TZ7TDHS1",
+      siteid: siteId,
+    });
+  };
+})(window, document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<button onclick="topFunction()" id="myBtn">&#8679; SCROLL TO TOP</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="index.html"><img src="../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="index.html"><img src="images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="java-tutorial.html">Java</a></li>
+<li><a href="keras.html" class="selected">Keras</a></li>
+<li><a href="javascript-tutorial.html">JavaScript</a></li>
+<li><a href="bootstrap-tutorial.html">Bootstrap</a></li>
+<li><a href="c-programming-language-tutorial.html">C</a></li>
+<li><a href="html-tutorial.html">HTML</a></li>
+<li><a href="xhtml-tutorial.html">XHTML</a></li>
+<li><a href="css-tutorial.html">CSS</a></li>
+<li><a href="jquery-tutorial.html">jQuery</a></li>
+<li><a href="xml-tutorial.html">XML</a></li>
+<li><a href="json-tutorial.html">JSON</a></li>
+<li><a href="comment.html">Comment</a></li>
+<li><a href="forum.html">Forum</a></li>
+<li><a href="http://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+<ins class="adPushupAds" data-adpControl="hqdgs" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV8zMDB4MjUwX01vYl8xNC85IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MzAwcHg7aGVpZ2h0OjI1MHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjcwMTQyNzI1MTkiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Keras Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="keras.html">Keras Tutorial</a>
+<a href="installation-of-keras-library-in-anaconda.html">Installation of Keras library in Anaconda</a>
+<a href="keras-backends.html">Keras Backends</a>
+<a href="keras-models.html">Keras Models</a>
+<a href="keras-layers.html">Keras layers</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Keras Models</span></h2>
+</div>
+<div class="leftmenu">
+<a href="keras-the-model-class.html">Keras Model class</a>
+<a href="keras-sequential-class.html">Keras Sequential class</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Keras Layers</span></h2>
+</div>
+<div class="leftmenu">
+<a href="keras-core-layers.html">Keras Core Layers</a>
+<a href="keras-convolutional-layers.html">Convolutional Layer</a>
+<a href="pooling-layers.html">Pooling Layers</a>
+<a href="keras-locally-connected-layers.html">Locally-Connected layers</a>
+<a href="keras-recurrent-layers.html">Recurrent Layers</a>
+<a href="keras-embedding.html">Embedding Layers</a>
+<a href="keras-merge-layers.html">Keras Merge Layers</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Deep Learning Library</span></h2>
+</div>
+<div class="leftmenu">
+<a href="deep-learning.html">Deep Learning</a>
+<a href="keras-artificial-neural-networks.html">Artificial Neural Network</a>
+<a href="keras-convolutional-neural-network.html">Convolutional Neural Network</a>
+<a href="keras-recurrent-neural-networks.html">Recurrent Neural Network</a>
+<a href="keras-kohonen-self-organizing-maps.html">Self-Organizing Maps</a>
+<a href="keras-mega-case-study.html">Mega Case Study</a>
+<a href="keras-restricted-boltzmann-machine.html">Restricted Boltzmann Machine</a>
+</div>
+<img src="wh.jpg" alt="JavaTpoint" />
+<br />
+<div id="leftad" style="margin-left:20px">
+
+<div id="17c09743-0b89-427c-ba64-e09f6a1745a2" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("17c09743-0b89-427c-ba64-e09f6a1745a2");
+		});
+	</script>
+</div>
+</div>
+</div>
+<div class="onlycontent">
+
+<div class="onlycontentad">
+<div id="9bbcb75d-b5e2-40e1-a811-e7680d1f59a4" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("9bbcb75d-b5e2-40e1-a811-e7680d1f59a4");
+		});
+	</script>
+</div>
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="keras-convolutional-neural-network.html">next &rarr;</a>
+<a class="next" href="deep-learning.html">&larr; prev</a>
+</div>
+<h1 class="h1">Artificial Neural Networks</h1>
+<p>At earlier times, the conventional computers incorporated algorithmic approach that is the computer used to follow a set of instructions to solve a problem unless those specific steps need that the computer need to follow are known the computer cannot solve a problem. So, obviously, a person is needed in order to solve the problems or someone who can provide instructions to the computer so as to how to solve that particular problem. It actually restricted the problem-solving capacity of conventional computers to problems that we already understand and know how to solve.</p>
+<p>But what about those problems whose answers are not clear, so that is where our traditional approach face failure and so Neural Networks came into existence. Neural Networks processes information in a similar way the human brain does, and these networks actually learn from examples, you cannot program them to perform a specific task. They will learn only from past experiences as well as examples, which is why you don't need to provide all the information regarding any specific task. So, that was the main reason why neural networks came into existence.</p>
+<blockquote>Artificial Neural Network is biologically inspired by the neural network, which constitutes after the human brain.</blockquote>
+<p>Neural networks are modeled in accordance with the human brain so as to imitate their functionality. The human brain can be defined as a neural network that is made up of several neurons, so is the <a href="artificial-neural-network.html">Artificial Neural Network</a> is made of numerous perceptron.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks.png" alt="Artificial Neural Networks" />
+<p>A neural network comprises of three main layers, which are as follows;</p>
+<ul class="points">
+<li><strong>Input layer:</strong> The input layer accepts all the inputs that are provided by the programmer.</li>
+<li><strong>Hidden layer:</strong> In between the input and output layer, there is a set of hidden layers on which computations are performed that further results in the output.</li>
+<li><strong>Output layer:</strong> After the input layer undergoes a series of transformations while passing through the hidden layer, it results in output that is delivered by the output layer.</li>
+</ul>
+<h2 class="h2">Motivation behind Neural Network</h2>
+<p>Basically, the neural network is based on the neurons, which are nothing but the brain cells. A biological neuron receives input from other sources, combines them in some way, followed by performing a nonlinear operation on the result, and the output is the final result.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks2.png" alt="Artificial Neural Networks" />
+<p>The <strong>dendrites</strong> will act as a receiver that receives signals from other neurons, which are then passed on to the <strong>cell body</strong>. The cell body will perform some operations that can be a summation, multiplication, etc. After the operations are performed on the set of input, then they are transferred to the next neuron via <strong>axion</strong>, which is the transmitter of the signal for the neuron.</p>
+<h2 class="h2">What are Artificial Neural Networks?</h2>
+<p>Artificial Neural Networks are the computing system that is designed to simulate the way the human brain analyzes and processes the information. Artificial Neural Networks have self-learning capabilities that enable it to produce a better result as more data become available. So, if the network is trained on more data, it will be more accurate because these neural networks learn from the examples. The neural network can be configured for specific applications like data classification, pattern recognition, etc.</p>
+<p>With the help of the neural network, we can actually see that a lot of technology has been evolved from translating webpages to other languages to having a virtual assistant to order groceries online. All of these things are possible because of neural networks. So, an artificial neural network is nothing but a network of various artificial neurons.</p>
+<h3 class="h3">Importance of Neural Network:</h3>
+<ul class="points">
+<li><strong>Without Neural Network:</strong> Let's have a look at the example given below. Here we have a machine, such that we have trained it with four types of cats, as you can see in the image below. And once we are done with the training, we will provide a random image to that particular machine that has a cat. Since this cat is not similar to the cats through which we have trained our system, so without the neural network, our machine would not identify the cat in the picture. Basically, the machine will get confused in figuring out where the cat is.<br>
+<br><img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks3.png" alt="Artificial Neural Networks" /></li>
+<li><strong>With Neural Network:</strong> However, when we talk about the case with a neural network, even if we have not trained our machine with that particular cat. But still, it can identify certain features of a cat that we have trained on, and it can match those features with the cat that is there in that particular image and can also identify the cat. So, with the help of this example, you can clearly see the importance of the concept of a neural network.</li>
+</ul>
+<h2 class="h2">Working of Artificial Neural Networks</h2>
+<p>Instead of directly getting into the working of Artificial Neural Networks, lets breakdown and try to understand Neural Network's basic unit, which is called a <strong>Perceptron</strong>.</p>
+<p>So, a perceptron can be defined as a neural network with a single layer that classifies the linear data. It further constitutes four major components, which are as follows;</p>
+<ol class="points">
+<li>Inputs</li>
+<li>Weights and Bias</li>
+<li>Summation Functions</li>
+<li>Activation or transformation function</li>
+</ol>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks4.png" alt="Artificial Neural Networks" />
+<p>The main logic behind the concept of Perceptron is as follows:</p>
+<p>The inputs (x) are fed into the input layer, which undergoes multiplication with the allotted weights (w) followed by experiencing addition in order to form weighted sums. Then these inputs weighted sums with their corresponding weights are executed on the pertinent activation function.</p>
+<h3 class="h3">Weights and Bias</h3>
+<p>As and when the input variable is fed into the network, a random value is given as a weight of that particular input, such that each individual weight represents the importance of that input in order to make correct predictions of the result.</p>
+<p>However, bias helps in the adjustment of the curve of activation function so as to accomplish a precise output.</p>
+<h3 class="h3">Summation Function</h3>
+<p>After the weights are assigned to the input, it then computes the product of each input and weights. Then the weighted sum is calculated by the summation function in which all of the products are added.</p>
+<h3 class="h3">Activation Function</h3>
+<p>The main objective of the activation function is to perform a mapping of a weighted sum upon the output. The transformation function comprises of activation functions such as tanh, ReLU, sigmoid, etc.</p>
+<p>The activation function is categorized into two main parts:</p>
+<ol class="points">
+<li>Linear Activation Function</li>
+<li>Non-Linear Activation Function</li>
+</ol>
+<h3 class="h4">Linear Activation Function</h3>
+<p>In the linear activation function, the output of functions is not restricted in between any range. Its range is specified from -infinity to infinity. For each individual neuron, the inputs get multiplied with the weight of each respective neuron, which in turn leads to the creation of output signal proportional to the input. If all the input layers are linear in nature, then the final activation of the last layer will actually be the linear function of the initial layer's input.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks5.png" alt="Artificial Neural Networks" />
+<h3 class="h4">Non- linear function</h3>
+<p>These are one of the most widely used activation function. It helps the model in generalizing and adapting any sort of data in order to perform correct differentiation among the output. It solves the following problems faced by linear activation functions:</p>
+<ul class="points">
+<li>Since the non-linear function comes up with derivative functions, so the problems related to backpropagation has been successfully solved.</li>
+<li>For the creation of deep neural networks, it permits the stacking up of several layers of the neurons.</li>
+</ul>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks6.png" alt="Artificial Neural Networks" />
+<p>The non-linear activation function is further divided into the following parts:</p>
+<ol class="points">
+<li><strong>Sigmoid or Logistic Activation Function</strong><br>
+It provides a smooth gradient by preventing sudden jumps in the output values. It has an output value range between 0 and 1 that helps in the normalization of each neuron's output. For X, if it has a value above 2 or below -2, then the values of y will be much steeper. In simple language, it means that even a small change in the X can bring a lot of change in Y.<br>
+It's value ranges between 0 and 1 due to which it is highly preferred by binary classification whose result is either 0 or 1.<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks7.png" alt="Artificial Neural Networks" /></li>
+<li><strong>Tanh or Hyperbolic Tangent Activation Function</strong><br>
+The tanh activation function works much better than that of the sigmoid function, or simply we can say it is an advanced version of the sigmoid activation function. Since it has a value range between -1 to 1, so it is utilized by the hidden layers in the neural network, and because of this reason, it has made the process of learning much easier.<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks8.png" alt="Artificial Neural Networks" /></li>
+<li><strong>ReLU(Rectified Linear Unit) Activation Function</strong><br>
+ReLU is one of the most widely used activation function by the hidden layer in the neural network. Its value ranges from 0 to infinity. It clearly helps in solving out the problem of backpropagation. It tends out to be more expensive than the sigmoid, as well as the tanh activation function. It allows only a few neurons to get activated at a particular instance that leads to effectual as well as easier computations.<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks9.png" alt="Artificial Neural Networks" /></li>
+<li><strong>Softmax Function</strong><br>
+It is one of a kind of sigmoid function whereby solving the problems of classifications. It is mainly used to handle multiple classes for which it squeezes the output of each class between 0 and 1, followed by dividing it by the sum of outputs. This kind of function is specially used by the classifier in the output layer.</li>
+</ol>
+<h2 class="h2">Gradient Descent Algorithm</h2>
+<p>Gradient descent is an optimization algorithm that is utilized to minimize the cost function used in various machine learning algorithms so as to update the parameters of the learning model. In linear regression, these parameters are coefficients, whereas, in the neural network, they are weights.</p>
+<p><strong>Procedure:</strong></p>
+<p>It all starts with the coefficient's initial value or function's coefficient that may be either 0.0 or any small arbitrary value.</p>
+<div class="formula">
+coefficient = 0.0
+</div>
+<p>For estimating the cost of the coefficients, they are plugged into the function that helps in evaluating.</p>
+<div class="formula">
+cost = f(coefficient)<br>
+or, cost = evaluate(f(coefficient))
+</div>
+<p>Next, the derivate will be calculated, which is one of the concepts of calculus that relates to the function's slope at any given instance. In order to know the direction in which the values of the coefficient will move, we need to calculate the slope so as to accomplish a low cost in the next iteration.</p>
+<div class="formula">
+delta = derivative(cost)
+</div>
+<p>Now that we have found the downhill direction, it will further help in updating the values of coefficients. Next, we will need to specify alpha, which is a learning rate parameter, as it handles the amount of amendments made by coefficients on each update. </p>
+<div class="formula">
+coefficient = coefficient - (alpha * delta)
+</div>
+<p>Until the cost of the coefficient reaches <strong>0.0</strong> or somewhat close enough to it, the whole process will reiterate again and again.</p>
+<p>It can be concluded that gradient descent is a very simple as well as straightforward concept. It just requires you to know about the gradient of the cost function or simply the function that you are willing to optimize.</p>
+<h3 class="h3">Batch Gradient Descent</h3>
+<p>For every repetition of gradient descent, the main aim of batch gradient descent is to processes all of the training examples. In case we have a large number of training examples, then batch gradient descent tends out to be one of the most expensive and less preferable too.</p>
+<p><strong>Algorithm for Batch Gradient Descent</strong></p>
+<p>Let <strong>m</strong> be the number of training examples and <strong>n</strong> be the number of features.</p>
+<p>Now assume that <strong>h<sub>&#415;</sub></strong> represents the hypothesis for linear regression and <strong>&sum;</strong> computes the sum of all training examples from <strong>i=1 to m</strong>. Then the cost of function will be computed by:</p>
+<div class="formula">
+<p>J<sub>train</sub> (&#415;) = (1/2m) &sum; (h<sub>&#415;</sub>(x<sup>(i)</sup>) - (y<sup>(i)</sup>)<sup>2</sup></p>
+<p>Repeat {</p>
+<p>&#415;j = &#415;j - (learning rate/m) * &sum; (h<sub>&#415;</sub>(x<sup>(i)</sup>) - y<sup>(i)</sup>) x<sub>j</sub><sup>(i)</sup></p>
+<p>For every j = 0...n</p>
+<p>}</p>
+</div>
+<p>Here <strong>x<sup>(i)</sup></strong> indicates the <strong>j<sup>th</sup></strong> feature of the <strong>i<sup>th</sup></strong> training example. In case if <strong>m</strong> is very large, then derivative will fail to converge at a <strong>global minimum</strong>.</p>
+<h3 class="h3">Stochastic Gradient Descent</h3>
+<p>At a single repetition, the stochastic gradient descent processes only one training example, which means it necessitates for all the parameters to update after the one single training example is processed per single iteration. It tends to be much faster than that of the batch gradient descent, but when we have a huge number of training examples, then also it processes a single example due to which system may undergo a large no of repetitions. To evenly train the parameters provided by each type of data, properly shuffle the dataset.</p>
+<p><strong>Algorithm for Stochastic Gradient Descent</strong></p>
+<div class="formula">
+<p>Suppose that (x<sup>(i)</sup>, y<sup>(i)</sup>) be the training example</p>
+<p>Cost (&#415;, (x<sup>(i)</sup>, y<sup>(i)</sup>)) = (1/2) &sum; (h&#415;(x<sup>(i)</sup>) - (y<sup>(i)</sup>)<sup>2</sup></p>
+<p>J<sub>train</sub> (&#415;) = (1/m) &sum; Cost (&#415;, (x<sup>(i)</sup>, y<sup>(i)</sup>))</p>
+<p>Repeat {</p>
+<p>For i=1 to m{</p>
+<p>&#415;j = &#415;j - (learning rate) * &sum; (h<sub>&#415;</sub>(x<sup>(i)</sup>) - y<sup>(i)</sup>) x<sub>j</sub><sup>(i)</sup></p>
+<p>For every j=0...n</p>
+<p>}</p>
+<p>}</p>
+</div>
+<h3 class="h3">Convergence trends in different variants of Gradient Descent</h3>
+<p>The Batch Gradient Descent algorithm follows a straight-line path towards the minimum. The algorithm converges towards the <strong>global minimum</strong>, in case the cost function is <strong>convex</strong>, else towards the <strong>local minimum</strong>, if the cost function is not convex. Here the learning rate is typically constant.</p>
+<p>However, in the case of Stochastic Gradient Descent, the algorithm fluctuates all over the global minimum rather than converging. The learning rate is changed slowly so that it can converge. Since it processes only one example in one iteration, it tends out to be noisy.</p>
+<h2 class="h2">Backpropagation</h2>
+<p>The backpropagation consists of an input layer of neurons, an output layer, and at least one hidden layer. The neurons perform a weighted sum upon the input layer, which is then used by the activation function as an input, especially by the sigmoid activation function. It also makes use of supervised learning to teach the network. It constantly updates the weights of the network until the desired output is met by the network. It includes the following factors that are responsible for the training and performance of the network:</p>
+<ul class="points">
+<li>Random (initial) values of weights.</li>
+<li>A number of training cycles.</li>
+<li>A number of hidden neurons.</li>
+<li>The training set.</li>
+<li>Teaching parameter values such as learning rate and momentum.</li>
+</ul>
+<h3 class="h3">Working of Backpropagation</h3>
+<p>Consider the diagram given below.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks10.png" alt="Artificial Neural Networks" />
+<ol class="points">
+<li>The preconnected paths transfer the inputs <strong>X</strong>.</li>
+<li>Then the weights <strong>W</strong> are randomly selected, which are used to model the input.</li>
+<li>After then, the output is calculated for every individual neuron that passes from the input layer to the hidden layer and then to the output layer.</li>
+<li>Lastly, the errors are evaluated in the outputs. <strong>Error<sub>B</sub>= Actual Output - Desired Output</strong></li>
+<li>The errors are sent back to the hidden layer from the output layer for adjusting the weights to lessen the error.</li>
+<li>Until the desired result is achieved, keep iterating all of the processes.</li>
+</ol>
+<h3 class="h3">Need of Backpropagation</h3>
+<ul class="points">
+<li>Since it is fast as well as simple, it is very easy to implement.</li>
+<li>Apart from no of inputs, it does not encompass of any other parameter to perform tuning.</li>
+<li>As it does not necessitate any kind of prior knowledge, so it tends out to be more flexible.</li>
+<li>It is a standard method that results well.</li>
+</ul>
+<h2 class="h2">Building an ANN</h2>
+<p>Before starting with building an ANN model, we will require a dataset on which our model is going to work. The dataset is the collection of data for a particular problem, which is in the form of a CSV file.</p>
+<p><strong>CSV</strong> stands for <strong>Comma-separated values</strong> that save the data in the tabular format. We are using a fictional dataset of banks. The bank dataset contains data of its 10,000 customers with their details. This whole thing is undergone because the bank is seeing some unusual churn rates, which is nothing but the customers are leaving at an unusual high rate, and they want to know the reason behind it so that they can assess and address that particular problem.</p>
+<p>Here we are going to solve this business problem using artificial neural networks. The problem that we are going to deal with is a <strong>classification problem</strong>. We have several independent variables like Credit Score, Balance, and Number of Products on the basis of which we are going to predict which customers are leaving the bank. Basically, we are going to do a classification problem, and artificial neural networks can do a terrific job at making such kind of predictions.</p>
+<p>So, we will start with installing the <strong>Keras</strong> library, <strong>TensorFlow</strong> library, as well as the <strong>Theano</strong> library on Anaconda Prompt, and for that, you need to open it as administrator followed by running the commands one after other as given below.</p>
+<div class="codeblock"><textarea name="code" class="java">
+pip install theano
+</textarea></div>
+<p>Since it is already installed, the output will be as given below.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks11.png" alt="Artificial Neural Networks" />
+<br>
+<div class="codeblock"><textarea name="code" class="java">
+pip install tensorflow
+</textarea></div>
+<p>From the image given below, it can be seen that the TensorFlow library is successfully installed.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks12.png" alt="Artificial Neural Networks" />
+<br>
+<div class="formula">
+pip install keras
+</div>
+<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks13.png" alt="Artificial Neural Networks" />
+<p>So, we have installed Keras library too.</p>
+<p>Now that we are done with the installation, the next step is to update all these libraries to the most updated version, and it can be done by following the given code.</p>
+<div class="codeblock"><textarea name="code" class="java">
+conda update --all
+</textarea></div>
+<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks14.png" alt="Artificial Neural Networks" />
+<p>Since we are doing it for the very first time, it will ask whether to proceed or not. Confirm it with y and press enter.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks15.png" alt="Artificial Neural Networks" />
+<p>After the libraries are updated successfully, we will close the Anaconda prompt and get back to the Spyder IDE.</p>
+<p>Now we will start building our model in two parts, such that in part <strong>1<sup>st</sup></strong>, we will do <strong>data pre-processing</strong>, however in <strong>2<sup>nd</sup></strong> part, we will <strong>create the ANN model</strong>.</p>
+<p>Data pre-processing is very necessary to prepare the data correctly for building a future deep learning model. Since we are in front of a classification problem, so we have some independent variables encompassing some information about customers in a bank, and we are trying to predict the binary outcome for the dependent variable, i.e., either <strong>1</strong> if the customer leaves the bank or <strong>0</strong> if the customer stays in the bank.</p>
+<h3 class="h3">Part1: Data Pre-processing</h3>
+<p>We will start by importing some of the pre-defined Python libraries such as NumPy, <a href="matplotlib.html">Matplotlib</a>, and Pandas so as to perform data-preprocessing. All these libraries perform some sort of specific tasks.</p>
+<p><strong>NumPy</strong></p>
+<p><a href="numpy-tutorial.html">NumPy</a> is a python library that stands for <strong>Numerical Python</strong>, allows the implementation of linear, mathematical and logical operations on arrays as well as Fourier transformation and routine to manipulate the shapes.</p>
+<div class="codeblock"><textarea name="code" class="java">
+import numpy as np
+</textarea></div>
+<p><strong>Matplotlib</strong></p>
+<p>It is also an open-source library with the help of which charts can be plotted in the <a href="python-tutorial.html">python</a>. The sole purpose of this library is to visualize the data for which it necessitates to import its <strong>pyplot</strong> sub library.</p>
+<div class="codeblock"><textarea name="code" class="java">
+import matplotlib.pyplot as plt
+</textarea></div>
+<p><strong>Pandas</strong></p>
+<p>Pandas is also an open-source library that enables high-performance data manipulation as well as analyzing tools. It is mainly used to handle the data and make the analysis.</p>
+<div class="codeblock"><textarea name="code" class="java">
+ import pandas as pd
+</textarea></div>
+<p>An output image is given below, which shows that the libraries have been successfully imported. </p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks16.png" alt="Artificial Neural Networks" />
+<p>Next, we will import the data file from the current working directories with the help of Pandas. We will use <strong>read.csv()</strong> for reading the CSV file both locally as well as through the <a href="url-full-form.html">URL</a>.</p>
+<div class="codeblock"><textarea name="code" class="java">
+dataset = pd.read_csv('Churn_Modelling.csv')
+</textarea></div>
+<p>From the code given above, <strong>the dataset</strong> is the name of the variable in which we are going to save the data. We have passed the name of the dataset in the <strong>read.csv()</strong>. Once the code is run, we can see that the data is uploaded successfully.</p>
+<p>By clicking on the <strong>Variable explorer</strong> and selecting <strong>the dataset</strong>, we can check the dataset, as shown in the following image.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks17.png" alt="Artificial Neural Networks" />
+<p>Next, we will create the <strong>matrix of feature</strong>, which is nothing but a matrix of the independent variable. Since we don't know which independent variable might has the most impact on the dependent variable, so that is what our artificial neural network will spot by looking at the correlations; it will give bigger weight to those independent variables that have the most impact in the neural network.</p>
+<p>So, we will include all the independent variables from the <strong>credit score</strong> to the last one that is the estimated salary.</p>
+<div class="codeblock"><textarea name="code" class="java">
+X = dataset.iloc[:, 3:13].values
+</textarea></div>
+<p>After running the above code, we will see that we have successfully created the matrix of feature <strong>X</strong>. Next, we will create a <strong>dependent variable vector</strong>.</p>
+<div class="codeblock"><textarea name="code" class="java">
+y = dataset.iloc[:, 13].values
+</textarea></div>
+<p>By clicking on <strong>y</strong>, we can have a look that y contains <strong>binary outcome</strong>, i.e., 0 or 1 for all the 10,000 customers of the bank.</p>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks18.png" alt="Artificial Neural Networks" />
+<p>Next, we will split the dataset into the training and test set. But before that, we need to encode that matrix of the feature as it contains the <strong>categorical data</strong>. Since the dependent variable also comprises of categorical data but sidewise, it also takes a numerical value, so don't need to encode text into numbers. But then again, we have our independent variable, which has categories of strings, so we need to encode the categorical independent variables.</p>
+<p>The main reason behind encoding the categorical data before splitting is that it is must to encode the matrix of <strong>X</strong> and the dependent variable <strong>y</strong>.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X = LabelEncoder()
+X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
+onehotencoder = OneHotEncoder(categorical_features = [0])
+X = onehotencoder.fit_transform(X).toarray()
+</textarea></div>
+<p>So, now we will encode our categorical independent variable by having a look at our matrix from console and for that we just need to press <strong>X</strong> at the console.</p>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks19.png" alt="Artificial Neural Networks" />
+<p>From the image given above, we can see that we have only two categorical independent variables, which is the <strong>country variable</strong> containing three countries, i.e., France, Spain, and Germany, and the other one is the <strong>gender variable</strong>, i.e., male and female. So, we have got these two variables, which we will encode in our matrix of features.</p>
+<p>So we will need to create two label encoder objects, such that we will create our first label encoder object named <strong>labelencoder_X_1</strong> followed by applying <strong>fit_transform</strong> method to encode this variable, which will, in turn, the strings here France, Spain, and Germany into the numbers 0, 1 and 2.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+labelencoder_X_1 = LabelEncoder()
+X[:, 1] = labelencoder_X_1.fit_transform(X[:, 1])
+</textarea></div>
+<p>After executing the code, we will now have a look at the <strong>X</strong> variable, simply by pressing X in the console, as we did in the earlier step.</p>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks20.png" alt="Artificial Neural Networks" />
+<p>So, from the output image given above, we can see that France became 0, Germany became 1, and Spain became 2.</p>
+<p>Now in a similar manner, we will do the same for the other variable, i.e., Gender variable but with a new object.</p>
+<div class="codeblock"><textarea name="code" class="java">
+labelencoder_X_2 = LabelEncoder()
+X[:, 2] = labelencoder_X_2.fit_transform(X[:, 2])
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks21.png" alt="Artificial Neural Networks" />
+<p>We can clearly see that females became 0 and males became 1. Since there is no relational order between the categories of our categorical variable, so for that we need to create a dummy variable for the country categorical variable as it contains three categories unlike the gender variable having only two categories, which is why we will be removing one column to avoid the <strong>dummy variable trap</strong>. It is useless to create the dummy variable for the gender variable. We will use <strong>the OneHotEncoder</strong> class to create the dummy variables.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.compose import ColumnTransformer
+label_encoder_x_1 = LabelEncoder()
+X[: , 2] = label_encoder_x_1.fit_transform(X[:,2])
+transformer = ColumnTransformer(
+    transformers=[
+        ("OneHot",        # Just a name
+         OneHotEncoder(), # The transformer class
+         [1]              # The column(s) to be applied on.
+         )
+    ],
+    remainder='passthrough' # don't apply anything to the remaining columns 
+)
+X = transformer.fit_transform(X.tolist())
+X = X.astype('float64')
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks22.png" alt="Artificial Neural Networks" />
+<p>By having a look at <strong>X</strong>, we can see that all the columns are of the same type now. Also, the type is no longer an object but float64. We can see that we have twelve independent variables because we have three new dummy variables.</p>
+<p>Next, we will remove one dummy variable to avoid falling into a dummy variable trap. We will take a matrix of features X and update it by taking all the lines of this matrix and all the columns except the first one.</p>
+<div class="codeblock"><textarea name="code" class="java">
+X = X[:, 1:]
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks23.png" alt="Artificial Neural Networks" />
+<p>It can be seen that we are left with only two dummy variables, so no more dummy variable trap.</p>
+<p>Now we are ready to split the dataset into the training set and test set. We have taken the <strong>test size</strong> to <strong>0.2</strong> for training the ANN on <strong>8,000</strong> observations and testing its performance on <strong>2,000</strong> observations.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+</textarea></div>
+<p>By executing the code given above, we will get four different variables that can be seen under the variable explorer section.</p>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks24.png" alt="Artificial Neural Networks" />
+<p>Besides parallel computations, we are going to have highly computed intensive calculations as well as we don't want one independent variable dominating the other one, so we will be applying feature scaling to ease out all the calculations.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+</textarea></div>
+<p>After executing the above code, we can have a quick look at <strong>X_train</strong> and <strong>X_test</strong> to check if all the independent variables are scaled properly or not.</p>
+<p><strong>Output:</strong></p>
+<p><strong>X_train</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks25.png" alt="Artificial Neural Networks" />
+<p><strong>X_test</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks26.png" alt="Artificial Neural Networks" />
+<p>Now that our data is well pre-processed, we will start by building an artificial neural network.</p>
+<h3 class="h3">Part2: Building an ANN</h3>
+<p>We will start with importing the <a href="keras.html">Keras</a> libraries as well as the desired packages as it will build the Neural Network based on <a href="tensorflow.html">TensorFlow</a></p>
+<div class="codeblock"><textarea name="code" class="java">
+import keras 
+</textarea></div>
+<br>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks27.png" alt="Artificial Neural Networks" />
+<p>After importing the Keras library, we will now import two modules, i.e., the Sequential module, which is required to initialize our neural network, and the Dense module that is needed to build the layer of our ANN.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from keras.models import Sequential
+from keras.layers import Dense
+</textarea></div>
+<p>Next, we will initialize the ANN, or simply we can say we will be defining it as a sequence of layers. The deep learning model can be initialized in two ways, either by defining the sequence of layers or defining a graph. Since we are going to make our ANN with successive layers, so we will initialize our deep learning model by defining it as a sequence of layers.</p>
+<p>It can be done by creating an object of the sequential class, which is taken from the sequential model. The object that we are going to create is nothing but the model itself, i.e., a neural network that will have a row of classifiers because we are solving a classification problem where we have to predict a class, so our neural network model is going to be a classifier. As in the next step, we will be predicting the test set result using the classifier name, so we will call our model as a classifier that is nothing but our future Artificial Neural Network that we are going to build.</p>
+<p>Since this classifier is an object of Sequential class, so we will be using it, but will not pass any argument because we will be defining the layers step by step by starting with the input layer followed by adding some hidden layers and then the output layer.</p>
+<div class="codeblock"><textarea name="code" class="java">
+classifier = Sequential() 
+</textarea></div>
+<p>After this, we will start by adding the input layer and the first hidden layer. We will take the classifier that we initialized in the previous step by creating an object of the sequential class, and we will use the <strong>add()</strong> method to add different layers in our neural network. In the add(), we will pass the <strong>layer</strong> argument, and since we are going to add two layers, i.e., the input and first hidden layer, which we will be doing with the help of <strong>Dense()</strong> function that we have mentioned above.</p>
+<p>Within the <strong>Dense()</strong> function we will pass the following arguments;</p>
+<ul class="points">
+<li><strong>units</strong> are the very first argument, which can be defined as the number of nodes that we want to add in the hidden layer.</li>
+<li>The second argument is the <strong>kernel_initializer</strong> that randomly initializes the weight as a small number close to zero so that they can be randomly initialized with a uniform function. Here we have a simple <strong>uniform</strong> function that will initialize the weight according to the uniform distribution.</li>
+<li>The third argument is the <strong>activation</strong>, which can be understood as the function that we want to choose in our hidden layer. So, we will be using the <strong>rectifier function</strong> for the <strong>hidden layers</strong> and the <strong>sigmoid function</strong> for the <strong>output layer</strong>. Since we are in the hidden layer, we are using the "<strong>relu</strong>" perimeter as it corresponds to the rectifier function.</li>
+<li>And the last is the <strong>input_dim</strong> argument that specifies the number of nodes in the input layer, which is actually the number of independent variables. It is very necessary to add the argument because, by so far, we have only initialized our ANN, we haven't created any layer yet, and that's why it doesn't know which node this hidden layer we are creating is expecting as inputs. After the first hidden layer gets created, we don't need to specify this argument for the next hidden layers.</li>
+</ul>
+<div class="codeblock"><textarea name="code" class="java">
+classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu', input_dim = 11))
+</textarea></div>
+<p>Next, we will add the second hidden layer by using the same add method followed by passing the same parameter, which is the <strong>Dense()</strong> as well as the same parameters inside it as we did in the earlier step except for the <strong>input_dim</strong>.</p>
+<div class="codeblock"><textarea name="code" class="java">
+classifier.add(Dense(units = 6, kernel_initializer = 'uniform', activation = 'relu'))
+</textarea></div>
+<p>After adding the two hidden layers, we will now add the final output layer. This is again similar to the previous step, just the fact that we will be units parameter because in the output layer we only require one node as our dependent variable is a categorical variable encompassing a binary outcome and also when we have binary outcome then, in that case, we have only one node in the output layer. So, therefore, we will put units equals to 1, and since we are in the output layer, we will be replacing the <strong>rectifier</strong> function to <strong>sigmoid</strong> activation function.</p>
+<div class="codeblock"><textarea name="code" class="java">
+classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'sigmoid'))
+</textarea></div>
+<p>As we are done with adding the layers of our ANN, we will now compile the whole artificial neural network by applying the stochastic gradient descent. We will start with our classifier object, followed by using the compile method and will pass on the following arguments in it.</p>
+<ul class="points">
+<li>The first argument is the <strong>optimizer</strong>, which is simply the algorithm that we want to use to find the optimal set of weights in the neural networks. The algorithm that we are going to use is nothing but the stochastic gradient descent algorithm. Since there are several types of stochastic descent algorithms and the most efficient one is called "<strong>adam</strong>," which is going to be the input of this optimizer parameter.</li>
+<li>The second parameter is the loss, which is a loss function within the stochastic gradient descent algorithm, which is used to find the optimal weights. Since our dependent variable has a <strong>binary outcome</strong>, so we will be using <strong>binary_crossentropy</strong> logarithmic function, and when there is a <strong>binary outcome</strong>, then we will incorporate <strong>categorical_crossentropy</strong>.</li>
+<li>The last argument will be the metrics, which is nothing but a criterion to evaluate our model, and we are using the "<strong>accuracy</strong>." So, what happens is when the weights are updated after each observation, the algorithm makes use of this accuracy to improve the model's performance.</li>
+</ul>
+<div class="codeblock"><textarea name="code" class="java">
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+</textarea></div>
+<p>Next, we will fit the ANN to the training set for which we will be using the fit method to fit our ANN to the training set. In the fit method, we will be passing the following arguments:</p>
+<ul class="points">
+<li>The first argument is the dataset on which we want to train our classifier, which is the training set separated into two-argument such as <strong>X_train</strong> (matrix of feature containing the observations of the train set) and <strong>y_train</strong> (containing the actual outcomes of the dependent variable for all the observations in the training set).</li>
+<li>The next argument is the <strong>batch_size</strong>, which is the number of observations, after which we want to update the weight.</li>
+<li>And lastly, the no. of <strong>epochs</strong> that we are going to apply to see the algorithm in action as well the improvement in accuracy over the different epochs.</li>
+</ul>
+<div class="codeblock"><textarea name="code" class="java">
+classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks28.png" alt="Artificial Neural Networks" />
+<p>From the output image given above, you can see that our model is ready and has reached an <strong>accuracy</strong> of <strong>84%</strong> approximately, so this how a stochastic gradient descent algorithm is performed.</p>
+<h3 class="h3">Part3: Making the Predictions and Evaluating the Model</h3>
+<p>Since we are done with training the ANN on the training set, now we will make the predictions on the set.</p>
+<div class="codeblock"><textarea name="code" class="java">
+y_pred = classifier.predict(X_test)
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks29.png" alt="Artificial Neural Networks" />
+<p>From the output image given above, we can see all the probabilities that the 2,000 customers of the test set will leave the bank. For example, if we have a look at first probability, i.e., 21% means that this first customer of the test set, indexed by zero, has a 20% chance to leave the bank.</p>
+<p>Since the predicted method returns the probability of the customers leave the bank and in order to use this confusion matrix, we don't need these probabilities, but we do need the predicted results in the form of True or False. So, we need to transform these probabilities into the predicted result.</p>
+<p>We will choose a threshold value to decide when the predicted result is one, and when it is zero. So, we predict <strong>1</strong> over the threshold and <strong>0</strong> below the threshold as well as the natural threshold that we will take is <strong>0.5</strong>, i.e., 50%. If the <strong>y_pred</strong> is larger, then it will return True else False.</p>
+<div class="codeblock"><textarea name="code" class="java">
+y_pred = (y_pred > 0.5) 
+</textarea></div>
+<p>Now, if we have a look at <strong>y_pred</strong>, we will see that it has updated the results in the form of "<strong>False</strong>" or "<strong>True</strong>".</p>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks30.png" alt="Artificial Neural Networks" />
+<p>So, the first five customers of the test set don't leave the bank according to the model, whereas the sixth customer in the test set leaves the bank.</p>
+<p>Next, we will execute the following code to get the confusion matrix.</p>
+<div class="codeblock"><textarea name="code" class="java">
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+</textarea></div>
+<p><strong>Output:</strong></p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks31.png" alt="Artificial Neural Networks" />
+<p>From the output given above, we can see that out of 2000 new observations; we get 1542+141= <strong>1683</strong> correct predictions 264+53= <strong>317</strong> incorrect predictions.</p>
+<p>So, now we will compute the accuracy on the console, which is the number of correct predictions divided by the total number of predictions.</p>
+<img src="../static.javatpoint.com/tutorial/keras/images/keras-artificial-neural-networks32.png" alt="Artificial Neural Networks" />
+<p>So, we can see that we got an accuracy of 84% on new observations on which we didn't train our ANN, even that get a good amount of accuracy. Since this is the same accuracy that we obtained in the training set but obtained here on the test set too.</p>
+<p>So, eventually, we can validate our model, and now the bank can use it to make a ranking of their customers, ranked by their probability to leave the bank, from the customer that has the highest probability to leave the bank, down to the customer that has the lowest probability to leave the bank.</p>
+<hr />
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="keras-convolutional-neural-network.html">Convolutional Neural Network</a></span>
+</div>
+
+<br /><br />
+<div id="bottomnext">
+<a style="float:left" class="next" href="deep-learning.html">&larr; prev</a>
+<a style="float:right" class="next" href="keras-convolutional-neural-network.html">next &rarr;</a>
+</div>
+<br /><br />
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="086e6d6d6c6a696b634862697e697c786761667c266b6765">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/keras-artificial-neural-networks"><img src="images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/keras-artificial-neural-networks"><img src="images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/keras-artificial-neural-networks"><img src="images/pinterest32.png" alt="pinterest" /></a>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="5022809933" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="splunk.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="spss.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="swagger.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="t-sql.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="tumblr.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="regex.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="reinforcement-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="r-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="rxjs.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="react-native-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="python-design-pattern.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="python-pillow.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="python-turtle-programming.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="keras.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="aptitude/quantitative.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="reasoning.html">
+ <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="verbal-ability.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="interview-questions-and-answers.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="company-interview-questions-and-recruitment-process.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="artificial-intelligence-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence Tutorial" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="aws-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="selenium-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="cloud-computing-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing tutorial" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="hadoop-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="data-science.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="angular-7-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="blockchain-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="git.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="machine-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="devops.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="dbms-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="data-structure-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="daa-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="os-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System tutorial" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="computer-network-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+ </a>
+<a href="compiler-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="computer-organization-and-architecture-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="discrete-mathematics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="ethical-hacking-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking Tutorial" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="computer-graphics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="software-engineering-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering Tutorial" />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="html-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="cyber-security-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="automata-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="c-programming-language-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="cpp-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="java-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="net-framework.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="python-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="programs-list.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="control-system-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="data-mining.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="data-warehouse.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br /><div class="mobilemenu" style="clear:both">
+<ins class="adPushupAds" data-adpControl="jrfe7" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByZXNwb25zaXZlbW9iaWxlZm9vdGVyIC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTpibG9jayIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI4MjIyODY2MzE4IgogICAgIGRhdGEtYWQtZm9ybWF0PSJhdXRvIgogICAgIGRhdGEtZnVsbC13aWR0aC1yZXNwb25zaXZlPSJ0cnVlIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div></div>
+<div id="right">
+<div id="e59d93b5-7231-4043-a19e-e7ec340efd1f" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("e59d93b5-7231-4043-a19e-e7ec340efd1f");
+		});
+	</script>
+</div>
+<br /><br />
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br /><br />
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<br />
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="147c66547e75627560647b7d7a603a777b79">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="adc5dfedc7ccdbccd9ddc2c4c3d983cec2c083">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="java-tutorial.html">Learn Java</a><a href="data-structure-tutorial.html">Learn Data Structures</a><a href="c-programming-language-tutorial.html">Learn C Programming</a><a href="cpp-tutorial.html">Learn C++ Tutorial</a><a href="c-sharp-tutorial.html">Learn C# Tutorial</a><a href="php-tutorial.html">Learn PHP Tutorial</a><a href="html-tutorial.html">Learn HTML Tutorial</a><a href="javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="jquery-tutorial.html">Learn jQuery Tutorial</a><a href="spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="contact-us.html">Contact Us</a> <a href="subscribe.html">Subscribe Us</a> <a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.xml">Sitemap</a><br><a href="sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+
+</div></div>
+
+<script>
+        const redirectButton = document.querySelector('#redirect');
+        redirectButton.addEventListener('click', () => {
+          const form = document.createElement('form');
+          form.method = 'POST';
+          const textArea = document.createElement('textarea');
+          const language = document.querySelector('#jtp_compiler').classList[0];
+          textArea.name = 'code';
+          textArea.value = document.querySelector('#jtp_compiler').textContent;
+          form.appendChild(textArea);
+          document.body.appendChild(form);
+          form.action = `https://onlinecompiler.javatpoint.com/`;
+          form.submit();
+        });
+      </script>
+<script src="../static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="../static.javatpoint.com/lazysizes.min.js" async></script>
+</body> </html> 

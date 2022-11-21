@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Assam Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Assam Pin Code, Assam Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="assam-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Assam Pin Code, Assam Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="assam-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Assam Pin Code</h1>
+<p>Assam Pin Code: Postal Index Number or PIN or Pin Code of Assam is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Assam Pin Code is the actual digit provided to the individual post offices. The 1st digit of Assam Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>ASSAM has total <strong>23 districts</strong> and <strong>3841 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Assam Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../karimganj/alamkhani-pin-code.html'>ALAMKHANI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788722</td></tr><tr><td><a href='../cachar/algapur-pin-code.html'>ALGAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../cachar/ambicapur-pin-code.html'>AMBICAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788004</td></tr><tr><td><a href='../karimganj/badarpur-karimganj-pin-code.html'>BADARPUR KARIMGANJ</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788806</td></tr><tr><td><a href='../hailakandi/baldabaldi-pin-code.html'>BALDABALDI</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788162</td></tr><tr><td><a href='../karimganj/balipipla-bazar-pin-code.html'>BALIPIPLA BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788728</td></tr><tr><td><a href='../karimganj/baraigram-pin-code.html'>BARAIGRAM</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788723</td></tr><tr><td><a href='../hailakandi/barsangam-pin-code.html'>BARSANGAM</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788117</td></tr><tr><td><a href='../karimganj/basudevnagar-pin-code.html'>BASUDEVNAGAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788723</td></tr><tr><td><a href='../cachar/behara-bazar-pin-code.html'>BEHARA BAZAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788817</td></tr><tr><td><a href='../cachar/bilburunga-pin-code.html'>BILBURUNGA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788817</td></tr><tr><td><a href='../north-cachar-hills/borolabang-pin-code.html'>BOROLABANG</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788931</td></tr><tr><td><a href='../karimganj/chandkhira-pin-code.html'>CHANDKHIRA</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788725</td></tr><tr><td><a href='../cachar/chhoto-dudpatil-pt-i-pin-code.html'>CHHOTO DUDPATIL PT I</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788002</td></tr><tr><td><a href='../cachar/dalu-pin-code.html'>DALU</a></td><td>Dalu</td><td> Cachar</td><td>ASSAM</td><td> 788111</td></tr><tr><td><a href='../cachar/daluagram-pin-code.html'>DALUAGRAM</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../cachar/dewan-pin-code.html'>DEWAN</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788102</td></tr><tr><td><a href='../cachar/dhanipur-pin-code.html'>DHANIPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788120</td></tr><tr><td><a href='../hailakandi/dinanathpur-pt-i-pin-code.html'>DINANATHPUR PT I</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788161</td></tr><tr><td><a href='../cachar/dudpatil-pin-code.html'>DUDPATIL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788003</td></tr><tr><td><a href='../cachar/dungripar-pin-code.html'>DUNGRIPAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../north-cachar-hills/electric-veng-pin-code.html'>ELECTRIC VENG</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788820</td></tr><tr><td><a href='../cachar/gossainpur-pt-i-pin-code.html'>GOSSAINPUR PT I</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788030</td></tr><tr><td><a href='../cachar/harinagar-bazar-pin-code.html'>HARINAGAR BAZAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/haticherra-t-e-pin-code.html'>HATICHERRA T E</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788030</td></tr><tr><td><a href='../north-cachar-hills/hatikhali-pin-code.html'>HATIKHALI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788832</td></tr><tr><td><a href='../karimganj/isabeel-pin-code.html'>ISABEEL</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788728</td></tr><tr><td><a href='../karimganj/jadutilla-pin-code.html'>JADUTILLA</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788720</td></tr><tr><td><a href='../cachar/jagadishpur-pin-code.html'>JAGADISHPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788805</td></tr><tr><td><a href='../cachar/jalalpur-cachar-pin-code.html'>JALALPUR CACHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788816</td></tr><tr><td><a href='../north-cachar-hills/jatinga-tenali-pin-code.html'>JATINGA TENALI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788819</td></tr><tr><td><a href='../cachar/jirighat-pin-code.html'>JIRIGHAT</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788104</td></tr><tr><td><a href='../cachar/kalain-pin-code.html'>KALAIN</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788815</td></tr><tr><td><a href='../cachar/kamranga-pin-code.html'>KAMRANGA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../karimganj/katabari-pin-code.html'>KATABARI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788726</td></tr><tr><td><a href='../hailakandi/katagaon-pin-code.html'>KATAGAON</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788160</td></tr><tr><td><a href='../cachar/katirail-pin-code.html'>KATIRAIL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788804</td></tr><tr><td><a href='../hailakandi/kayah-t-e-pin-code.html'>KAYAH T E</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../karimganj/kotamani-bazar-pin-code.html'>KOTAMANI BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788728</td></tr><tr><td><a href='../karimganj/lakhibazar-pin-code.html'>LAKHIBAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788709</td></tr><tr><td><a href='../hailakandi/lakhinagar-t-e-pin-code.html'>LAKHINAGAR T E</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../hailakandi/lakshmisahar-pin-code.html'>LAKSHMISAHAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788152</td></tr><tr><td><a href='../hailakandi/lala-deb-block-pin-code.html'>LALA DEB BLOCK</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../north-cachar-hills/langting-pin-code.html'>LANGTING</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788832</td></tr><tr><td><a href='../hailakandi/leelachela-pin-code.html'>LEELACHELA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788734</td></tr><tr><td><a href='../cachar/leiri-pin-code.html'>LEIRI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/link-road-cachar-pin-code.html'>LINK ROAD CACHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788006</td></tr><tr><td><a href='../karimganj/longai-road-pin-code.html'>LONGAI ROAD</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788710</td></tr><tr><td><a href='../karimganj/lowairpoa-pin-code.html'>LOWAIRPOA</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788726</td></tr><tr><td><a href='../hailakandi/madanmohan-pin-code.html'>MADANMOHAN</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788152</td></tr><tr><td><a href='../north-cachar-hills/mailongdisha-pin-code.html'>MAILONGDISHA</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788818</td></tr><tr><td><a href='../cachar/malugram-pin-code.html'>MALUGRAM</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788002</td></tr><tr><td><a href='../cachar/manipur-pti-pin-code.html'>MANIPUR PTI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../karimganj/mullaganj-bazar-pin-code.html'>MULLAGANJ BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788719</td></tr><tr><td><a href='../karimganj/nagendranagar-pin-code.html'>NAGENDRANAGAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788733</td></tr><tr><td><a href='../cachar/naraincherra-pin-code.html'>NARAINCHERRA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788110</td></tr><tr><td><a href='../hailakandi/narainpur-pin-code.html'>NARAINPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788152</td></tr><tr><td><a href='../karimganj/netaji-nagar-pin-code.html'>NETAJI NAGAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788166</td></tr><tr><td><a href='../cachar/new-bag-o-bahar-pin-code.html'>NEW BAG O BAHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788113</td></tr><tr><td><a href='../hailakandi/nimaichandpur-pt-ii-pin-code.html'>NIMAICHANDPUR PT II</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788168</td></tr><tr><td><a href='../hailakandi/nischintapur-pin-code.html'>NISCHINTAPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../hailakandi/nitainagar-pin-code.html'>NITAINAGAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788155</td></tr><tr><td><a href='../cachar/paloi-pin-code.html'>PALOI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788123</td></tr><tr><td><a href='../north-cachar-hills/panch-kilometer-pin-code.html'>PANCH KILOMETER</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788931</td></tr><tr><td><a href='../cachar/r-k-mission-road-pin-code.html'>R K MISSION ROAD</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788007</td></tr><tr><td><a href='../north-cachar-hills/redzol-pin-code.html'>REDZOL</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788818</td></tr><tr><td><a href='../hailakandi/rongpur-north-pin-code.html'>RONGPUR NORTH</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788155</td></tr><tr><td><a href='../cachar/rukhni-pt-i-pin-code.html'>RUKHNI PT I</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788116</td></tr><tr><td><a href='../cachar/rukhni-t-e-pin-code.html'>RUKHNI T E</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788116</td></tr><tr><td><a href='../hailakandi/sialtek-pin-code.html'>SIALTEK</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788802</td></tr><tr><td><a href='../karimganj/silchar-road-pin-code.html'>SILCHAR ROAD</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788713</td></tr><tr><td><a href='../hailakandi/singala-pin-code.html'>SINGALA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../karimganj/singaria-bazar-pin-code.html'>SINGARIA BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788719</td></tr><tr><td><a href='../karimganj/sripur-pin-code.html'>SRIPUR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788166</td></tr><tr><td><a href='../hailakandi/sudarshanpur-pin-code.html'>SUDARSHANPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788160</td></tr><tr><td><a href='../cachar/sundari-pt-ii-pin-code.html'>SUNDARI PT II</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788116</td></tr><tr><td><a href='../karimganj/sutarkandi-pin-code.html'>SUTARKANDI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788712</td></tr><tr><td><a href='../cachar/thanjanlaikai-pin-code.html'>THANJANLAIKAI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788119</td></tr><tr><td><a href='../north-cachar-hills/tulpoi-pin-code.html'>TULPOI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788830</td></tr><tr><td><a href='../karimganj/umarpur-pin-code.html'>UMARPUR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788806</td></tr><tr><td><a href='../cachar/uttarkrishnapur-pin-code.html'>UTTARKRISHNAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788006</td></tr><tr><td><a href='../karimganj/badarpurghat-pin-code.html'>BADARPURGHAT</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788803</td></tr><tr><td><a href='../karimganj/baithakhal-basti-pin-code.html'>BAITHAKHAL BASTI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788726</td></tr><tr><td><a href='../cachar/banskandi-pin-code.html'>BANSKANDI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../cachar/bararkap-pin-code.html'>BARARKAP</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/bhairabpur-pin-code.html'>BHAIRABPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788815</td></tr><tr><td><a href='../karimganj/bhurunga-pin-code.html'>BHURUNGA</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788724</td></tr><tr><td><a href='../cachar/borodukan-pin-code.html'>BORODUKAN</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788113</td></tr><tr><td><a href='../hailakandi/brojendrapur-pin-code.html'>BROJENDRAPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788156</td></tr><tr><td><a href='../cachar/chaligram-pin-code.html'>CHALIGRAM</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788815</td></tr><tr><td><a href='../karimganj/chargola-bazar-pin-code.html'>CHARGOLA BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788713</td></tr><tr><td><a href='../cachar/chhotomanda-pin-code.html'>CHHOTOMANDA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788126</td></tr><tr><td><a href='../cachar/clever-house-pin-code.html'>CLEVER HOUSE</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788112</td></tr><tr><td><a href='../cachar/damcherra-pin-code.html'>DAMCHERRA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788817</td></tr><tr><td><a href='../cachar/darmikhal-pin-code.html'>DARMIKHAL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788116</td></tr><tr><td><a href='../north-cachar-hills/dezabra-pin-code.html'>DEZABRA</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788832</td></tr><tr><td><a href='../cachar/dhanehari-pin-code.html'>DHANEHARI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788013</td></tr><tr><td><a href='../north-cachar-hills/dibari-pin-code.html'>DIBARI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788819</td></tr><tr><td><a href='../cachar/dinanathpur-pin-code.html'>DINANATHPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788817</td></tr><tr><td><a href='../cachar/diska-grant-pin-code.html'>DISKA GRANT</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/dulalgram-pin-code.html'>DULALGRAM</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788114</td></tr><tr><td><a href='../karimganj/duttagram-pin-code.html'>DUTTAGRAM</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788722</td></tr><tr><td><a href='../karimganj/eraligool-pin-code.html'>ERALIGOOL</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788723</td></tr><tr><td><a href='../karimganj/fakuagram-pin-code.html'>FAKUAGRAM</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788723</td></tr><tr><td><a href='../karimganj/girishganj-bazar-pin-code.html'>GIRISHGANJ BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788711</td></tr><tr><td><a href='../north-cachar-hills/govindanagar-pin-code.html'>GOVINDANAGAR</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788931</td></tr><tr><td><a href='../hailakandi/hailakandi-east-pin-code.html'>HAILAKANDI EAST</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788152</td></tr><tr><td><a href='../cachar/hospital-road-cachar-pin-code.html'>HOSPITAL ROAD CACHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788005</td></tr><tr><td><a href='../cachar/kajidahar-pin-code.html'>KAJIDAHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788115</td></tr><tr><td><a href='../cachar/kakmara-pin-code.html'>KAKMARA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../north-cachar-hills/kanabasti-pin-code.html'>KANABASTI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788819</td></tr><tr><td><a href='../hailakandi/kanchanpur-pt-ii-pin-code.html'>KANCHANPUR PT II</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788152</td></tr><tr><td><a href='../karimganj/kathaltoli-bazar-pin-code.html'>KATHALTOLI BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788725</td></tr><tr><td><a href='../hailakandi/kukicherra-pin-code.html'>KUKICHERRA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788165</td></tr><tr><td><a href='../cachar/lailapur-pin-code.html'>LAILAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788120</td></tr><tr><td><a href='../hailakandi/lalpani-pin-code.html'>LALPANI</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788165</td></tr><tr><td><a href='../cachar/larsingpar-pin-code.html'>LARSINGPAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788002</td></tr><tr><td><a href='../cachar/longlacherra-pin-code.html'>LONGLACHERRA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788108</td></tr><tr><td><a href='../cachar/machpara-pin-code.html'>MACHPARA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788009</td></tr><tr><td><a href='../cachar/madripar-pin-code.html'>MADRIPAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../cachar/matinagar-pin-code.html'>MATINAGAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788099</td></tr><tr><td><a href='../hailakandi/mohanpur-pin-code.html'>MOHANPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788150</td></tr><tr><td><a href='../hailakandi/monacherra-pin-code.html'>MONACHERRA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788164</td></tr><tr><td><a href='../hailakandi/muktaranpur-pin-code.html'>MUKTARANPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788156</td></tr><tr><td><a href='../north-cachar-hills/nablaidisha-pin-code.html'>NABLAIDISHA</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788831</td></tr><tr><td><a href='../cachar/nagar-t-e-pin-code.html'>NAGAR T E</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788030</td></tr><tr><td><a href='../karimganj/nathupur-pin-code.html'>NATHUPUR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788711</td></tr><tr><td><a href='../cachar/neairgram-pin-code.html'>NEAIRGRAM</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788013</td></tr><tr><td><a href='../cachar/nutan-ramnagar-pin-code.html'>NUTAN RAMNAGAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788126</td></tr><tr><td><a href='../cachar/pallorbond-pin-code.html'>PALLORBOND</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788101</td></tr><tr><td><a href='../karimganj/patharkandi-anchalik-pin-code.html'>PATHARKANDI ANCHALIK</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788724</td></tr><tr><td><a href='../cachar/rajyeswarpur-west-pin-code.html'>RAJYESWARPUR WEST</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788816</td></tr><tr><td><a href='../karimganj/ramkrishnanagar-pin-code.html'>RAMKRISHNANAGAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788166</td></tr><tr><td><a href='../hailakandi/rangabawk-pin-code.html'>RANGABAWK</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788161</td></tr><tr><td><a href='../cachar/rongpur-pt-ii-pin-code.html'>RONGPUR PT II</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788009</td></tr><tr><td><a href='../hailakandi/saidband-pt-ii-pin-code.html'>SAIDBAND PT II</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788150</td></tr><tr><td><a href='../cachar/salganga-pin-code.html'>SALGANGA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788031</td></tr><tr><td><a href='../cachar/sayedpur-amtala-pin-code.html'>SAYEDPUR AMTALA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788815</td></tr><tr><td><a href='../cachar/sibbari-road-pin-code.html'>SIBBARI ROAD</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788002</td></tr><tr><td><a href='../cachar/sibpur-pin-code.html'>SIBPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788098</td></tr><tr><td><a href='../cachar/silchar-pin-code.html'>SILCHAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788001</td></tr><tr><td><a href='../cachar/sildhubi-pin-code.html'>SILDHUBI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788112</td></tr><tr><td><a href='../cachar/singerbond-pin-code.html'>SINGERBOND</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788126</td></tr><tr><td><a href='../hailakandi/singlacherra-bazar-pin-code.html'>SINGLACHERRA BAZAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788736</td></tr><tr><td><a href='../cachar/srikona-pin-code.html'>SRIKONA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788026</td></tr><tr><td><a href='../cachar/swastipally-pin-code.html'>SWASTIPALLY</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788126</td></tr><tr><td><a href='../hailakandi/tongibari-pin-code.html'>TONGIBARI</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788735</td></tr><tr><td><a href='../hailakandi/umednagar-pin-code.html'>UMEDNAGAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788163</td></tr><tr><td><a href='../north-cachar-hills/umrangshu-pin-code.html'>UMRANGSHU</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788931</td></tr><tr><td><a href='../hailakandi/vichingcha-pin-code.html'>VICHINGCHA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788155</td></tr><tr><td><a href='../karimganj/adarkona-pin-code.html'>ADARKONA</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788701</td></tr><tr><td><a href='../karimganj/asalkandi-pin-code.html'>ASALKANDI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788723</td></tr><tr><td><a href='../hailakandi/bakrihawar-pt-iii-pin-code.html'>BAKRIHAWAR PT III</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788801</td></tr><tr><td><a href='../north-cachar-hills/bandarkhal-pin-code.html'>BANDARKHAL</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788818</td></tr><tr><td><a href='../north-cachar-hills/baro-mulkoi-pin-code.html'>BARO MULKOI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788818</td></tr><tr><td><a href='../cachar/baromuni-pin-code.html'>BAROMUNI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788121</td></tr><tr><td><a href='../karimganj/baropunji-pin-code.html'>BAROPUNJI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788781</td></tr><tr><td><a href='../hailakandi/baruala-pin-code.html'>BARUALA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788734</td></tr><tr><td><a href='../karimganj/basantinagar-pin-code.html'>BASANTINAGAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788725</td></tr><tr><td><a href='../karimganj/bhanga-bazaar-pin-code.html'>BHANGA BAZAAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788701</td></tr><tr><td><a href='../cachar/bhuban-valley-pin-code.html'>BHUBAN VALLEY</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788099</td></tr><tr><td><a href='../cachar/binnakandi-ghat-pin-code.html'>BINNAKANDI GHAT</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788126</td></tr><tr><td><a href='../hailakandi/brojapur-pin-code.html'>BROJAPUR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788155</td></tr><tr><td><a href='../hailakandi/burnibrease-t-e-pin-code.html'>BURNIBREASE T E</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788801</td></tr><tr><td><a href='../hailakandi/dalgram-pt-ii-pin-code.html'>DALGRAM PT II</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788735</td></tr><tr><td><a href='../north-cachar-hills/dehangi-pin-code.html'>DEHANGI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788819</td></tr><tr><td><a href='../cachar/dewanji-bazar-pin-code.html'>DEWANJI BAZAR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788001</td></tr><tr><td><a href='../hailakandi/dullabcherra-pin-code.html'>DULLABCHERRA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788736</td></tr><tr><td><a href='../hailakandi/gamaria-pin-code.html'>GAMARIA</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788156</td></tr><tr><td><a href='../cachar/gangapur-pin-code.html'>GANGAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788804</td></tr><tr><td><a href='../cachar/govindapur-west-pin-code.html'>GOVINDAPUR WEST</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788804</td></tr><tr><td><a href='../north-cachar-hills/haflo-rs-pin-code.html'>HAFLO RS</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788820</td></tr><tr><td><a href='../hailakandi/jamira-bazar-pin-code.html'>JAMIRA BAZAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788162</td></tr><tr><td><a href='../cachar/jhoragul-pin-code.html'>JHORAGUL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788119</td></tr><tr><td><a href='../cachar/jogiabasti-pin-code.html'>JOGIABASTI</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788115</td></tr><tr><td><a href='../hailakandi/kacharitol-pin-code.html'>KACHARITOL</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788163</td></tr><tr><td><a href='../cachar/kalakhal-pin-code.html'>KALAKHAL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788116</td></tr><tr><td><a href='../karimganj/kanaibazar-pin-code.html'>KANAIBAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788724</td></tr><tr><td><a href='../cachar/kanakpur-east-pin-code.html'>KANAKPUR EAST</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/kaptanpur-pt-18-pin-code.html'>KAPTANPUR PT 18</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788119</td></tr><tr><td><a href='../karimganj/karimganj-bazar-pin-code.html'>KARIMGANJ BAZAR</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788711</td></tr><tr><td><a href='../hailakandi/katagaon-pin-code.html'>KATAGAON</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788168</td></tr><tr><td><a href='../hailakandi/katlacherra-bazar-pin-code.html'>KATLACHERRA BAZAR</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788161</td></tr><tr><td><a href='../cachar/krishnapur-pin-code.html'>KRISHNAPUR</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788025</td></tr><tr><td><a href='../cachar/kumacherra-pin-code.html'>KUMACHERRA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788107</td></tr><tr><td><a href='../cachar/laboc-pin-code.html'>LABOC</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788102</td></tr><tr><td><a href='../north-cachar-hills/lodikachari-pin-code.html'>LODIKACHARI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788108</td></tr><tr><td><a href='../cachar/loharband-pin-code.html'>LOHARBAND</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788113</td></tr><tr><td><a href='../cachar/machughat-pin-code.html'>MACHUGHAT</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788003</td></tr><tr><td><a href='../cachar/madhura-pin-code.html'>MADHURA</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788030</td></tr><tr><td><a href='../karimganj/mahisashan-pin-code.html'>MAHISASHAN</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788781</td></tr><tr><td><a href='../karimganj/maizgram-pin-code.html'>MAIZGRAM</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788712</td></tr><tr><td><a href='../cachar/maniarkhal-pin-code.html'>MANIARKHAL</a></td><td>NA</td><td> Cachar</td><td>ASSAM</td><td> 788099</td></tr><tr><td><a href='../karimganj/manikbond-pin-code.html'>MANIKBOND</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788728</td></tr><tr><td><a href='../hailakandi/manipur-bagan-pin-code.html'>MANIPUR BAGAN</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788165</td></tr><tr><td><a href='../karimganj/marjatkandi-pin-code.html'>MARJATKANDI</a></td><td>NA</td><td> Karimganj</td><td>ASSAM</td><td> 788701</td></tr><tr><td><a href='../hailakandi/matijuri-pin-code.html'>MATIJURI</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788155</td></tr><tr><td><a href='../hailakandi/mirirgool-pin-code.html'>MIRIRGOOL</a></td><td>NA</td><td> Hailakandi</td><td>ASSAM</td><td> 788168</td></tr><tr><td><a href='../north-cachar-hills/mouthoi-pin-code.html'>MOUTHOI</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788819</td></tr><tr><td><a href='../north-cachar-hills/narainpur-pin-code.html'>NARAINPUR</a></td><td>NA</td><td> North Cachar Hills</td><td>ASSAM</td><td> 788818</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="90f8e2d0faf1e6f1e4e0fff9fee4bef3fffd">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="3b53497b515a4d5a4f4b5452554f1558545615">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

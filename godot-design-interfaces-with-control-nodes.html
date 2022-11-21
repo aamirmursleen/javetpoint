@@ -1,0 +1,773 @@
+ <!DOCTYPE html><html lang="en"><!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Design interface with control nodes - Javatpoint</title><link rel="SHORTCUT ICON" href="../static.javatpoint.com/images/favicon2.png" />
+<link rel="stylesheet" type="text/css" href="../static.javatpoint.com/linkf731.css?v=5.0" async /><link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/"><meta name="theme-color" content="#4CAF50" /><meta property="og:title" content="Design interface with control nodes - Javatpoint" /><meta property="og:description" content="Design interface with control nodes with Godot Tutorial, What is Godot, Godot Game Engine, Creating First Project in Godot, Godot introduction, Loony Lips in Godot, Label in Godot, LineEdit, Buttons etc." />
+<meta name="keywords" content="godot, godot tutorial, what is godot, godot game engine, creating first project in godot, loony lips in godot, label in godot, lineedit in godot, buttons in godot, appending arrays and if-condition in godot" /><meta name="description" content="Design interface with control nodes with Godot Tutorial, What is Godot, Godot Game Engine, Creating First Project in Godot, Godot introduction, Loony Lips in Godot, Label in Godot, LineEdit, Buttons etc." /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="godot-design-interfaces-with-control-nodes.html" />
+<meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta name="twitter:title" property="og:title" content="Design interface with control nodes - Javatpoint" /><meta name="twitter:description" property="og:description" content="Design interface with control nodes with Godot Tutorial, What is Godot, Godot Game Engine, Creating First Project in Godot, Godot introduction, Loony Lips in Godot, Label in Godot, LineEdit, Buttons etc." /><meta property="og:url" content="godot-design-interfaces-with-control-nodes.html" /><meta property="og:site_name" content="www.javatpoint.com" /><meta name="twitter:card" content="summary" /><meta name="twitter:site" content="@pagejavatpoint" /><meta name="twitter:domain" content="www.javatpoint.com" /><meta name="twitter:creator" content="@pagejavatpoint" />
+<link href="manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '../delivery.adrecover.com/37784/adRecoverb466.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+
+<script data-cfasync="false" type="text/javascript">
+(function (w, d) {
+  var siteId = "37780";
+  var targetElement =
+    d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+  var s = d.createElement("script");
+  s.src = "//cdn.adpushup.com/" + siteId + "/adpushup.js";
+  s.crossOrigin = "anonymous";
+  s.type = "text/javascript";
+  s.async = true;
+  targetElement.appendChild(s);
+  function sendErrorLog(log) {
+    var eventName = "script_error";
+    log.siteId = siteId;
+    var data = btoa(JSON.stringify(log));
+    var img = document.createElement("img");
+    img.src =
+      "https://aplogger.adpushup.com/log?event=HC_" + eventName + "&data=" + data;
+  }
+  var searchParams =
+    typeof URLSearchParams === "function" &&
+    new URLSearchParams(window.location.search);
+  if (searchParams) {
+    var isDebugModeOn = searchParams.has("apDebug");
+  }
+  w.addEventListener("error", function (event) {
+    try {
+      var filename = event.filename || "";
+      if (filename.indexOf("/" + siteId + "/adpushup.js") === -1) {
+        return;
+      }
+      var error = event.error;
+      if (error) {
+        var message = error.message;
+        var stack = error.stack;
+      }
+      message = message || event.message;
+      var log = {
+        message: message,
+        stack: stack || "",
+        timestamp: Math.floor(event.timeStamp),
+        type: "uncaughterror",
+      };
+      sendErrorLog(log);
+      !isDebugModeOn && event.preventDefault();
+    } catch (error) {}
+  });
+  w.addEventListener("unhandledrejection", function (event) {
+    var reason = event.reason;
+    if (typeof reason === "object") reason = JSON.stringify(reason);
+    var log = {
+      message: reason || "no reason found",
+      timestamp: Math.floor(event.timeStamp),
+      type: "unhandledrejection",
+    };
+    sendErrorLog(log);
+    !isDebugModeOn && event.preventDefault();
+  });
+  var ga = d.createElement("script");
+  ga.src = "https://www.googletagmanager.com/gtag/js?id=G-Z0TZ7TDHS1";
+  ga.type = "text/javascript";
+  ga.async = true;
+  targetElement.appendChild(ga);
+  w.dataLayer = window.dataLayer || [];
+  w.gtag = function () {
+    window.dataLayer.push(arguments);
+  };
+  w.gtag("js", new Date());
+  w.gtag("config", "G-Z0TZ7TDHS1", {
+    custom_map: { dimension1: "siteid" },
+  });
+  w.gtag("event", "script-call", {
+    send_to: "G-Z0TZ7TDHS1",
+    siteid: siteId,
+  });
+  s.onerror = function (msg) {
+    w.gtag("event", "ad-block", {
+      send_to: "G-Z0TZ7TDHS1",
+      siteid: siteId,
+    });
+  };
+})(window, document);
+</script>
+</head>
+<body onload="highlightlink()">
+
+<button onclick="topFunction()" id="myBtn">&#8679; SCROLL TO TOP</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="index.html"><img src="../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="images/menuhome64.png" alt="Go To Top" onclick="showmenu()" /></span>
+<span style="float:left"><a href="index.html"><img src="images/logo/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+</div>
+</div>
+<div id="link" style="clear:both;z-index:999"> <div class="ddsmoothmenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="godot.html" class="selected">Godot</a></li>
+<li><a href="java-tutorial.html">Java</a></li>
+<li><a href="python-tutorial.html">Python</a></li>
+<li><a href="sql-tutorial.html">SQL</a></li>
+<li><a href="c-programming-language-tutorial.html">C</a></li>
+<li><a href="cobol.html">COBOL</a></li>
+<li><a href="cpp-tutorial.html">C++</a></li>
+<li><a href="html-tutorial.html">HTML</a></li>
+<li><a href="css-tutorial.html">CSS</a></li>
+<li><a href="javascript-tutorial.html">JavaScript</a></li>
+<li><a href="xml-tutorial.html">XML</a></li>
+<li><a href="ajax-tutorial.html">Ajax</a></li>
+<li><a href="android-tutorial.html">Android</a></li>
+<li><a href="design-patterns-in-java.html">Design Pattern</a></li>
+<li><a href="free-java-projects.html">Projects</a></li>
+<li><a href="corejava-interview-questions.html">Interview Q</a></li>
+<li><a href="comment.html">Comment</a></li>
+<li><a href="forum.html">Forum</a></li>
+</ul>
+<br style="clear: left" />
+</div></div>
+<div class="mobilemenu" style="clear:both">
+
+<ins class="adPushupAds" data-adpControl="hqdgs" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV8zMDB4MjUwX01vYl8xNC85IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MzAwcHg7aGVpZ2h0OjI1MHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjcwMTQyNzI1MTkiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Godot Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="godot.html">Godot Tutorial</a>
+<a href="godot-game-engine.html">Godot Game Engine</a>
+<a href="creating-first-godot-project.html">Godot First Project</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Lonny Lips</span></h2>
+</div>
+<div class="leftmenu">
+<a href="loony-lips-in-godot.html">Godot Loony Lips</a>
+<a href="label-in-godot.html">Godot Label</a>
+<a href="line-edit-in-godot.html">Godot LineEdit</a>
+<a href="buttons-in-godot.html">Godot Buttons</a>
+<a href="appending-array-in-godot.html">Appending arrays &amp; if-condition</a>
+<a href="queue-free-and-reload-current-scene-functions-in-godot.html">queue_free() &amp; reload_current_scene()</a>
+<a href="dictionaries-adding-story-template-in-godot.html">Dictionaries Adding story template</a>
+<a href="storybook-json-in-godot.html">Godot StoryBook Object</a>
+<a href="storybook-story-object-json-in-godot.html">StoryBook Object with JSON</a>
+<a href="exporting-lonny-lips-in-godot.html">Godot Exporting Project</a>
+<a href="languages-used-in-godot.html">Godot Languages</a>
+<a href="design-language-in-godot.html">Godot Design Language</a>
+<a href="scripting-scene-in-godot.html">Godot Scripting Scene</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">GDscript</span></h2>
+</div>
+<div class="leftmenu">
+<a href="godot-introduction-of-gdscript.html">GDscript Introduction</a>
+<a href="godot-keywords.html">Keywords of GDscript</a>
+<a href="godot-referencing-functions.html">Referencing Function</a>
+<a href="godot-classes-in-gdscript.html">Classes in GDscript</a>
+<a href="godot-tool-mode-in-gdscript.html">Tool Mode in GDscript</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">First Game</span></h2>
+</div>
+<div class="leftmenu">
+<a href="first-game-in-godot.html">First game in Godot</a>
+<a href="godot-node-setup-of-game.html">Node set-up of game</a>
+<a href="godot-hud.html">HUD in godot</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Design Philosophy</span></h2>
+</div>
+<div class="leftmenu">
+<a href="godots-design-philosophy.html">Godot's Design Philosophy</a>
+<a href="godot-design-interfaces-with-control-nodes.html">Design interface with control nodes</a>
+<a href="design-title-screen-in-godot.html">Design title screen in Godot</a>
+<a href="godot-design-gui.html">Design GUI in Godot</a>
+<a href="design-energybar-in-godot.html">Design EnergyBar in Godot</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Splash Screen</span></h2>
+</div>
+<div class="leftmenu">
+<a href="splash-screen-in-godot.html">Splash screen in Godot</a>
+<a href="animations-in-godot.html">Animations in Godot</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">File System</span></h2>
+</div>
+<div class="leftmenu">
+<a href="godot-file-system.html">File system</a>
+<a href="scenetree-in-godot.html">SceneTree in Godot</a>
+</div>
+<img src="wh.jpg" alt="JavaTpoint" />
+<br />
+<div id="leftad" style="margin-left:20px">
+
+<div id="17c09743-0b89-427c-ba64-e09f6a1745a2" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("17c09743-0b89-427c-ba64-e09f6a1745a2");
+		});
+	</script>
+</div>
+</div>
+</div>
+<div class="onlycontent">
+
+<div class="onlycontentad">
+<div id="9bbcb75d-b5e2-40e1-a811-e7680d1f59a4" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("9bbcb75d-b5e2-40e1-a811-e7680d1f59a4");
+		});
+	</script>
+</div>
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tr><td>
+<div id="bottomnextup">
+<a class="next" href="design-title-screen-in-godot.html">next &rarr;</a>
+<a class="next" href="godots-design-philosophy.html">&larr; prev</a>
+</div>
+<h1 class="h1">Design interfaces with the control nodes</h1>
+<p>Mobile phones, Computer displays, and TV screens come in all shapes and sizes. To ship the game, we have to support different screen ratios and resolutions. It can be challenging to build responsive interfaces that are compatible with all platforms.</p>
+<p><a href="godot.html">Godo</a>t comes with robust tools to manage and design a responsive user interface. To develop our UI, we will use control nodes. These are nodes with a green icon in the editor. Dozens of them can create anything from life bars to complex applications. Godot's entire editors and plugins use these nodes.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes.png" alt="Design interfaces with the control nodes" />
+<p>This guide will get us started with UI design. We will learn:</p>
+<ul class="points">
+<li>The five most useful control nodes to build our games' interface</li>
+<li>How to work with the anchor of the UI elements</li>
+<li>How to place and arrange our user interface using containers</li>
+<li>The five most common containers</li>
+</ul>
+<p>To learn to control the interface and connect it to other scripts, read <strong>build our <a href="first-game-in-godot.html">first game UI in Godot</a></strong>. Only use control nodes when we design our interfaces.</p>
+<p>They have unique qualities that allow them to work with each other. Other nodes such as Node2D, Sprite, etc. will not work. We can still use some nodes that work with others like the Animation Player, Tween, or the <strong>StreamPlayer</strong>. Control nodes are Canvasitems like Node2D so that we can apply shaders to it.</p>
+<p>All control nodes share the main properties;</p>
+<ul class="points">
+<li>Anchor</li>
+<li>Bounding rectangle</li>
+<li>Focus neighbor</li>
+<li>Size flags</li>
+<li>Margin</li>
+<li>The optional UI theme.</li>
+</ul>
+<p>Once we understand the basics of the Control Node, it will take us less time to learn all the nodes that derive from it.</p>
+<h3 class="h3">Five common UI elements</h3>
+<p>Godot ships with dozens of control nodes. A lot of those editors are here to help us build plugins and applications. To learn more about them, click the guide about Advanced UI nodes and themes.</p>
+<p>For most games, we will only need five types of UI elements and a few containers. These five containers.</p>
+<p><strong>These five control nodes are:</strong></p>
+<ol class="points">
+<li><strong>Label:</strong> for displaying text</li>
+<li><strong>TextureRect:</strong> It is used mostly for backgrounds, or everything that should be a static image.</li>
+<li><strong>TextureProgress:</strong> for life bars, loading bars, horizontal, vertical or radial</li>
+<li><strong>NinePatchRect:</strong> it is used for scalable panels</li>
+<li><strong>TextureButton:</strong> it is used to create buttons</li>
+</ol>
+<p>The five most common control nodes for UI design</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes2.png" alt="Design interfaces with the control nodes" />
+<h3 class="h3">TextureRect</h3>
+<p>TextureRect displays a texture or image inside the UI. It is similar to a sprite node but provides several scaling modes. Set the stretch mode property to change its behavior:</p>
+<ul class="points">
+<li><strong>The scale on Expand (compat)</strong> scales the texture to fit the node's bounding rectangle, only if <strong>expand farm is correct</strong>; otherwise, it behaves like <strong>keep</strong> mode. The default mode for backward compatibility.</li>
+<li><strong>The</strong> scale measures the texture to fit the bounding rectangle of a node</li>
+<li>The tile repeats the texture, but it will not scale</li>
+<li>Concentrate and place force the surface to remain in its original shape, respectively in the top left corner or center of the frame</li>
+<li><strong>Keep the aspect</strong> and <strong>keep the element centered</strong> but scales the surface but force it to remain in its original aspect ratio, respectively, in the upper left corner or center of the frame.</li>
+<li><strong>Keep the aspect covered as the element is centered</strong>, but the smaller side bounding rectangle and other one clip fit the border of the nodes.</li>
+</ul>
+<p>With sprite nodes, we can modify the color of TextureRect. Click on the <strong>Modulate</strong> property and use the color picker.</p>
+<p>TextureRect modulated with a red color.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes3.png" alt="Design interfaces with the control nodes" />
+<h3 class="h3">TextureButton</h3>
+<p><strong>TextureButton</strong> is like <strong>TextureRect</strong>, except it has five texture slots: one for each of the button states. Most of the time, we will use the Normal, Pressed, and Hover textures. Focused is useful if we interface listens to the keyboard's input. The sixth image slot, and the click Mask, lets us define the clickable area using a 2-bit, pure black, and white image.</p>
+<p>In the Base Button section, we will find checkboxes that change how the button behaves. When the toggle mode is on, the button will toggle between active and normal state when we press it. It is disabled by default, in which case it will use the disabled design. TextureButton shares some properties with a frame of texture: Resize and Stretch modes have a modulate property to change its color and resize.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes4.png" alt="Design interfaces with the control nodes" />
+<h3 class="h3">TextureProgress</h3>
+<p>TextureProgress layers has 3 sprites to create the progress bar. Under and over textures sandwich progress, which displays the value of the bar.</p>
+<p>The <strong>mode</strong> property controls the direction in which the strip moves: horizontally, vertically, or radially. If we set it to radial, the <strong>Initial Angle</strong> and <strong>Fill Degrees</strong> properties let us limit the range of the gauge.</p>
+<p>To animate the bar, We want to see the category section. Set the minimum and <strong>max</strong>imum properties to define the range of the gauge. For example, to represent the life of a character, we'll want to set <strong>Min</strong> to <strong>0</strong>, and <strong>Max</strong> to values to the default of <strong>1</strong> and <strong>100</strong>, and set the Value property to update the bar. If we leave the <strong>Min</strong> and <strong>Max</strong> values to the default of <strong>1</strong> and <strong>100</strong> and set the Value property to <strong>40</strong>, 40% of the progress texture will show up, and 60% of it will stay hidden.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes5.png" alt="Design interfaces with the control nodes" />
+<p><strong>TextureProgress bar, two-thirds filled</strong></p>
+<h3 class="h3">Label</h3>
+<p>Label prints <strong>text</strong> to the screen. We will find all its properties in the Label section of the inspector. Write the text in the Text property, and check Autowrap if we want it to respect the textbox's size. If Autowrap is off, we can't be able to scale the node. We can align the text horizontally and vertically with <strong>Align</strong> and <strong>Valign</strong>, respectively.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes6.png" alt="Design interfaces with the control nodes" />
+<p><strong>Picture of a label</strong></p>
+<h3 class="h3">NinePatchRect</h3>
+<p><strong>NinePatchRect</strong> takes a texture split into <strong>3 rows</strong> and <strong>3 columns</strong>. Center and sides tile when we measure the texture, but it never surrounds the corners. Creating panels, dialog boxes, and scalable backgrounds are useful for our UI.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes7.png" alt="Design interfaces with the control nodes" />
+<p><strong>NinePatchRect scaled with the min_size property</strong></p>
+<h3 class="h3">There are two workflows to build responsive UI</h3>
+<p>There are two workflows to build scalable and flexible interfaces in the Godot:</p>
+<ol class="points">
+<li>We have many container nodes at our disposal that scale and place UI elements for us. They take control of their children.</li>
+<li>On the other side, we have the layout menu. It helps us to anchor, place, and resize a UI element within its parent.</li>
+</li>
+</ol>
+<p>The two approaches are not always compatible. Because a container controls its children, we cannot use the layout menu on them. Each box has a specific effect, so we may need to nest several of them to get a working interface. With the layout approach, we work from the bottom up, on the children. As we don't insert extra containers in the scene, it can make for cleaner hierarchies, but it's harder to arrange items in a row, column, grid, etc.</p>
+<p>As we create UIs for games and tools, we'll develop a sense of what fits best in each situation.</p>
+<h3 class="h3">Place UI elements precisely with anchors</h3>
+<p><strong>Put UI elements with anchors</strong></p>
+<p>Control nodes have a size and position, but they also have margins and anchors. Anchors define the origin or reference point for the <strong>left, top, right</strong>, and <strong>bottom</strong> edges of a node. Change any of the four anchors to change the reference point of the margin</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes8.png" alt="Design interfaces with the control nodes" />
+<p><strong>The anchor property</strong></p>
+<h3 class="h3">How to change the anchor?</h3>
+<p>Like any properties, we can edit the four anchor points in the inspector, but this is not the most convenient way. When we select a control node, the layout menu appears above the viewport, in the toolbar. It gives us a list of icons to set all four anchors with a single click, instead of using the inspector's four properties. The layout menu will only show when we select a control node.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes9.png" alt="Design interfaces with the control nodes" />
+<p><strong>The layout menu in the viewport</strong></p>
+<h3 class="h3">Anchors are relative to the original container</h3>
+<p>Each anchor is a value between 0 and 1. For left and top anchors, a value of 0 means that without any margin, the edge of the node will align with the right and bottom edges of the parent container. On the other hand, the margins represent the distance to the anchor position in pixels, while the anchors are relative to the size of the original container.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes10.png" alt="Design interfaces with the control nodes" />
+<p>Margins are relative to the anchor position, which is comparable to the anchors. In practice, we will let the container update margins for us.</p>
+<h3 class="h3">Margins change with the anchor</h3>
+<p>The margin is updated when we move or resize the control node. They represent the distance from the edges of the control node to its anchor, relative to the parent's control node or container, as we will see in a moment. If there is no parent, the margins will be relative to the node's bounding rectangle, set in the <strong>Rect</strong> section.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes11.png" alt="Design interfaces with the control nodes" />
+<p><strong>Margins on a CenterContainer set into the "Full Rect" anchor</strong></p>
+<p>Try to change the anchors or nest our Control nodes inside Containers: the margins will update.</p>
+<p>We would hardly need to edit the margin manually. Always try to find a container to help us; Godot comes with nodes to solve all the common cases for us. Need to add space between a life bar and the border of the screen?</p>
+<p>Use MarginContainer. Want to build a vertical menu? Use VBoxContainer. More on these below.</p>
+<h3 class="h3">UI elements use shape tags to fill available space</h3>
+<p>Each control node has shape flags. They tell the container how the UI elements should scale. If we add the "Fill" flag to the horizontal or vertical property, the node's bounding box will take all the space it can, but it will respect its siblings and retain its size. If an HBoxContainer has 3 TextureRect nodes, with "Fill" flags on both axes, they will take up to a third of each available space, but no more. The container will take the node and resize it.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes12.png" alt="Design interfaces with the control nodes" />
+<p><strong>3 UI elements in an HBoxContainer, they align horizontally</strong></p>
+<p>The "extension" flag allows that the UI element can take place all over, and push against its siblings. Its bounding rectangle will grow against the edge of its parent, or until another UI node blocks it.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes13.png" alt="Design interfaces with the control nodes" />
+<p>The same example as above, but the center node has to <strong>"Expand"</strong> size flag</p>
+<p>We will need some practice to understand the size tags, as their effect can change quite a bit, depending on how we set up our interface.</p>
+<h3 class="h3">Arrange control nodes automatically with containers</h3>
+<p>Containers automatically arrange all children's control nodes, including other containers in rows, columns, and more.</p>
+<p>Use them to add padding to their bounding rectangles around our interface or center nodes. All the built-in containers are updated in the editor so that we can see the effect immediately.</p>
+<p>Containers have some unique properties for organizing UI elements. To change them, go to the Custom Constants section in the Inspector.</p>
+<h3 class="h3">Five most useful containers</h3>
+<p>If we build tools, we may need all the containers:</p>
+<ul class="points">
+<li><strong>MarginContainer:</strong> It is used to add margins around part of the UI</li>
+<li><strong>CenterContainer:</strong> it is mainly used to center its children in its bounding box</li>
+<li><strong>VboxContainer and HboxContainer:</strong> Used to arrange UI elements in rows or columns</li>
+<li><strong>GridContainer:</strong> It used to arrange control nodes in grid-like patterns</li>
+</ul>
+<p><strong>CenterContainer</strong> centers all its children within its bounding rectangle. It's one we typically use for title screens if we want the options to stay in the center of the viewport. As it centers everything, we will often want a single container nested inside it. If we use textures and buttons instead, they will stack up.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes14.png" alt="Design interfaces with the control nodes" />
+<p>The <strong>MarginContainer</strong> adds a margin on either side of the child nodes. Add a margin Corner, which encompasses the entire viewport to add a separation between the edges of the window and UI. We can set a margin at the top, left, right, or bottom of the container. No need to tick the checkbox: Click on the corresponding value box and type any number. It will be activated automatically.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes15.png" alt="Design interfaces with the control nodes" />
+<p><strong>The MarginContainer adds a 40px margin around the Gam User interface</strong></p>
+<p>There are two <strong>BoxContainer: VBoxContainer</strong> and <strong>HBoxContainer</strong>. We cannot add the Boxcontainer node itself, as it is a helper class, but We can use vertical and horizontal box containers. They organize nodes into rows or columns. Use it to line up items in a shop, or to create complex grids with rows and columns of different sizes, because we can nest them to our heart's content.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes16.png" alt="Design interfaces with the control nodes" />
+<p><strong>The HBoxContainer horizontally aligns UI elements</strong></p>
+<p>VBoxContainer automatically arranges its children in a column. This puts them one after the other. If we use the separation parameter, it will leave a gap between its children. HBoxContainer arranges UI elements in a row. It is similar to the VBoxContainer, with an extra <strong>add_spacer</strong> method to add a spacer control node before its first child or after its last-child, from a script.</p>
+<p>The GridContainer lets us arrange UI elements in a grid-like pattern. We can only control the number of columns it has, and it will set the number of rows by itself, based on its children's count. If we have nine children and three columns, we will have <strong>9&divide;3=3</strong> rows. Add three more children, and we will have four rows. In other words, it create new rows as we add more textures and buttons. Like box containers, it has two properties to set vertical and horizontal separation between rows and columns, respectively.</p>
+<img src="../static.javatpoint.com/tutorial/godot/images/design-interfaces-with-the-control-nodes17.png" alt="Design interfaces with the control nodes" />
+<p><strong>A grid container with two columns. It sizes each column automatically.</strong></p>
+<p>Godot's UI system is complex and a lot more to offer. To learn how to design a more advanced interface, read <strong>Design advanced UI with other control nodes</strong>.</p>
+<hr />
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="design-title-screen-in-godot.html">Design title screen in Godot</a></span>
+</div>
+
+<br /><br />
+<div id="bottomnext">
+<a style="float:left" class="next" href="godots-design-philosophy.html">&larr; prev</a>
+<a style="float:right" class="next" href="design-title-screen-in-godot.html">next &rarr;</a>
+</div>
+<br /><br />
+</td></tr>
+</table>
+</div>
+<hr class="hrhomebox" />
+<div><img class="lazyload" data-src="https://static.javatpoint.com/images/youtube-32.png" style="vertical-align:middle;" alt="Youtube" />
+<span class="h3" style="vertical-align:middle;font-size:22px"> For Videos Join Our Youtube Channel: <a href="https://bit.ly/2FOeX6S" target="_blank"> Join Now</a></span>
+</div>
+<hr class="hrhomebox" />
+<h3 class="h3">Feedback</h3>
+<ul class="points">
+<li>Send your Feedback to <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="9ff9fafafbfdfefcf4dff5fee9feebeff0f6f1ebb1fcf0f2">[email&#160;protected]</a></li>
+</ul>
+<hr class="hrhomebox" />
+<h2 class="h2">Help Others, Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/godot-design-interfaces-with-control-nodes"><img src="images/facebook32.png" alt="facebook" /></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/godot-design-interfaces-with-control-nodes"><img src="images/twitter32.png" alt="twitter" /></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/godot-design-interfaces-with-control-nodes"><img src="images/pinterest32.png" alt="pinterest" /></a>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="5022809933" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="splunk.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial" />
+<p>Splunk</p>
+</div>
+</a>
+<a href="spss.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial" />
+<p>SPSS</p>
+</div>
+</a>
+<a href="swagger.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial" />
+<p>Swagger</p>
+</div>
+</a>
+<a href="t-sql.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial" />
+<p>Transact-SQL</p>
+</div>
+</a>
+<a href="tumblr.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial" />
+<p>Tumblr</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial" />
+ <p>ReactJS</p>
+</div>
+</a>
+<a href="regex.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial" />
+<p>Regex</p>
+</div>
+</a>
+<a href="reinforcement-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial" />
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="r-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial" />
+<p>R Programming</p>
+</div>
+</a>
+<a href="rxjs.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial" />
+<p>RxJS</p>
+</div>
+</a>
+<a href="react-native-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial" />
+<p>React Native</p>
+</div>
+</a>
+<a href="python-design-pattern.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns" />
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="python-pillow.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial" />
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="python-turtle-programming.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial" />
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="keras.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial" />
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="aptitude/quantitative.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+<p>Aptitude</p>
+</div>
+</a>
+<a href="reasoning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+<p>Reasoning</p>
+</div>
+</a>
+<a href="verbal-ability.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="interview-questions-and-answers.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="company-interview-questions-and-recruitment-process.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="artificial-intelligence-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence Tutorial" />
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="aws-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial" />
+<p>AWS</p>
+</div>
+</a>
+<a href="selenium-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial" />
+<p>Selenium</p>
+</div>
+</a>
+<a href="cloud-computing-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing tutorial" />
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="hadoop-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial" />
+<p>Hadoop</p>
+</div>
+</a>
+<a href="reactjs-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial" />
+<p>ReactJS</p>
+</div>
+</a>
+<a href="data-science.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial" />
+<p>Data Science</p>
+</div>
+</a>
+<a href="angular-7-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial" />
+<p>Angular 7</p>
+</div>
+</a>
+<a href="blockchain-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial" />
+<p>Blockchain</p>
+</div>
+</a>
+<a href="git.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial" />
+<p>Git</p>
+</div>
+</a>
+<a href="machine-learning.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial" />
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="devops.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial" />
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox" />
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="dbms-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial" />
+<p>DBMS</p>
+</div>
+</a>
+<a href="data-structure-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial" />
+<p>Data Structures</p>
+</div>
+</a>
+<a href="daa-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial" />
+<p>DAA</p>
+</div>
+</a>
+<a href="os-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System tutorial" />
+<p>Operating System</p>
+</div>
+</a>
+<a href="computer-network-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial" />
+<p>Computer Network</p>
+</div>
+</a>
+<a href="compiler-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial" />
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="computer-organization-and-architecture-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture" />
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="discrete-mathematics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial" />
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="ethical-hacking-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking Tutorial" />
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="computer-graphics-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial" />
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="software-engineering-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering Tutorial" />
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="html-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial" />
+<p>Web Technology</p>
+</div>
+</a>
+<a href="cyber-security-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial" />
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="automata-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial" />
+<p>Automata</p>
+</div>
+</a>
+<a href="c-programming-language-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial" />
+<p>C Programming</p>
+</div>
+</a>
+<a href="cpp-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial" />
+<p>C++</p>
+</div>
+</a>
+<a href="java-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial" />
+<p>Java</p>
+</div>
+</a>
+<a href="net-framework.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial" />
+<p>.Net</p>
+</div>
+</a>
+<a href="python-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial" />
+<p>Python</p>
+</div>
+</a>
+<a href="programs-list.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs" />
+<p>Programs</p>
+</div>
+</a>
+<a href="control-system-tutorial.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial" />
+<p>Control System</p>
+</div>
+</a>
+<a href="data-mining.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial" />
+<p>Data Mining</p>
+</div>
+</a>
+<a href="data-warehouse.html">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial" />
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<br><br /><div class="mobilemenu" style="clear:both">
+<ins class="adPushupAds" data-adpControl="jrfe7" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByZXNwb25zaXZlbW9iaWxlZm9vdGVyIC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTpibG9jayIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI4MjIyODY2MzE4IgogICAgIGRhdGEtYWQtZm9ybWF0PSJhdXRvIgogICAgIGRhdGEtZnVsbC13aWR0aC1yZXNwb25zaXZlPSJ0cnVlIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div></div>
+<div id="right">
+<div id="e59d93b5-7231-4043-a19e-e7ec340efd1f" class="_ap_apex_ad">
+<script>
+		var adpushup = window.adpushup = window.adpushup || {};
+		adpushup.que = adpushup.que || [];
+		adpushup.que.push(function() {
+			adpushup.triggerAd("e59d93b5-7231-4043-a19e-e7ec340efd1f");
+		});
+	</script>
+</div>
+<br /><br />
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br /><br />
+<ins class="adPushupAds" data-adpControl="6d5qg" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<br />
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="c9a1bb89a3a8bfa8bdb9a6a0a7bde7aaa6a4">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="f29a80b29893849386829d9b9c86dc919d9fdc">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="java-tutorial.html">Learn Java</a><a href="data-structure-tutorial.html">Learn Data Structures</a><a href="c-programming-language-tutorial.html">Learn C Programming</a><a href="cpp-tutorial.html">Learn C++ Tutorial</a><a href="c-sharp-tutorial.html">Learn C# Tutorial</a><a href="php-tutorial.html">Learn PHP Tutorial</a><a href="html-tutorial.html">Learn HTML Tutorial</a><a href="javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="jquery-tutorial.html">Learn jQuery Tutorial</a><a href="spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="contact-us.html">Contact Us</a> <a href="subscribe.html">Subscribe Us</a> <a href="privacy-policy.html">Privacy Policy</a><a href="sitemap.xml">Sitemap</a><br><a href="sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+
+</div></div>
+
+<script>
+        const redirectButton = document.querySelector('#redirect');
+        redirectButton.addEventListener('click', () => {
+          const form = document.createElement('form');
+          form.method = 'POST';
+          const textArea = document.createElement('textarea');
+          const language = document.querySelector('#jtp_compiler').classList[0];
+          textArea.name = 'code';
+          textArea.value = document.querySelector('#jtp_compiler').textContent;
+          form.appendChild(textArea);
+          document.body.appendChild(form);
+          form.action = `https://onlinecompiler.javatpoint.com/`;
+          form.submit();
+        });
+      </script>
+<script src="../static.javatpoint.com/js/shcoreandbrush.js"></script><script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="../static.javatpoint.com/lazysizes.min.js" async></script>
+</body> </html> 

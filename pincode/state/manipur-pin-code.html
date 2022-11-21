@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Manipur Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Manipur Pin Code, Manipur Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="manipur-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Manipur Pin Code, Manipur Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="manipur-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Manipur Pin Code</h1>
+<p>Manipur Pin Code: Postal Index Number or PIN or Pin Code of Manipur is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Manipur Pin Code is the actual digit provided to the individual post offices. The 1st digit of Manipur Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>MANIPUR has total <strong>9 districts</strong> and <strong>690 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Manipur Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../thoubal/aimol-kodamphai-pin-code.html'>AIMOL KODAMPHAI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../tamenglong/atang-khunou-pin-code.html'>ATANG KHUNOU</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../imphal-east/awang-konmgpal-pin-code.html'>AWANG KONMGPAL</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795005</td></tr><tr><td><a href='../bishnupur/bishnupur-bishnupur-pin-code.html'>BISHNUPUR BISHNUPUR</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../tamenglong/bongoijang-pin-code.html'>BONGOIJANG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../imphal-west/canchipur-t/c/d-pin-code.html'>CANCHIPUR T/C/D</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795003</td></tr><tr><td><a href='../imphal-west/ch-khongnangpokpi-pin-code.html'>CH KHONGNANGPOKPI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795136</td></tr><tr><td><a href='../thoubal/chajing-pt-ii-pin-code.html'>CHAJING PT II</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795130</td></tr><tr><td><a href='../thoubal/chelhep-pin-code.html'>CHELHEP</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../thoubal/cherapur-pin-code.html'>CHERAPUR</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795148</td></tr><tr><td><a href='../imphal-west/chingmun-pin-code.html'>CHINGMUN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../tamenglong/chongmun-pin-code.html'>CHONGMUN</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795147</td></tr><tr><td><a href='../churachandpur/chothemunpi-pin-code.html'>CHOTHEMUNPI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../imphal-west/christan-centre-haochong-pin-code.html'>CHRISTAN CENTRE HAOCHONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../bishnupur/dolang-khunou-pin-code.html'>DOLANG KHUNOU</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../tamenglong/dullen-t/c/d-pin-code.html'>DULLEN T/C/D</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../chandel/duthang-pin-code.html'>DUTHANG</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795127</td></tr><tr><td><a href='../imphal-west/gularthol-pin-code.html'>GULARTHOL</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795115</td></tr><tr><td><a href='../imphal-west/heingang-pin-code.html'>HEINGANG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../bishnupur/irengbam-pin-code.html'>IRENGBAM</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../imphal-west/irong-chessabal-pin-code.html'>IRONG CHESSABAL</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../ukhrul/jessami-edno-pin-code.html'>JESSAMI EDNO</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../thoubal/jul-bangching-pin-code.html'>JUL BANGCHING</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795101</td></tr><tr><td><a href='../bishnupur/kabowakching-pin-code.html'>KABOWAKCHING</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../imphal-east/kameng-kakching-pin-code.html'>KAMENG KAKCHING</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795010</td></tr><tr><td><a href='../imphal-west/kangchup-makhong-pin-code.html'>KANGCHUP MAKHONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../imphal-west/karakhul-pin-code.html'>KARAKHUL</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../senapati/karong-pin-code.html'>KARONG</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795007</td></tr><tr><td><a href='../senapati/kheijang-pin-code.html'>KHEIJANG</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795122</td></tr><tr><td><a href='../bishnupur/khoirentak-pin-code.html'>KHOIRENTAK</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../imphal-west/khonghampat-pin-code.html'>KHONGHAMPAT</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../bishnupur/khousabung-pin-code.html'>KHOUSABUNG</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../tamenglong/khumphung-pin-code.html'>KHUMPHUNG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../churachandpur/kolhen-pin-code.html'>KOLHEN</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../bishnupur/kwakta-pin-code.html'>KWAKTA</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../thoubal/laiching-khongsang-pin-code.html'>LAICHING KHONGSANG</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../senapati/lakhamei-pin-code.html'>LAKHAMEI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795015</td></tr><tr><td><a href='../imphal-east/lamlai-pin-code.html'>LAMLAI</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795010</td></tr><tr><td><a href='../imphal-east/lamlong-pin-code.html'>LAMLONG</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795010</td></tr><tr><td><a href='../chandel/liwasari-pin-code.html'>LIWASARI</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795127</td></tr><tr><td><a href='../senapati/liyai-pin-code.html'>LIYAI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795104</td></tr><tr><td><a href='../senapati/liyal-khunou-pin-code.html'>LIYAL KHUNOU</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795104</td></tr><tr><td><a href='../tamenglong/lukhambi-pin-code.html'>LUKHAMBI</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795159</td></tr><tr><td><a href='../churachandpur/lungthul-pin-code.html'>LUNGTHUL</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795139</td></tr><tr><td><a href='../imphal-west/maibam-konjil-pin-code.html'>MAIBAM KONJIL</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../senapati/makeng-ngarolu-pin-code.html'>MAKENG NGAROLU</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795118</td></tr><tr><td><a href='../imphal-west/mayang-langjing-pin-code.html'>MAYANG LANGJING</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../thoubal/minou-khunjao-pin-code.html'>MINOU KHUNJAO</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../churachandpur/munpi-pin-code.html'>MUNPI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../chandel/new-somtal-pin-code.html'>NEW SOMTAL</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795131</td></tr><tr><td><a href='../imphal-east/ningthemchakhul-pin-code.html'>NINGTHEMCHAKHUL</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795010</td></tr><tr><td><a href='../bishnupur/oinam-pin-code.html'>OINAM</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../senapati/oklong-pin-code.html'>OKLONG</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795106</td></tr><tr><td><a href='../thoubal/okram-wangmataba-pin-code.html'>OKRAM WANGMATABA</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795138</td></tr><tr><td><a href='../imphal-west/paobitek-pin-code.html'>PAOBITEK</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795009</td></tr><tr><td><a href='../imphal-west/phaibok-mullen-pin-code.html'>PHAIBOK MULLEN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../senapati/phaibung-khullen-pin-code.html'>PHAIBUNG KHULLEN</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795104</td></tr><tr><td><a href='../churachandpur/pherazol-pin-code.html'>PHERAZOL</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795143</td></tr><tr><td><a href='../imphal-west/phoubakchao-pin-code.html'>PHOUBAKCHAO</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../bishnupur/phubala-pin-code.html'>PHUBALA</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../senapati/phunanamei-pin-code.html'>PHUNANAMEI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795150</td></tr><tr><td><a href='../ukhrul/rajai-khunou-pin-code.html'>RAJAI KHUNOU</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../chandel/sajik-tampak-pin-code.html'>SAJIK TAMPAK</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795102</td></tr><tr><td><a href='../senapati/sangpei-khullen-pin-code.html'>SANGPEI KHULLEN</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795118</td></tr><tr><td><a href='../churachandpur/sangphou-pin-code.html'>SANGPHOU</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../churachandpur/sawaiphaih-t/c/d-pin-code.html'>SAWAIPHAIH T/C/D</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795143</td></tr><tr><td><a href='../imphal-west/sekmaijin-pin-code.html'>SEKMAIJIN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../ukhrul/semol-pin-code.html'>SEMOL</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795145</td></tr><tr><td><a href='../thoubal/shahumphai-pin-code.html'>SHAHUMPHAI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795101</td></tr><tr><td><a href='../churachandpur/singhat-pin-code.html'>SINGHAT</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795139</td></tr><tr><td><a href='../thoubal/sora-pin-code.html'>SORA</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../chandel/sugnu-pin-code.html'>SUGNU</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795101</td></tr><tr><td><a href='../tamenglong/takou-pin-code.html'>TAKOU</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../tamenglong/tamenglong-pin-code.html'>TAMENGLONG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../senapati/thanamba-pin-code.html'>THANAMBA</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795122</td></tr><tr><td><a href='../senapati/thingba-khullen-pin-code.html'>THINGBA KHULLEN</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795007</td></tr><tr><td><a href='../tamenglong/thuilon-pin-code.html'>THUILON</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../bishnupur/tronglaobi-pin-code.html'>TRONGLAOBI</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../churachandpur/tuikham-pin-code.html'>TUIKHAM</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795117</td></tr><tr><td><a href='../senapati/tumuyan-khullen-pin-code.html'>TUMUYAN KHULLEN</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795106</td></tr><tr><td><a href='../thoubal/waikhong-pin-code.html'>WAIKHONG</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../chandel/anal-khullen-pin-code.html'>ANAL KHULLEN</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795102</td></tr><tr><td><a href='../imphal-west/arong-pin-code.html'>ARONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../thoubal/athokpam-pin-code.html'>ATHOKPAM</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795138</td></tr><tr><td><a href='../tamenglong/bhalok-pin-code.html'>BHALOK</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../imphal-west/borobekra-pin-code.html'>BOROBEKRA</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../bishnupur/charoi-khullel-pin-code.html'>CHAROI KHULLEL</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795124</td></tr><tr><td><a href='../imphal-west/crpf-camp-langjing-pin-code.html'>CRPF CAMP LANGJING</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795113</td></tr><tr><td><a href='../imphal-east/dolaithabi-pin-code.html'>DOLAITHABI</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795114</td></tr><tr><td><a href='../bishnupur/dolang-pin-code.html'>DOLANG</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../bishnupur/ethai-bazar-pin-code.html'>ETHAI BAZAR</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../thoubal/haokhongching-pin-code.html'>HAOKHONGCHING</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795149</td></tr><tr><td><a href='../thoubal/haoreibi-mayai-leikai-pin-code.html'>HAOREIBI MAYAI LEIKAI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795130</td></tr><tr><td><a href='../thoubal/heinganglok-pin-code.html'>HEINGANGLOK</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795149</td></tr><tr><td><a href='../ukhrul/huime-pin-code.html'>HUIME</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795144</td></tr><tr><td><a href='../thoubal/hulkap-pin-code.html'>HULKAP</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795149</td></tr><tr><td><a href='../imphal-west/ijairong-pin-code.html'>IJAIRONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../imphal-west/irom-meijrao-pin-code.html'>IROM MEIJRAO</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795009</td></tr><tr><td><a href='../imphal-west/jakurdhar-pin-code.html'>JAKURDHAR</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../bishnupur/jiban-nager-pin-code.html'>JIBAN NAGER</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795124</td></tr><tr><td><a href='../ukhrul/kagai-pin-code.html'>KAGAI</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../thoubal/kakching-khunou-pin-code.html'>KAKCHING KHUNOU</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../tamenglong/kasanlong-pin-code.html'>KASANLONG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../thoubal/kasom-khullen-pin-code.html'>KASOM KHULLEN</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795149</td></tr><tr><td><a href='../thoubal/keibung-mamang-pin-code.html'>KEIBUNG MAMANG</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795138</td></tr><tr><td><a href='../imphal-west/kh-jaikhan-pin-code.html'>KH JAIKHAN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../ukhrul/khamasom-pin-code.html'>KHAMASOM</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../ukhrul/kharasom-pin-code.html'>KHARASOM</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../imphal-east/khongangpheidekpi-pin-code.html'>KHONGANGPHEIDEKPI</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../bishnupur/khordak-ichin-pin-code.html'>KHORDAK ICHIN</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../chandel/khubungh-khullen-pin-code.html'>KHUBUNGH KHULLEN</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795102</td></tr><tr><td><a href='../imphal-east/kitnapanung-pin-code.html'>KITNAPANUNG</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../imphal-west/konthakhabam-pin-code.html'>KONTHAKHABAM</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../churachandpur/kumbipukhri-pin-code.html'>KUMBIPUKHRI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../imphal-west/kyamgei-pin-code.html'>KYAMGEI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795003</td></tr><tr><td><a href='../imphal-west/lamphelpat-pin-code.html'>LAMPHELPAT</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795004</td></tr><tr><td><a href='../thoubal/leibi-pin-code.html'>LEIBI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../churachandpur/leison-pin-code.html'>LEISON</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795143</td></tr><tr><td><a href='../tamenglong/lenglong-pin-code.html'>LENGLONG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../imphal-east/liklikhong-bazar-pin-code.html'>LIKLIKHONG BAZAR</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795114</td></tr><tr><td><a href='../churachandpur/lingshiphai-pin-code.html'>LINGSHIPHAI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../ukhrul/lungphu-pin-code.html'>LUNGPHU</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795145</td></tr><tr><td><a href='../senapati/maiba-pin-code.html'>MAIBA</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795015</td></tr><tr><td><a href='../bishnupur/maibam-pin-code.html'>MAIBAM</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../imphal-west/mantripukhri-pin-code.html'>MANTRIPUKHRI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../senapati/maohiing-pin-code.html'>MAOHIING</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795129</td></tr><tr><td><a href='../ukhrul/maokot-pin-code.html'>MAOKOT</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795145</td></tr><tr><td><a href='../imphal-west/mayang-impahl-bengoon-pin-code.html'>MAYANG IMPAHL BENGOON</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../bishnupur/moirang-pin-code.html'>MOIRANG</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../bishnupur/molphei-tampak-pin-code.html'>MOLPHEI TAMPAK</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../imphal-west/new-keiphundai-pin-code.html'>NEW KEIPHUNDAI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795115</td></tr><tr><td><a href='../imphal-east/nongdam-tangkhul-pin-code.html'>NONGDAM TANGKHUL</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795010</td></tr><tr><td><a href='../tamenglong/nungba-pin-code.html'>NUNGBA</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795147</td></tr><tr><td><a href='../imphal-east/oinam-thingel-pin-code.html'>OINAM THINGEL</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../thoubal/pangaltabi-pin-code.html'>PANGALTABI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../imphal-west/patsoi-part-ii-pin-code.html'>PATSOI PART II</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795113</td></tr><tr><td><a href='../imphal-west/phayeng-pin-code.html'>PHAYENG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../churachandpur/pmzol-pin-code.html'>PMZOL</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795143</td></tr><tr><td><a href='../imphal-west/ponlian-pin-code.html'>PONLIAN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../senapati/sbolkot-pin-code.html'>SBOLKOT</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795107</td></tr><tr><td><a href='../bishnupur/sadukhoiroi-pin-code.html'>SADUKHOIROI</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795124</td></tr><tr><td><a href='../churachandpur/saikot-pin-code.html'>SAIKOT</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795117</td></tr><tr><td><a href='../thoubal/samaram-pin-code.html'>SAMARAM</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795148</td></tr><tr><td><a href='../imphal-west/samurou-pin-code.html'>SAMUROU</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795009</td></tr><tr><td><a href='../ukhrul/sanakeithel-pin-code.html'>SANAKEITHEL</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795145</td></tr><tr><td><a href='../senapati/sapermeina-pin-code.html'>SAPERMEINA</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795107</td></tr><tr><td><a href='../imphal-east/sekmai-pin-code.html'>SEKMAI</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795136</td></tr><tr><td><a href='../churachandpur/siabu-pin-code.html'>SIABU</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795139</td></tr><tr><td><a href='../tamenglong/sibilong-pin-code.html'>SIBILONG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795147</td></tr><tr><td><a href='../churachandpur/sielmet-pin-code.html'>SIELMET</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../imphal-east/singjamei-pin-code.html'>SINGJAMEI</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../ukhrul/sirarakhong-pin-code.html'>SIRARAKHONG</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../imphal-west/soibam-leikai-pin-code.html'>SOIBAM LEIKAI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795001</td></tr><tr><td><a href='../imphal-west/suangpuimun-pin-code.html'>SUANGPUIMUN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../ukhrul/tc-ground-pin-code.html'>TC GROUND</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../senapati/tadubi-pin-code.html'>TADUBI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795104</td></tr><tr><td><a href='../senapati/tamei-pin-code.html'>TAMEI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../thoubal/tekcham-pin-code.html'>TEKCHAM</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795148</td></tr><tr><td><a href='../imphal-west/tendongyang-p-pin-code.html'>TENDONGYANG P</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795002</td></tr><tr><td><a href='../imphal-west/tera-khoidum-mayai-leikai-pin-code.html'>TERA KHOIDUM MAYAI LEIKAI</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../bishnupur/thanga-karang-pin-code.html'>THANGA KARANG</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../ukhrul/thawai-pin-code.html'>THAWAI</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795145</td></tr><tr><td><a href='../senapati/thingba-khunou-pin-code.html'>THINGBA KHUNOU</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795007</td></tr><tr><td><a href='../bishnupur/thinungei-pin-code.html'>THINUNGEI</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../thoubal/tollen-pin-code.html'>TOLLEN</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795148</td></tr><tr><td><a href='../churachandpur/tulaphei-pin-code.html'>TULAPHEI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../senapati/tungjoy-pin-code.html'>TUNGJOY</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795104</td></tr><tr><td><a href='../ukhrul/tungou-pin-code.html'>TUNGOU</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../ukhrul/ukhrul-pin-code.html'>UKHRUL</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../thoubal/wabagai-pin-code.html'>WABAGAI</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../thoubal/yambem-laxmi-bazar-pin-code.html'>YAMBEM LAXMI BAZAR</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795149</td></tr><tr><td><a href='../chandel/yangoulen-pin-code.html'>YANGOULEN</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795131</td></tr><tr><td><a href='../imphal-east/yumnam-khunou-pin-code.html'>YUMNAM KHUNOU</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795114</td></tr><tr><td><a href='../thoubal/arong-nongmaikhong-pin-code.html'>ARONG NONGMAIKHONG</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795103</td></tr><tr><td><a href='../tamenglong/atengba-pin-code.html'>ATENGBA</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../imphal-west/bidyanagar-pin-code.html'>BIDYANAGAR</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795115</td></tr><tr><td><a href='../imphal-west/bongmun-pin-code.html'>BONGMUN</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795116</td></tr><tr><td><a href='../bishnupur/boroyangbi-pin-code.html'>BOROYANGBI</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795133</td></tr><tr><td><a href='../imphal-west/central-agriculture-university-pin-code.html'>CENTRAL AGRICULTURE UNIVERSITY</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795004</td></tr><tr><td><a href='../tamenglong/chaiton-pin-code.html'>CHAITON</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795125</td></tr><tr><td><a href='../tamenglong/charoi-tupul-pin-code.html'>CHAROI TUPUL</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795159</td></tr><tr><td><a href='../thoubal/chaton-pin-code.html'>CHATON</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795135</td></tr><tr><td><a href='../bishnupur/dolang-pin-code.html'>DOLANG</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795118</td></tr><tr><td><a href='../thoubal/haokha-pin-code.html'>HAOKHA</a></td><td>Nil</td><td> Thoubal</td><td>MANIPUR</td><td> 795138</td></tr><tr><td><a href='../bishnupur/haotak-khullen-pin-code.html'>HAOTAK KHULLEN</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795126</td></tr><tr><td><a href='../imphal-west/heibong-makhong-pin-code.html'>HEIBONG MAKHONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795132</td></tr><tr><td><a href='../bishnupur/heikrujam-pin-code.html'>HEIKRUJAM</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../ukhrul/hundung-pin-code.html'>HUNDUNG</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795142</td></tr><tr><td><a href='../imphal-east/irilbung-pin-code.html'>IRILBUNG</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../senapati/jangnoi-pin-code.html'>JANGNOI</a></td><td>Nil</td><td> Senapati</td><td>MANIPUR</td><td> 795118</td></tr><tr><td><a href='../tamenglong/kahulong-pin-code.html'>KAHULONG</a></td><td>Nil</td><td> Tamenglong</td><td>MANIPUR</td><td> 795141</td></tr><tr><td><a href='../imphal-west/kangchup-chiru-pin-code.html'>KANGCHUP CHIRU</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795146</td></tr><tr><td><a href='../imphal-east/keirao-makting-pin-code.html'>KEIRAO MAKTING</a></td><td>Nil</td><td> Imphal East</td><td>MANIPUR</td><td> 795008</td></tr><tr><td><a href='../bishnupur/khabi-pin-code.html'>KHABI</a></td><td>Nil</td><td> Bishnupur</td><td>MANIPUR</td><td> 795134</td></tr><tr><td><a href='../churachandpur/khajang-pin-code.html'>KHAJANG</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795143</td></tr><tr><td><a href='../churachandpur/khanpi-pin-code.html'>KHANPI</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795128</td></tr><tr><td><a href='../chandel/khengjoi-pin-code.html'>KHENGJOI</a></td><td>Nil</td><td> Chandel</td><td>MANIPUR</td><td> 795102</td></tr><tr><td><a href='../ukhrul/khongdei-simphung-pin-code.html'>KHONGDEI SIMPHUNG</a></td><td>Nil</td><td> Ukhrul</td><td>MANIPUR</td><td> 795144</td></tr><tr><td><a href='../churachandpur/khouwpuibung-pin-code.html'>KHOUWPUIBUNG</a></td><td>Nil</td><td> Churachandpur</td><td>MANIPUR</td><td> 795117</td></tr><tr><td><a href='../imphal-west/khoyathong-pin-code.html'>KHOYATHONG</a></td><td>Nil</td><td> Imphal West</td><td>MANIPUR</td><td> 795001</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="513923113b30273025213e383f257f323e3c">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="2c445e6c464d5a4d585c43454258024f434102">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

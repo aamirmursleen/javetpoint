@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Karnataka Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Karnataka Pin Code, Karnataka Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="karnataka-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Karnataka Pin Code, Karnataka Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="karnataka-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Karnataka Pin Code</h1>
+<p>Karnataka Pin Code: Postal Index Number or PIN or Pin Code of Karnataka is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Karnataka Pin Code is the actual digit provided to the individual post offices. The 1st digit of Karnataka Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>KARNATAKA has total <strong>30 districts</strong> and <strong>8741 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Karnataka Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../bangalore/attur-pin-code.html'>ATTUR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/cmm-court-complex-pin-code.html'>CMM COURT COMPLEX</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/gkvk-pin-code.html'>GKVK</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560065</td></tr><tr><td><a href='../bangalore/hebbal-kempapura-pin-code.html'>HEBBAL KEMPAPURA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560024</td></tr><tr><td><a href='../bangalore/hulsur-bazaar-pin-code.html'>HULSUR BAZAAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560008</td></tr><tr><td><a href='../bangalore/jcnagar-pin-code.html'>JCNAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560006</td></tr><tr><td><a href='../bangalore/kadugodi-extention-so-pin-code.html'>KADUGODI EXTENTION SO</a></td><td>Banglore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/ramagondana-halli-pin-code.html'>RAMAGONDANA HALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560066</td></tr><tr><td><a href='../bangalore/vartur-pin-code.html'>VARTUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560087</td></tr><tr><td><a href='../bangalore/vasanthanagar-pin-code.html'>VASANTHANAGAR</a></td><td>NA</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/austin-town-pin-code.html'>AUSTIN TOWN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560047</td></tr><tr><td><a href='../bangalore/bellandur-pin-code.html'>BELLANDUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560103</td></tr><tr><td><a href='../bangalore/doddagubbi-pin-code.html'>DODDAGUBBI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560077</td></tr><tr><td><a href='../bangalore/epip-pin-code.html'>EPIP</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560066</td></tr><tr><td><a href='../bangalore/kannamangala-pin-code.html'>KANNAMANGALA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/kothanur-pin-code.html'>KOTHANUR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560077</td></tr><tr><td><a href='../bangalore/rajbhavan-bangalore-pin-code.html'>RAJBHAVAN BANGALORE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/cvraman-nagar-pin-code.html'>CVRAMAN NAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560093</td></tr><tr><td><a href='../bangalore/crpf-campus-yelahanka-pin-code.html'>CRPF CAMPUS YELAHANKA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/dr-shivarama-karanth-nagar-pin-code.html'>DR SHIVARAMA KARANTH NAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560077</td></tr><tr><td><a href='../bangalore/hkp-road-pin-code.html'>HKP ROAD</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560051</td></tr><tr><td><a href='../bangalore/jakkur-pin-code.html'>JAKKUR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore-rural/kalkunte-pin-code.html'>KALKUNTE</a></td><td>Hosakote</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/kanakanagar-pin-code.html'>KANAKANAGAR</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560032</td></tr><tr><td><a href='../bangalore/krishnarajapuram-pin-code.html'>KRISHNARAJAPURAM</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560036</td></tr><tr><td><a href='../bangalore/mundur-pin-code.html'>MUNDUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560049</td></tr><tr><td><a href='../bangalore-rural/naduvathi-pin-code.html'>NADUVATHI</a></td><td>Hosakote</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/r-t-nagar-pin-code.html'>R T NAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560032</td></tr><tr><td><a href='../bangalore/rmv-extension-ii-stage-pin-code.html'>RMV EXTENSION II STAGE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560094</td></tr><tr><td><a href='../bangalore/rajanakunte-pin-code.html'>RAJANAKUNTE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/sahakaranagar-po-pin-code.html'>SAHAKARANAGAR PO</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560092</td></tr><tr><td><a href='../bangalore/st-thomas-town-pin-code.html'>ST THOMAS TOWN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560084</td></tr><tr><td><a href='../bangalore/vidhana-soudha-pin-code.html'>VIDHANA SOUDHA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/vimanapura-pin-code.html'>VIMANAPURA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560017</td></tr><tr><td><a href='../bangalore/yelahanka-pin-code.html'>YELAHANKA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/yelahanka-satellite-town-pin-code.html'>YELAHANKA SATELLITE TOWN</a></td><td>NA</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/a-f-station-yelahanka-pin-code.html'>A F STATION YELAHANKA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560063</td></tr><tr><td><a href='../bangalore/benson-town-pin-code.html'>BENSON TOWN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560046</td></tr><tr><td><a href='../bangalore/bidrahalli-pin-code.html'>BIDRAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560049</td></tr><tr><td><a href='../bangalore/cmp-centre-and-school-pin-code.html'>CMP CENTRE AND SCHOOL</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560025</td></tr><tr><td><a href='../bangalore/doddanekkundi-pin-code.html'>DODDANEKKUNDI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560037</td></tr><tr><td><a href='../bangalore/ha-farm-pin-code.html'>HA FARM</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560024</td></tr><tr><td><a href='../bangalore/indiranagar-bangalore-pin-code.html'>INDIRANAGAR BANGALORE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560038</td></tr><tr><td><a href='../bangalore/jeevabhimanagar-pin-code.html'>JEEVABHIMANAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560075</td></tr><tr><td><a href='../bangalore/kacharakanahalli-pin-code.html'>KACHARAKANAHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560084</td></tr><tr><td><a href='../bangalore/kadugodi-pin-code.html'>KADUGODI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/legislators-home-pin-code.html'>LEGISLATORS HOME</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/mahadevapura-pin-code.html'>MAHADEVAPURA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560048</td></tr><tr><td><a href='../bangalore/muthusandra-pin-code.html'>MUTHUSANDRA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560087</td></tr><tr><td><a href='../bangalore/sadashivanagar-pin-code.html'>SADASHIVANAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560080</td></tr><tr><td><a href='../bangalore/thambuchetty-palya-pin-code.html'>THAMBUCHETTY PALYA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560049</td></tr><tr><td><a href='../bangalore/air-force-hospital-pin-code.html'>AIR FORCE HOSPITAL</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560007</td></tr><tr><td><a href='../bangalore/anandnagar-bangalore-pin-code.html'>ANANDNAGAR BANGALORE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560024</td></tr><tr><td><a href='../bangalore/bangalore-international-airport-pin-code.html'>BANGALORE INTERNATIONAL AIRPORT</a></td><td>NA</td><td> Bangalore</td><td>KARNATAKA</td><td> 560300</td></tr><tr><td><a href='../bangalore/bsf-campus-yelahanka-pin-code.html'>BSF CAMPUS YELAHANKA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560063</td></tr><tr><td><a href='../bangalore/devanagundi-pin-code.html'>DEVANAGUNDI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/hoodi-pin-code.html'>HOODI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560048</td></tr><tr><td><a href='../bangalore/isro-anthariksha-bhavan-pin-code.html'>ISRO ANTHARIKSHA BHAVAN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560094</td></tr><tr><td><a href='../bangalore/jeevanbhimanagar-pin-code.html'>JEEVANBHIMANAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560075</td></tr><tr><td><a href='../bangalore/krishnarajapuram-r-s-pin-code.html'>KRISHNARAJAPURAM R S</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560016</td></tr><tr><td><a href='../bangalore/kundalahalli-pin-code.html'>KUNDALAHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560037</td></tr><tr><td><a href='../bangalore/lingarajapuram-pin-code.html'>LINGARAJAPURAM</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560084</td></tr><tr><td><a href='../bangalore/marathahalli-colony-pin-code.html'>MARATHAHALLI COLONY</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560037</td></tr><tr><td><a href='../bangalore/medimallasandra-pin-code.html'>MEDIMALLASANDRA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/nagawara-pin-code.html'>NAGAWARA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560045</td></tr><tr><td><a href='../bangalore/nal-pin-code.html'>NAL</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560017</td></tr><tr><td><a href='../bangalore-rural/samethanahalli-pin-code.html'>SAMETHANAHALLI</a></td><td>Hosakote</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560067</td></tr><tr><td><a href='../bangalore/sivan-chetty-gardens-pin-code.html'>SIVAN CHETTY GARDENS</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560042</td></tr><tr><td><a href='../bangalore/arabic-college-pin-code.html'>ARABIC COLLEGE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560045</td></tr><tr><td><a href='../bangalore/bhattarahalli-pin-code.html'>BHATTARAHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560049</td></tr><tr><td><a href='../bangalore/devasandra-pin-code.html'>DEVASANDRA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560036</td></tr><tr><td><a href='../bangalore/dr-ambedkar-veedhi-pin-code.html'>DR AMBEDKAR VEEDHI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/gunjur-pin-code.html'>GUNJUR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560087</td></tr><tr><td><a href='../bangalore/immedihalli-pin-code.html'>IMMEDIHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560066</td></tr><tr><td><a href='../bangalore/kalyananagar-pin-code.html'>KALYANANAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560043</td></tr><tr><td><a href='../bangalore/museum-road-pin-code.html'>MUSEUM ROAD</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560025</td></tr><tr><td><a href='../bangalore/ramamurthy-nagar-pin-code.html'>RAMAMURTHY NAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560016</td></tr><tr><td><a href='../bangalore/richmond-town-pin-code.html'>RICHMOND TOWN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560025</td></tr><tr><td><a href='../bangalore/whitefield-pin-code.html'>WHITEFIELD</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560066</td></tr><tr><td><a href='../bangalore/bangalore-bazaar-pin-code.html'>BANGALORE BAZAAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/hal-ii-stage-pin-code.html'>HAL II STAGE</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560008</td></tr><tr><td><a href='../bangalore/highcourt-pin-code.html'>HIGHCOURT</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/horamavu-pin-code.html'>HORAMAVU</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560043</td></tr><tr><td><a href='../bangalore/mahatma-gandhi-road-pin-code.html'>MAHATMA GANDHI ROAD</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/maruthi-sevanagar-pin-code.html'>MARUTHI SEVANAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560033</td></tr><tr><td><a href='../bangalore/rameshnagar-pin-code.html'>RAMESHNAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560037</td></tr><tr><td><a href='../bangalore/singanayakanahalli-pin-code.html'>SINGANAYAKANAHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560064</td></tr><tr><td><a href='../bangalore/training-command-iaf-pin-code.html'>TRAINING COMMAND IAF</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560006</td></tr><tr><td><a href='../bangalore/venkateshapura-pin-code.html'>VENKATESHAPURA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560045</td></tr><tr><td><a href='../bangalore/yemalur-pin-code.html'>YEMALUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560037</td></tr><tr><td><a href='../bangalore/agram-pin-code.html'>AGRAM</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560007</td></tr><tr><td><a href='../bangalore/amruthahalli-pin-code.html'>AMRUTHAHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560092</td></tr><tr><td><a href='../bangalore/banaswadi-pin-code.html'>BANASWADI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560043</td></tr><tr><td><a href='../bangalore/byatarayanapura-pin-code.html'>BYATARAYANAPURA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560092</td></tr><tr><td><a href='../bangalore/cubban-road-pin-code.html'>CUBBAN ROAD</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/domlur-pin-code.html'>DOMLUR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560071</td></tr><tr><td><a href='../bangalore/doorvaninagar-pin-code.html'>DOORVANINAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560016</td></tr><tr><td><a href='../bangalore/fraser-town-pin-code.html'>FRASER TOWN</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560005</td></tr><tr><td><a href='../bangalore/jalavayuvihar-pin-code.html'>JALAVAYUVIHAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560043</td></tr><tr><td><a href='../bangalore/kodigehalli-pin-code.html'>KODIGEHALLI</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560092</td></tr><tr><td><a href='../bangalore/new-thippasandra-pin-code.html'>NEW THIPPASANDRA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560075</td></tr><tr><td><a href='../bangalore/p%26t-col-kavalbyrasandra-pin-code.html'>P&T COL KAVALBYRASANDRA</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560032</td></tr><tr><td><a href='../bangalore/panathur-pin-code.html'>PANATHUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560103</td></tr><tr><td><a href='../bangalore/virgonagar-pin-code.html'>VIRGONAGAR</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560049</td></tr><tr><td><a href='../bangalore/viveknagar-bangalore-pin-code.html'>VIVEKNAGAR BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560047</td></tr><tr><td><a href='../bangalore/bangalore-gpo-pin-code.html'>BANGALORE GPO</a></td><td>Bangalore North</td><td> Bangalore</td><td>KARNATAKA</td><td> 560001</td></tr><tr><td><a href='../bangalore/b-sk-ii-stage-pin-code.html'>B SK II STAGE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560070</td></tr><tr><td><a href='../bangalore/bannerghatta-pin-code.html'>BANNERGHATTA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560083</td></tr><tr><td><a href='../bangalore/basavanagudi-pin-code.html'>BASAVANAGUDI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560004</td></tr><tr><td><a href='../bangalore/byatarayanapura-pin-code.html'>BYATARAYANAPURA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560085</td></tr><tr><td><a href='../bangalore/chamrajpet-bangalore-pin-code.html'>CHAMRAJPET BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560018</td></tr><tr><td><a href='../bangalore/chudenapura-pin-code.html'>CHUDENAPURA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560060</td></tr><tr><td><a href='../bangalore/haragadde-pin-code.html'>HARAGADDE</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560105</td></tr><tr><td><a href='../bangalore/hulimavu-pin-code.html'>HULIMAVU</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/jayanagar-pin-code.html'>JAYANAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560041</td></tr><tr><td><a href='../bangalore-rural/kengeri-upanagara-pin-code.html'>KENGERI UPANAGARA</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560060</td></tr><tr><td><a href='../bangalore/sri-jayachamarajendra-road-pin-code.html'>SRI JAYACHAMARAJENDRA ROAD</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560002</td></tr><tr><td><a href='../bangalore/subramanyapura-pin-code.html'>SUBRAMANYAPURA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560061</td></tr><tr><td><a href='../bangalore/thalaghattapura-pin-code.html'>THALAGHATTAPURA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560109</td></tr><tr><td><a href='../bangalore/tilaknagar-bangalore-pin-code.html'>TILAKNAGAR BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560041</td></tr><tr><td><a href='../bangalore/wilson-garden-pin-code.html'>WILSON GARDEN</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560027</td></tr><tr><td><a href='../bangalore/banashankari-iii-stage-pin-code.html'>BANASHANKARI III STAGE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560085</td></tr><tr><td><a href='../bangalore/bolare-pin-code.html'>BOLARE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560082</td></tr><tr><td><a href='../bangalore/deepanjalinagar-pin-code.html'>DEEPANJALINAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560026</td></tr><tr><td><a href='../bangalore/dharmaram-college-pin-code.html'>DHARMARAM COLLEGE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560029</td></tr><tr><td><a href='../bangalore/hsr-layout-pin-code.html'>HSR LAYOUT</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560102</td></tr><tr><td><a href='../bangalore-rural/kengeri-pin-code.html'>KENGERI</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560060</td></tr><tr><td><a href='../bangalore/konanakunte-pin-code.html'>KONANAKUNTE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560062</td></tr><tr><td><a href='../bangalore/kumaraswamy-layout-pin-code.html'>KUMARASWAMY LAYOUT</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560078</td></tr><tr><td><a href='../bangalore/padmanabhnagar-pin-code.html'>PADMANABHNAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560070</td></tr><tr><td><a href='../bangalore/rajarajeshwarinagar-pin-code.html'>RAJARAJESHWARINAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560098</td></tr><tr><td><a href='../bangalore/sampangiramnagar-pin-code.html'>SAMPANGIRAMNAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560027</td></tr><tr><td><a href='../bangalore-rural/somanhalli-pin-code.html'>SOMANHALLI</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560082</td></tr><tr><td><a href='../bangalore/tyagrajnagar-pin-code.html'>TYAGRAJNAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560070</td></tr><tr><td><a href='../bangalore-rural/udaypura-pin-code.html'>UDAYPURA</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560082</td></tr><tr><td><a href='../bangalore/doddakallasandra-pin-code.html'>DODDAKALLASANDRA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560062</td></tr><tr><td><a href='../bangalore/electronics-city-pin-code.html'>ELECTRONICS CITY</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560100</td></tr><tr><td><a href='../bangalore/gaviopuram-extension-pin-code.html'>GAVIOPURAM EXTENSION</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560019</td></tr><tr><td><a href='../bangalore/hebbagodi-pin-code.html'>HEBBAGODI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560099</td></tr><tr><td><a href='../bangalore/hongasandra-pin-code.html'>HONGASANDRA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560068</td></tr><tr><td><a href='../bangalore-rural/huskur-pin-code.html'>HUSKUR</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560099</td></tr><tr><td><a href='../bangalore/j-p-nagar-pin-code.html'>J P NAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560078</td></tr><tr><td><a href='../bangalore/jigani-pin-code.html'>JIGANI</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560105</td></tr><tr><td><a href='../bangalore/jp-nagar-iii-phase-pin-code.html'>JP NAGAR III PHASE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560078</td></tr><tr><td><a href='../bangalore/koramangala-i-block-pin-code.html'>KORAMANGALA I BLOCK</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560034</td></tr><tr><td><a href='../bangalore/koramangala-pin-code.html'>KORAMANGALA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560034</td></tr><tr><td><a href='../bangalore/kumbalagodu-pin-code.html'>KUMBALAGODU</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560074</td></tr><tr><td><a href='../bangalore-rural/sulikere-pin-code.html'>SULIKERE</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560060</td></tr><tr><td><a href='../bangalore-rural/taralu-pin-code.html'>TARALU</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560082</td></tr><tr><td><a href='../bangalore/banashankari-pin-code.html'>BANASHANKARI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560050</td></tr><tr><td><a href='../bangalore/bnagalore-viswavidalaya-pin-code.html'>BNAGALORE VISWAVIDALAYA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560056</td></tr><tr><td><a href='../bangalore/bommanahalli-bangalore-pin-code.html'>BOMMANAHALLI BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560068</td></tr><tr><td><a href='../bangalore/chickpet-pin-code.html'>CHICKPET</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560053</td></tr><tr><td><a href='../bangalore/chikkalasandra-pin-code.html'>CHIKKALASANDRA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560061</td></tr><tr><td><a href='../bangalore/girinagar-bangalore-pin-code.html'>GIRINAGAR BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560085</td></tr><tr><td><a href='../bangalore-rural/kagalipura-pin-code.html'>KAGALIPURA</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560082</td></tr><tr><td><a href='../bangalore/kallubalu-pin-code.html'>KALLUBALU</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560105</td></tr><tr><td><a href='../bangalore/kathriguppe-pin-code.html'>KATHRIGUPPE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560085</td></tr><tr><td><a href='../bangalore/kenchanahalli-pin-code.html'>KENCHANAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560098</td></tr><tr><td><a href='../bangalore/mico-layout-pin-code.html'>MICO LAYOUT</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/mount-st-joseph-pin-code.html'>MOUNT ST JOSEPH</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/muthanallur-pin-code.html'>MUTHANALLUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560099</td></tr><tr><td><a href='../bangalore/ramohalli-pin-code.html'>RAMOHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560074</td></tr><tr><td><a href='../bangalore/shanthinagar-pin-code.html'>SHANTHINAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560027</td></tr><tr><td><a href='../bangalore/wipro-limited-pin-code.html'>WIPRO LIMITED</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560100</td></tr><tr><td><a href='../bangalore/bangalore-corporation-building-pin-code.html'>BANGALORE CORPORATION BUILDING</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560002</td></tr><tr><td><a href='../bangalore/bilekahalli-pin-code.html'>BILEKAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/chandapura-pin-code.html'>CHANDAPURA</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560081</td></tr><tr><td><a href='../bangalore/dasarahallisrinagar-pin-code.html'>DASARAHALLISRINAGAR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560050</td></tr><tr><td><a href='../bangalore/gottigere-pin-code.html'>GOTTIGERE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560083</td></tr><tr><td><a href='../bangalore/governmemnt-electric-factory-pin-code.html'>GOVERNMEMNT ELECTRIC FACTORY</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560026</td></tr><tr><td><a href='../bangalore/hulimangala-pin-code.html'>HULIMANGALA</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560105</td></tr><tr><td><a href='../bangalore/jayangar-iii-block-pin-code.html'>JAYANGAR III BLOCK</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560011</td></tr><tr><td><a href='../bangalore-rural/kalkere-pin-code.html'>KALKERE</a></td><td>Bangalore South</td><td> Bangalore Rural</td><td>KARNATAKA</td><td> 560083</td></tr><tr><td><a href='../bangalore/nayandahalli-pin-code.html'>NAYANDAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560039</td></tr><tr><td><a href='../bangalore/rv-niketan-pin-code.html'>RV NIKETAN</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560059</td></tr><tr><td><a href='../bangalore/st-john.html' s-medical-college-pin-code'>ST JOHN'S MEDICAL COLLEGE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560034</td></tr><tr><td><a href='../bangalore/tataguni-pin-code.html'>TATAGUNI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560062</td></tr><tr><td><a href='../bangalore/adugodi-pin-code.html'>ADUGODI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560030</td></tr><tr><td><a href='../bangalore/ashoknagar-bangalore-pin-code.html'>ASHOKNAGAR BANGALORE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560050</td></tr><tr><td><a href='../bangalore/bannerghatta-road-pin-code.html'>BANNERGHATTA ROAD</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/begur-pin-code.html'>BEGUR</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560068</td></tr><tr><td><a href='../bangalore/hennagara-pin-code.html'>HENNAGARA</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560105</td></tr><tr><td><a href='../bangalore/jayanagar-west-pin-code.html'>JAYANAGAR WEST</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560070</td></tr><tr><td><a href='../bangalore/jp-nagar-viii-phase-pin-code.html'>JP NAGAR VIII PHASE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560076</td></tr><tr><td><a href='../bangalore/madhavan-park-pin-code.html'>MADHAVAN PARK</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560011</td></tr><tr><td><a href='../bangalore/madivala-pin-code.html'>MADIVALA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560068</td></tr><tr><td><a href='../bangalore/ragihalli-pin-code.html'>RAGIHALLI</a></td><td>Anekal</td><td> Bangalore</td><td>KARNATAKA</td><td> 560083</td></tr><tr><td><a href='../bangalore/tavarekere-pin-code.html'>TAVAREKERE</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560029</td></tr><tr><td><a href='../bangalore/agara-pin-code.html'>AGARA</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560034</td></tr><tr><td><a href='../bangalore/anjanapura-pin-code.html'>ANJANAPURA</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560108</td></tr><tr><td><a href='../bangalore/koramangala-vi-bk-pin-code.html'>KORAMANGALA VI BK</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560095</td></tr><tr><td><a href='../bangalore/mallathahalli-pin-code.html'>MALLATHAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560056</td></tr><tr><td><a href='../bangalore/mavalli-pin-code.html'>MAVALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560004</td></tr><tr><td><a href='../bangalore/pampamahakavi-road-pin-code.html'>PAMPAMAHAKAVI ROAD</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560004</td></tr><tr><td><a href='../bangalore/state-bank-of-mysore-colony-pin-code.html'>STATE BANK OF MYSORE COLONY</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560050</td></tr><tr><td><a href='../bangalore/thyagarajnagar-pin-code.html'>THYAGARAJNAGAR</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560004</td></tr><tr><td><a href='../bangalore/ullalu-upanagar-pin-code.html'>ULLALU UPANAGAR</a></td><td>Bangalore</td><td> Bangalore</td><td>KARNATAKA</td><td> 560110</td></tr><tr><td><a href='../bangalore/yelachenahalli-pin-code.html'>YELACHENAHALLI</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560078</td></tr><tr><td><a href='../bangalore/bommasandra-industrial-estate-pin-code.html'>BOMMASANDRA INDUSTRIAL ESTATE</a></td><td>Bangalore South</td><td> Bangalore</td><td>KARNATAKA</td><td> 560099</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="412933012b20372035312e282f356f222e2c">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="b0d8c2f0dad1c6d1c4c0dfd9dec49ed3dfdd9e">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

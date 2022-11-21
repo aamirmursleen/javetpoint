@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Chattisgarh Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Chattisgarh Pin Code, Chattisgarh Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="chattisgarh-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Chattisgarh Pin Code, Chattisgarh Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="chattisgarh-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Chattisgarh Pin Code</h1>
+<p>Chattisgarh Pin Code: Postal Index Number or PIN or Pin Code of Chattisgarh is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Chattisgarh Pin Code is the actual digit provided to the individual post offices. The 1st digit of Chattisgarh Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>CHATTISGARH has total <strong>19 districts</strong> and <strong>2760 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Chattisgarh Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../kanker/abhanpur-pin-code.html'>ABHANPUR</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494335</td></tr><tr><td><a href='../bastar/adawal-pin-code.html'>ADAWAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/argatta-pin-code.html'>ARGATTA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../bastar/bade-rajpur-pin-code.html'>BADE RAJPUR</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494347</td></tr><tr><td><a href='../bastar/bafna-pin-code.html'>BAFNA</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../bastar/bakawand-pin-code.html'>BAKAWAND</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../dantewada/banda-pin-code.html'>BANDA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494114</td></tr><tr><td><a href='../bastar/baniyagaon-pin-code.html'>BANIYAGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../bijapur(cgh)/bhairamgarh-pin-code.html'>BHAIRAMGARH</a></td><td>Bhairamgarh</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494450</td></tr><tr><td><a href='../bijapur(cgh)/bhopalpatnam-pin-code.html'>BHOPALPATNAM</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494446</td></tr><tr><td><a href='../bijapur(cgh)/bijapur-pin-code.html'>BIJAPUR</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494444</td></tr><tr><td><a href='../bijapur(cgh)/cherpal-pin-code.html'>CHERPAL</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494444</td></tr><tr><td><a href='../bastar/chipawand-pin-code.html'>CHIPAWAND</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../bastar/chitapur-pin-code.html'>CHITAPUR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../bastar/chokar-pin-code.html'>CHOKAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../kanker/dumali-pin-code.html'>DUMALI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../bijapur(cgh)/elmidi-pin-code.html'>ELMIDI</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494447</td></tr><tr><td><a href='../dantewada/errabore-pin-code.html'>ERRABORE</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494114</td></tr><tr><td><a href='../bastar/gadhiya-pin-code.html'>GADHIYA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494010</td></tr><tr><td><a href='../bijapur(cgh)/gangaloor-pin-code.html'>GANGALOOR</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494444</td></tr><tr><td><a href='../dantewada/geedam-pin-code.html'>GEEDAM</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../dantewada/gondpalli-pin-code.html'>GONDPALLI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../dantewada/gondras-pin-code.html'>GONDRAS</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494556</td></tr><tr><td><a href='../dantewada/gorli-pin-code.html'>GORLI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../kanker/hanker-pin-code.html'>HANKER</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494776</td></tr><tr><td><a href='../kanker/hatkondal-pin-code.html'>HATKONDAL</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../bastar/jagdalpur-rly-colony-pin-code.html'>JAGDALPUR RLY COLONY</a></td><td>NA</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/jhapra-pin-code.html'>JHAPRA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../kanker/jodekursi-pin-code.html'>JODEKURSI</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../kanker/kanker-kutchery-pin-code.html'>KANKER KUTCHERY</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../bijapur(cgh)/karkeli-pin-code.html'>KARKELI</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494450</td></tr><tr><td><a href='../bastar/kesarpal-pin-code.html'>KESARPAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../kanker/khairkeda-pin-code.html'>KHAIRKEDA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494336</td></tr><tr><td><a href='../bastar/kinjoli-pin-code.html'>KINJOLI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../bastar/kodenar-pin-code.html'>KODENAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../narayanpur/kohkameta-pin-code.html'>KOHKAMETA</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../bastar/kolawali-pin-code.html'>KOLAWALI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../bastar/kondagaon-pin-code.html'>KONDAGAON</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../dantewada/korra-pin-code.html'>KORRA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../dantewada/koshalnar-pin-code.html'>KOSHALNAR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../dantewada/kukanar-pin-code.html'>KUKANAR</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../kanker/kurenar-pin-code.html'>KURENAR</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494777</td></tr><tr><td><a href='../kanker/lohattar-pin-code.html'>LOHATTAR</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../bastar/madhota-pin-code.html'>MADHOTA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../bastar/madpal-pin-code.html'>MADPAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/mailawada-pin-code.html'>MAILAWADA</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../bastar/malakot-pin-code.html'>MALAKOT</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../dantewada/metapal-pin-code.html'>METAPAL</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494449</td></tr><tr><td><a href='../kanker/mode-pin-code.html'>MODE</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr><tr><td><a href='../bastar/mulmula-pin-code.html'>MULMULA</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../kanker/murdongri-pin-code.html'>MURDONGRI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../kanker/nedgaon-pin-code.html'>NEDGAON</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494771</td></tr><tr><td><a href='../bastar/netanaar-pin-code.html'>NETANAAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/pakhnar-pin-code.html'>PAKHNAR</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../kanker/parsoda-pin-code.html'>PARSODA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr><tr><td><a href='../kanker/pataud-pin-code.html'>PATAUD</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../dantewada/pharaspal-pin-code'>PHARASPAL</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494449</td></tr><tr><td><a href='../bijapur(cgh)/pusbaka-pin-code.html'>PUSBAKA</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494447</td></tr><tr><td><a href='../bastar/puspal-pin-code.html'>PUSPAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../kanker/pv-38-pin-code.html'>PV 38</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494776</td></tr><tr><td><a href='../bastar/raikot-pin-code.html'>RAIKOT</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../bastar/ratenga-pin-code.html'>RATENGA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494010</td></tr><tr><td><a href='../bijapur(cgh)/sagmeta-pin-code.html'>SAGMETA</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494450</td></tr><tr><td><a href='../bastar/salna-pin-code.html'>SALNA</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494347</td></tr><tr><td><a href='../kanker/samtara-pin-code.html'>SAMTARA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494335</td></tr><tr><td><a href='../kanker/sarwandi-pin-code.html'>SARWANDI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494335</td></tr><tr><td><a href='../kanker/selegaon-pin-code.html'>SELEGAON</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr><tr><td><a href='../dantewada/sirsitti-pin-code.html'>SIRSITTI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../bastar/sorgaon-pin-code.html'>SORGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../kanker/tadoki-pin-code.html'>TADOKI</a></td><td>Antagarh</td><td> Kanker</td><td>CHATTISGARH</td><td> 494665</td></tr><tr><td><a href='../kanker/talakurra-pin-code.html'>TALAKURRA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr><tr><td><a href='../bastar/taragaon-pin-code.html'>TARAGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494010</td></tr><tr><td><a href='../kanker/tarhul-pin-code.html'>TARHUL</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../bastar/tenwsa-pin-code.html'>TENWSA</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494347</td></tr><tr><td><a href='../bastar/tokapal-rajoor-pin-code.html'>TOKAPAL RAJOOR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../kanker/umradah-pin-code.html'>UMRADAH</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../kanker/amoda-pin-code.html'>AMODA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494333</td></tr><tr><td><a href='../kanker/amodi-pin-code.html'>AMODI</a></td><td>Antagarh</td><td> Kanker</td><td>CHATTISGARH</td><td> 494665</td></tr><tr><td><a href='../bastar/arandi-pin-code.html'>ARANDI</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494230</td></tr><tr><td><a href='../kanker/aridongri-pin-code.html'>ARIDONGRI</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../kanker/asulkhar-pin-code.html'>ASULKHAR</a></td><td>Bhaupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494669</td></tr><tr><td><a href='../kanker/badal-pin-code.html'>BADAL</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494333</td></tr><tr><td><a href='../dantewada/badesatti-pin-code.html'>BADESATTI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../bastar/bamni-bazar-pin-code.html'>BAMNI BAZAR</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../bastar/baniyagaon-pin-code.html'>BANIYAGAON</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../bastar/barda-pin-code.html'>BARDA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../kanker/barda-pin-code.html'>BARDA</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494776</td></tr><tr><td><a href='../bijapur(cgh)/bareguda-pin-code.html'>BAREGUDA</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494446</td></tr><tr><td><a href='../narayanpur/benur-pin-code.html'>BENUR</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../kanker/bewarti-pin-code.html'>BEWARTI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../bastar/bhainsgaon-pin-code.html'>BHAINSGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../narayanpur/bijli-pin-code.html'>BIJLI</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../kanker/budeli-pin-code.html'>BUDELI</a></td><td>NA</td><td> Kanker</td><td>CHATTISGARH</td><td> 494335</td></tr><tr><td><a href='../bastar/bunagaon-pin-code.html'>BUNAGAON</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../kanker/charbhata-pin-code.html'>CHARBHATA</a></td><td>NA</td><td> Kanker</td><td>CHATTISGARH</td><td> 494337</td></tr><tr><td><a href='../bastar/chhaparbhanpuri-pin-code.html'>CHHAPARBHANPURI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494010</td></tr><tr><td><a href='../dantewada/chindawada-pin-code.html'>CHINDAWADA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../narayanpur/chingnar-pin-code.html'>CHINGNAR</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../kanker/chotekapsi-pin-code.html'>CHOTEKAPSI</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494771</td></tr><tr><td><a href='../narayanpur/devgaon-pin-code.html'>DEVGAON</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../bijapur(cgh)/dharmaram-pin-code.html'>DHARMARAM</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494447</td></tr><tr><td><a href='../bastar/dilmili-pin-code.html'>DILMILI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../bastar/dimrapal-pin-code.html'>DIMRAPAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/dugeli-pin-code.html'>DUGELI</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494553</td></tr><tr><td><a href='../kanker/erpanar-pin-code.html'>ERPANAR</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494777</td></tr><tr><td><a href='../bastar/errakot-pin-code.html'>ERRAKOT</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../bijapur(cgh)/etepal-pin-code.html'>ETEPAL</a></td><td>Dantewada</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../bastar/ghutkel-pin-code.html'>GHUTKEL</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494347</td></tr><tr><td><a href='../dantewada/gogunda-pin-code.html'>GOGUNDA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../kanker/gondahoor-pin-code.html'>GONDAHOOR</a></td><td>Pakhanjore</td><td> Kanker</td><td>CHATTISGARH</td><td> 494776</td></tr><tr><td><a href='../dantewada/heeranar-pin-code.html'>HEERANAR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../bastar/heerapur-pin-code.html'>HEERAPUR</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../dantewada/idjepal-pin-code.html'>IDJEPAL</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../bastar/jaitpuri-pin-code.html'>JAITPURI</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494229</td></tr><tr><td><a href='../bastar/jodekera-pin-code.html'>JODEKERA</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494228</td></tr><tr><td><a href='../dantewada/kamaloor-pin-code.html'>KAMALOOR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494449</td></tr><tr><td><a href='../narayanpur/kanhargaon-pin-code.html'>KANHARGAON</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../dantewada/kanjipani-pin-code.html'>KANJIPANI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../kanker/karmoti-pin-code.html'>KARMOTI</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../dantewada/kirandul-rs-pin-code.html'>KIRANDUL RS</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494556</td></tr><tr><td><a href='../kanker/kodekurse-pin-code.html'>KODEKURSE</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494669</td></tr><tr><td><a href='../dantewada/kondasawli-pin-code.html'>KONDASAWLI</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494556</td></tr><tr><td><a href='../bastar/kongera-pin-code.html'>KONGERA</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../bastar/kopra-pin-code.html'>KOPRA</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494347</td></tr><tr><td><a href='../dantewada/kuakonda-pin-code.html'>KUAKONDA</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../bastar/kumhali-pin-code.html'>KUMHALI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../bastar/makdi-pin-code.html'>MAKDI</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../kanker/mardapoti-pin-code.html'>MARDAPOTI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../bastar/markel-pin-code.html'>MARKEL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../bijapur(cgh)/marudbaka-pin-code.html'>MARUDBAKA</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494447</td></tr><tr><td><a href='../dantewada/masenar-pin-code.html'>MASENAR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../bastar/matwal-pin-code.html'>MATWAL</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../kanker/michgaon-sadhu-pin-code.html'>MICHGAON SADHU</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494669</td></tr><tr><td><a href='../dantewada/mokhpal-pin-code.html'>MOKHPAL</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../bastar/muli-pin-code.html'>MULI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../bastar/mundagaon-pin-code.html'>MUNDAGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../bastar/nangur-pin-code.html'>NANGUR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../bijapur(cgh)/nemed-pin-code.html'>NEMED</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494444</td></tr><tr><td><a href='../dantewada/pakela-pin-code.html'>PAKELA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../dantewada/parcheli-pin-code.html'>PARCHELI</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494449</td></tr><tr><td><a href='../bastar/pharasgaon-pin-code.html'>PHARASGAON</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494228</td></tr><tr><td><a href='../dantewada/polampalli-pin-code.html'>POLAMPALLI</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../kanker/pondgaon-pin-code.html'>PONDGAON</a></td><td>Antagarh</td><td> Kanker</td><td>CHATTISGARH</td><td> 494665</td></tr><tr><td><a href='../dantewada/ramaram-pin-code.html'>RAMARAM</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../bastar/rotma-pin-code.html'>ROTMA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../bastar/sandkarmari-pin-code.html'>SANDKARMARI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../bijapur(cgh)/sandra-pin-code.html'>SANDRA</a></td><td>Bijapur</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494450</td></tr><tr><td><a href='../dantewada/shivanandashram-pin-code.html'>SHIVANANDASHRAM</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../bastar/sikagaon-pin-code.html'>SIKAGAON</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494230</td></tr><tr><td><a href='../bastar/sirisguda-pin-code.html'>SIRISGUDA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494010</td></tr><tr><td><a href='../kanker/sureli-pin-code.html'>SURELI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr><tr><td><a href='../dantewada/surnar-pin-code.html'>SURNAR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494552</td></tr><tr><td><a href='../dantewada/tirathgarh-pin-code.html'>TIRATHGARH</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../kanker/traighotiya-pin-code.html'>TRAIGHOTIYA</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494635</td></tr><tr><td><a href='../kanker/udkuda-pin-code.html'>UDKUDA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494336</td></tr><tr><td><a href='../dantewada/urmapal-pin-code.html'>URMAPAL</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../bastar/usari-pin-code.html'>USARI</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../kanker/vyas-kongera-pin-code.html'>VYAS KONGERA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../bastar/alor-pin-code.html'>ALOR</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494228</td></tr><tr><td><a href='../bastar/amaguda-pin-code.html'>AMAGUDA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../kanker/antagarh-pin-code.html'>ANTAGARH</a></td><td>Antagarh</td><td> Kanker</td><td>CHATTISGARH</td><td> 494665</td></tr><tr><td><a href='../bijapur(cgh)/atukpalli-pin-code.html'>ATUKPALLI</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494446</td></tr><tr><td><a href='../bastar/badeamabal-pin-code.html'>BADEAMABAL</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494224</td></tr><tr><td><a href='../bastar/badebodenar-pin-code.html'>BADEBODENAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494442</td></tr><tr><td><a href='../bastar/badechakwa-pin-code.html'>BADECHAKWA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../bastar/bademurma-pin-code.html'>BADEMURMA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../dantewada/bagmundi-panera-pin-code.html'>BAGMUNDI PANERA</a></td><td>Danteawada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../kanker/bagodar-pin-code.html'>BAGODAR</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../narayanpur/bakulbahi-pin-code.html'>BAKULBAHI</a></td><td>Narayanpur</td><td> Narayanpur</td><td>CHATTISGARH</td><td> 494661</td></tr><tr><td><a href='../dantewada/balpet-pin-code.html'>BALPET</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494449</td></tr><tr><td><a href='../bastar/bangaon-pin-code.html'>BANGAON</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494228</td></tr><tr><td><a href='../dantewada/barsoor-pin-code.html'>BARSOOR</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../bastar/bastar-pin-code.html'>BASTAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494223</td></tr><tr><td><a href='../bastar/bhandarseoni-pin-code.html'>BHANDARSEONI</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494229</td></tr><tr><td><a href='../kanker/bhanupratappur-pin-code.html'>BHANUPRATAPPUR</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494669</td></tr><tr><td><a href='../kanker/bhiragaon-pin-code.html'>BHIRAGAON</a></td><td>Bhanupratappur</td><td> Kanker</td><td>CHATTISGARH</td><td> 494669</td></tr><tr><td><a href='../bastar/binjhe-pin-code.html'>BINJHE</a></td><td>Keshkal</td><td> Bastar</td><td>CHATTISGARH</td><td> 494230</td></tr><tr><td><a href='../bijapur(cgh)/chinnakawali-pin-code.html'>CHINNAKAWALI</a></td><td>Bhopalpatnam</td><td> Bijapur(CGH)</td><td>CHATTISGARH</td><td> 494448</td></tr><tr><td><a href='../bastar/chitaloor-pin-code.html'>CHITALOOR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../bastar/chiurgaon-pin-code.html'>CHIURGAON</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494222</td></tr><tr><td><a href='../bastar/chotedeoda-pin-code.html'>CHOTEDEODA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494221</td></tr><tr><td><a href='../kanker/dokla-pin-code.html'>DOKLA</a></td><td>Charama</td><td> Kanker</td><td>CHATTISGARH</td><td> 494337</td></tr><tr><td><a href='../dantewada/dubbatota-pin-code.html'>DUBBATOTA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../kanker/dudhawa-pin-code.html'>DUDHAWA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494335</td></tr><tr><td><a href='../kanker/dumarpani-pin-code.html'>DUMARPANI</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494333</td></tr><tr><td><a href='../dantewada/gamawada-pin-code.html'>GAMAWADA</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494551</td></tr><tr><td><a href='../dantewada/harrakoder-pin-code.html'>HARRAKODER</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../bastar/hatkachora-pin-code.html'>HATKACHORA</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494001</td></tr><tr><td><a href='../kanker/hatkongera-pin-code.html'>HATKONGERA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494334</td></tr><tr><td><a href='../kanker/jepra-pin-code.html'>JEPRA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494336</td></tr><tr><td><a href='../bastar/kachnar-pin-code.html'>KACHNAR</a></td><td>Jagdalpur</td><td> Bastar</td><td>CHATTISGARH</td><td> 494221</td></tr><tr><td><a href='../dantewada/kerlapal-pin-code.html'>KERLAPAL</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494122</td></tr><tr><td><a href='../kanker/khartha-pin-code.html'>KHARTHA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494336</td></tr><tr><td><a href='../dantewada/kirandul-hill-top-pin-code.html'>KIRANDUL HILL TOP</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494556</td></tr><tr><td><a href='../dantewada/kirandul-pin-code.html'>KIRANDUL</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494556</td></tr><tr><td><a href='../dantewada/kodripal-pin-code.html'>KODRIPAL</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494111</td></tr><tr><td><a href='../dantewada/kokawada-pin-code.html'>KOKAWADA</a></td><td>Konta</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494115</td></tr><tr><td><a href='../bastar/kondagaon-naka-pin-code.html'>KONDAGAON NAKA</a></td><td>Kondagaon</td><td> Bastar</td><td>CHATTISGARH</td><td> 494226</td></tr><tr><td><a href='../dantewada/korlapal-pin-code.html'>KORLAPAL</a></td><td>Dantewada</td><td> Dantewada</td><td>CHATTISGARH</td><td> 494441</td></tr><tr><td><a href='../kanker/kottara-pin-code.html'>KOTTARA</a></td><td>Kanker</td><td> Kanker</td><td>CHATTISGARH</td><td> 494670</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="dab2a89ab0bbacbbaeaab5b3b4aef4b9b5b7">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="7c140e3c161d0a1d080c13151208521f131152">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

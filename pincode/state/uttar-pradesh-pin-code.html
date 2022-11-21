@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Uttar pradesh Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Uttar pradesh Pin Code, Uttar pradesh Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="uttar-pradesh-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Uttar pradesh Pin Code, Uttar pradesh Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="uttar-pradesh-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Uttar pradesh Pin Code</h1>
+<p>Uttar pradesh Pin Code: Postal Index Number or PIN or Pin Code of Uttar pradesh is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Uttar pradesh Pin Code is the actual digit provided to the individual post offices. The 1st digit of Uttar pradesh Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>UTTAR PRADESH has total <strong>70 districts</strong> and <strong>15304 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+ <select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Uttar pradesh Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../agra/agra-chauk-pin-code.html'>AGRA CHAUK</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/aharan-pin-code.html'>AHARAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/akola-agra-pin-code.html'>AKOLA AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/arela-pin-code.html'>ARELA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/arhera-pin-code.html'>ARHERA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/arsena-pin-code.html'>ARSENA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/behrampur-pin-code.html'>BEHRAMPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/bhara-pin-code.html'>BHARA</a></td><td>Kheragarh</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/cod-pin-code.html'>COD</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282009</td></tr><tr><td><a href='../agra/darki-pin-code.html'>DARKI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283112</td></tr><tr><td><a href='../agra/digner-pin-code.html'>DIGNER</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/fatehapursikari-pin-code.html'>FATEHAPURSIKARI</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/gm-khan-pin-code.html'>GM KHAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/garhwar-pin-code.html'>GARHWAR</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/gokulpura-pin-code.html'>GOKULPURA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/hnkhera-pin-code.html'>HNKHERA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/hospital-road-agra-pin-code.html'>HOSPITAL ROAD AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/jaganpur-pin-code.html'>JAGANPUR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282005</td></tr><tr><td><a href='../agra/jagrajpur-pin-code.html'>JAGRAJPUR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/jarari-pin-code.html'>JARARI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/kachora-ghat-pin-code.html'>KACHORA GHAT</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/kamtari-pin-code.html'>KAMTARI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/karmyogi-enclave-pin-code.html'>KARMYOGI ENCLAVE</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282005</td></tr><tr><td><a href='../agra/kiraoli-pin-code.html'>KIRAOLI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/lajpat-kunj-pin-code.html'>LAJPAT KUNJ</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/loha-mandi-pin-code.html'>LOHA MANDI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/mahwatpur-pin-code.html'>MAHWATPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/malupur-pin-code.html'>MALUPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283126</td></tr><tr><td><a href='../agra/mankeda-pin-code.html'>MANKEDA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/mau-pin-code.html'>MAU</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/mihawa-pin-code.html'>MIHAWA</a></td><td>Kheragarh</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283112</td></tr><tr><td><a href='../agra/murkia-pin-code.html'>MURKIA</a></td><td>Kheragarh</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/murthar-alipur-pin-code.html'>MURTHAR ALIPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/nagar-pin-code.html'>NAGAR</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/nagar-chand-pin-code.html'>NAGAR CHAND</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/naraich-pin-code.html'>NARAICH</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/naugawan-pin-code.html'>NAUGAWAN</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/pentikhera-pin-code.html'>PENTIKHERA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/police-line-pin-code.html'>POLICE LINE</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282010</td></tr><tr><td><a href='../agra/puramana-pin-code.html'>PURAMANA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/puseta-pin-code.html'>PUSETA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283112</td></tr><tr><td><a href='../agra/rasoolpur-pin-code.html'>RASOOLPUR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283121</td></tr><tr><td><a href='../agra/rawatpara-pin-code.html'>RAWATPARA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/reha-pin-code.html'>REHA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/sahata-pin-code.html'>SAHATA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/salemabad-pin-code.html'>SALEMABAD</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/samsabad-pin-code.html'>SAMSABAD</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/sandhan-pin-code.html'>SANDHAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/sawain-pin-code.html'>SAWAIN</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/shahi-pin-code.html'>SHAHI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/shahpur-toola-pin-code.html'>SHAHPUR TOOLA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/shiaupura-pin-code.html'>SHIAUPURA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/sidhaoli-pin-code.html'>SIDHAOLI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/siktara-pin-code.html'>SIKTARA</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/soni-khera-pin-code.html'>SONI KHERA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/sultan-pura-pin-code.html'>SULTAN PURA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/sunari-pin-code.html'>SUNARI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/tanora-noorpur-pin-code.html'>TANORA NOORPUR</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/tarauli-gujar-pin-code.html'>TARAULI GUJAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/tiwaha-pin-code.html'>TIWAHA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/ushmanpur-pin-code.html'>USHMANPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/waha-pin-code.html'>WAHA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283119</td></tr><tr><td><a href='../agra/15-btn-pac-agra-pin-code.html'>15 BTN PAC AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/agra-university-pin-code.html'>AGRA UNIVERSITY</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282004</td></tr><tr><td><a href='../agra/akhabai-pin-code.html'>AKHABAI</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/anwal-khera-pin-code.html'>ANWAL KHERA</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/arnota-pin-code.html'>ARNOTA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/aulanda-pin-code.html'>AULANDA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/bv-bichpuri-pin-code.html'>BV BICHPURI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/barauli-ahir-pin-code.html'>BARAULI AHIR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/barwar-pin-code.html'>BARWAR</a></td><td>Kheragarh</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283119</td></tr><tr><td><a href='../agra/bhadrauli-pin-code.html'>BHADRAULI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283113</td></tr><tr><td><a href='../agra/bhalokhara-pin-code.html'>BHALOKHARA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/bhogipura-pin-code.html'>BHOGIPURA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282010</td></tr><tr><td><a href='../agra/birai-pin-code.html'>BIRAI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/chamraua-pin-code.html'>CHAMRAUA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/chitaura-pin-code.html'>CHITAURA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/chitra-hat-pin-code.html'>CHITRA HAT</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/chokda-pin-code.html'>CHOKDA</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/churiyari-pin-code.html'>CHURIYARI</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/dhaurra-pin-code.html'>DHAURRA</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/gandhi-nagar-agra-pin-code.html'>GANDHI NAGAR AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/gonseli-pin-code.html'>GONSELI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/jajauli-pin-code.html'>JAJAULI</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/jonai-pin-code.html'>JONAI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/kachaura-pin-code.html'>KACHAURA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/kagrol-pin-code.html'>KAGROL</a></td><td>Kheragah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283119</td></tr><tr><td><a href='../agra/kailash-pin-code.html'>KAILASH</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/kanjauli-pin-code.html'>KANJAULI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283126</td></tr><tr><td><a href='../agra/kukapur-pin-code.html'>KUKAPUR</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/nagla-patam-pin-code.html'>NAGLA PATAM</a></td><td>Fetehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283112</td></tr><tr><td><a href='../agra/new-agra-pin-code.html'>NEW AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282005</td></tr><tr><td><a href='../agra/parna-pin-code.html'>PARNA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/phool-pur-pin-code.html'>PHOOL PUR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/pura-guman-singh-pin-code.html'>PURA GUMAN SINGH</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/rehan-kalan-pin-code.html'>REHAN KALAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/sarai-pin-code.html'>SARAI</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283126</td></tr><tr><td><a href='../agra/sarendi-pin-code.html'>SARENDI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283119</td></tr><tr><td><a href='../agra/seola-jat-pin-code.html'>SEOLA JAT</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/shahaganj-agra-pin-code.html'>SHAHAGANJ AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282010</td></tr><tr><td><a href='../agra/sikandra-agra-pin-code.html'>SIKANDRA AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/sikraondha-pin-code.html'>SIKRAONDHA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/subji-mandi-pin-code.html'>SUBJI MANDI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/yamuna-kinara-pin-code.html'>YAMUNA KINARA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/arrua-khas-pin-code.html'>ARRUA KHAS</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/baman-pin-code.html'>BAMAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283126</td></tr><tr><td><a href='../agra/bamrauli-ahir-pin-code.html'>BAMRAULI AHIR</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282009</td></tr><tr><td><a href='../agra/barobara-khurd-pin-code.html'>BAROBARA KHURD</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/baseri-chahar-pin-code.html'>BASERI CHAHAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/bijhamai-pin-code.html'>BIJHAMAI</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/budhana-mustkil-pin-code.html'>BUDHANA MUSTKIL</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/chaoli-pin-code.html'>CHAOLI</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/civil-court-agra-pin-code.html'>CIVIL COURT AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/dahtora-pin-code.html'>DAHTORA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/dauki-pin-code.html'>DAUKI</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/dehgawan-pin-code.html'>DEHGAWAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/deori-pin-code.html'>DEORI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282009</td></tr><tr><td><a href='../agra/dhanina-pin-code.html'>DHANINA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/dharera-pin-code.html'>DHARERA</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/jagdish-pura-pin-code.html'>JAGDISH PURA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/jarar-pin-code.html'>JARAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/jarua-katra-pin-code.html'>JARUA KATRA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/karahara-pin-code.html'>KARAHARA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/kathwari-pin-code.html'>KATHWARI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/keetham-pin-code.html'>KEETHAM</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/khandauli-pin-code.html'>KHANDAULI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283126</td></tr><tr><td><a href='../agra/kheragarh-pin-code.html'>KHERAGARH</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283121</td></tr><tr><td><a href='../agra/kheria-pin-code.html'>KHERIA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/kukthari-pin-code.html'>KUKTHARI</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/lahra-pin-code.html'>LAHRA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/malpura-pin-code.html'>MALPURA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283102</td></tr><tr><td><a href='../agra/mangrol-jat-pin-code.html'>MANGROL JAT</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/mitaoli-pin-code.html'>MITAOLI</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/nadeem-pin-code.html'>NADEEM</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/nibohara-pin-code.html'>NIBOHARA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/prr-pin-code.html'>PRR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/raja-mandi-pin-code.html'>RAJA MANDI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/richoba-pin-code.html'>RICHOBA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/rojholi-pin-code.html'>ROJHOLI</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/sahara-pin-code.html'>SAHARA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/samara-pin-code.html'>SAMARA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/sarai-khawaja-pin-code.html'>SARAI KHAWAJA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/shastripuram-pin-code.html'>SHASTRIPURAM</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/shoe-market-pin-code.html'>SHOE MARKET</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/tehu-pin-code.html'>TEHU</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283201</td></tr><tr><td><a href='../agra/tnatpur-pin-code.html'>TNATPUR</a></td><td>Kheragarh</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/umretha-pin-code.html'>UMRETHA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/undera-pin-code.html'>UNDERA</a></td><td>Kiraoli</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/agra-city-pin-code.html'>AGRA CITY</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/agra-pin-code.html'>AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/baharawati-pin-code.html'>BAHARAWATI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/bamnai-kalan-pin-code.html'>BAMNAI KALAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283115</td></tr><tr><td><a href='../agra/bamrauli-pin-code.html'>BAMRAULI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/bamrauli-katara-pin-code.html'>BAMRAULI KATARA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/bhakar-pin-code.html'>BHAKAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283121</td></tr><tr><td><a href='../agra/bhilawali-pin-code.html'>BHILAWALI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283121</td></tr><tr><td><a href='../agra/biara-pin-code.html'>BIARA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283101</td></tr><tr><td><a href='../agra/biprawali-pin-code.html'>BIPRAWALI</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/birharu-pin-code.html'>BIRHARU</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/chaurangahar-pin-code.html'>CHAURANGAHAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/chhalesar-pin-code.html'>CHHALESAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/civil-line-agra-pin-code.html'>CIVIL LINE AGRA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/dabar-pin-code.html'>DABAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/dayal-bagh-pin-code.html'>DAYAL BAGH</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282005</td></tr><tr><td><a href='../agra/deoretha-pin-code.html'>DEORETHA</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/dhandupura-pin-code.html'>DHANDUPURA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/dhim-shree-pin-code.html'>DHIM SHREE</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283125</td></tr><tr><td><a href='../agra/etmadpur-pin-code.html'>ETMADPUR</a></td><td>Etmadpur</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/foundry-nagar-pin-code.html'>FOUNDRY NAGAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/gajaura-pin-code.html'>GAJAURA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/garshan-pin-code.html'>GARSHAN</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/indrapuram-pin-code.html'>INDRAPURAM</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr><tr><td><a href='../agra/kalwari-pin-code.html'>KALWARI</a></td><td>Agra</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283105</td></tr><tr><td><a href='../agra/korai-pin-code.html'>KORAI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283110</td></tr><tr><td><a href='../agra/maharajpur-pin-code.html'>MAHARAJPUR</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/mahuar-pin-code.html'>MAHUAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283122</td></tr><tr><td><a href='../agra/malviya-kunj-pin-code.html'>MALVIYA KUNJ</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/nmpalika-pin-code.html'>NMPALIKA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282002</td></tr><tr><td><a href='../agra/nagaria-pin-code.html'>NAGARIA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/nai-ki-mandi-pin-code.html'>NAI KI MANDI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282010</td></tr><tr><td><a href='../agra/nainana-jat-pin-code.html'>NAINANA JAT</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282009</td></tr><tr><td><a href='../agra/nunhai-pin-code.html'>NUNHAI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282006</td></tr><tr><td><a href='../agra/panwari-pin-code.html'>PANWARI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/phulatti-bazar-pin-code.html'>PHULATTI BAZAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282003</td></tr><tr><td><a href='../agra/pinahat-pin-code.html'>PINAHAT</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/pura-kanhera-pin-code.html'>PURA KANHERA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283113</td></tr><tr><td><a href='../agra/pura-tinnet-pin-code.html'>PURA TINNET</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/rajora-pin-code.html'>RAJORA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283113</td></tr><tr><td><a href='../agra/ratoti-pin-code.html'>RATOTI</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283113</td></tr><tr><td><a href='../agra/richhpura-pin-code.html'>RICHHPURA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283114</td></tr><tr><td><a href='../agra/rithori-pin-code.html'>RITHORI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/rohta-pin-code.html'>ROHTA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282009</td></tr><tr><td><a href='../agra/rudhmuli-pin-code.html'>RUDHMULI</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283104</td></tr><tr><td><a href='../agra/sabora-pin-code.html'>SABORA</a></td><td>Bah</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283123</td></tr><tr><td><a href='../agra/sarendha-pin-code.html'>SARENDHA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283119</td></tr><tr><td><a href='../agra/sikrara-pin-code.html'>SIKRARA</a></td><td>Fatehabad</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283111</td></tr><tr><td><a href='../agra/agwar-pin-code.html'>AGWAR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283202</td></tr><tr><td><a href='../agra/ayela-pin-code.html'>AYELA</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 283124</td></tr><tr><td><a href='../agra/bainpur-pin-code.html'>BAINPUR</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282007</td></tr><tr><td><a href='../agra/balu-ganj-pin-code.html'>BALU GANJ</a></td><td>NA</td><td> Agra</td><td>UTTAR PRADESH</td><td> 282001</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="69011b2903081f081d190600071d470a0604">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="513923113b3027302521">[email&#160;protected]</a>oint.com. <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>

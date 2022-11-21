@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Kerala Pin Code - JavaTpoint</title>
+<link rel="SHORTCUT ICON" href="../../images/logo/icon.png" />
+<link rel="stylesheet" type="text/css" href="../../link.css" />
+<meta name="description" content="Kerala Pin Code, Kerala Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="kerala-pin-code.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" property="og:title" content="All India Pin Code - JavaTpoint" />
+<meta name="twitter:description" property="og:description" content="Kerala Pin Code, Kerala Zip Code, all india pincode and zipcode directory including all states and districts of india, postal code or zip code of all places of india." />
+<meta property="og:url" content="kerala-pin-code.html" />
+<meta property="og:site_name" content="www.javatpoint.com" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@pagejavatpoint" />
+<meta name="twitter:domain" content="www.javatpoint.com" />
+<meta name="twitter:creator" content="@pagejavatpoint" />
+<style>
+select{width:300px;padding:5px 10px 5px 10px;border-radius:3px;border-color: pink;}
+.ifscbox{margin-top:20px;border:1px solid pink;border-radius:2px;background:linear-gradient(#F6Ffe1,#F6Ffe9);padding:10px}
+button.refbtn{margin-left:5%;width:300px;background-color:grey;color:white;font-weight:bold;padding:5px 20px 5px 20px;border:1px solid cyan;}
+</style>
+<script type="text/javascript">
+function state()
+{
+document.getElementById('statedrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele2.value;
+
+var urls="../district7012.jsp?ok="+keys; 
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele3.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function district()
+{
+document.getElementById('districtdrop').disabled = true;
+var xmlhttp;
+var keys=document.dummy.sele3.value;
+var v=document.dummy.sele2.value;
+
+var urls="../alphabet7012.jsp?ok="+keys+"&stateValue="+v;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+
+
+
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+
+    
+
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele4.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+function alphabet()
+{
+document.getElementById('alphabetdrop').disabled = true;
+var xmlhttp;
+var alphabet=document.dummy.sele4.value;
+var district=document.dummy.sele3.value;
+var state=document.dummy.sele2.value;
+var urls="../officea376.jsp?alphabet="+alphabet+"&stateValue="+state+"&districtValue="+district+"";
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4)
+    {
+            z=0;
+            var roott=xmlhttp.responseXML.documentElement;
+            var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+
+            while(ress!=null)
+            {
+                    addoptions(ress)
+                    z++
+             var ress=roott.getElementsByTagName("empname")[z].childNodes[0].nodeValue;
+            }
+    }
+    function addoptions(reslt)
+    {
+
+        var ct1=document.createElement("OPTION");
+        ct1.text=reslt;
+        ct1.value=reslt;
+        document.dummy.sele5.options.add(ct1);
+
+    }
+}    
+
+xmlhttp.open("GET.html",urls,true);
+xmlhttp.send();
+}
+</script>
+
+<script type="text/javascript">
+var request;
+function office()
+{
+document.getElementById('officedrop').disabled = true;
+var district=document.dummy.sele3.value;
+var office=document.dummy.sele5.value;
+
+var district2=district.trim().toLowerCase();
+district2=district2.split(" ").join("-");
+var office2=office.trim().toLowerCase();
+office2=office2.split(" ").join("-");
+window.location.href = "https://www.javatpoint.com/pincode/"+district2+"/"+office2+"-pin-code"; 
+
+}
+</script>
+</head>
+<body onload="highlightlink()">
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="../../index.html"><img src="../../../static.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = '../../../cse.google.com/cse07b6.html?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><gcse:search></gcse:search> </div> </td> </tr></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<a href="../../index.html" style="text-decoration:none;"><span style="color:orange;font-size:25px;font-weight:bold;">Java</span><span style="color:#666600;font-size:35px;font-weight:bold;">T</span><span style="color:red;font-size:25px;font-weight:bold;">point</span></a>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint" />
+<input type="hidden" name="sitesearch" value="www.javatpoint.com" />
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu">
+<ul>
+<li><a href="../../index.html">Home</a></li>
+<li><a href="../../ifsc-code.html">IFSC Code</a></li>
+<li><a href="../../india-pin-codes.html" class="selected">India Pincodes</a></li>
+<li><a href="../../holidays/holidays.html">Holidays</a></li>
+<li><a href="../../full-form.html">Full Forms</a></li>
+<li><a href="../../difference-between.html">Differences</a></li>
+<li><a href="../../comment.html">Comment</a></li>
+<li><a href="../../forum.html">Forum</a></li>
+<li><a href="https://training.javatpoint.com/">Training</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<div class="mobilemenu" style="clear:both">
+<button onmouseover="style.color='khaki' " onmouseout="style.color='white'" onclick="showmenu()">Content Menu &#x25bc;</button>
+</div>
+<div class="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="menu">
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">India Pin Code</span></h2>
+</div>
+<div class="leftmenu">
+<a href="andhra-pradesh-pin-code.html" class="l1">Andhra Pradesh</a>
+<a href="arunachal-pradesh-pin-code.html" class="l1">Arunachal Pradesh</a>
+<a href="assam-pin-code.html" class="l1">Assam</a>
+<a href="bihar-pin-code.html" class="l1">Bihar</a>
+<a href="chattisgarh-pin-code.html" class="l1">Chattisgarh</a>
+<a href="chandigarh-pin-code.html" class="l1">Chandigarh</a>
+<a href="delhi-pin-code.html" class="l1">Delhi</a>
+<a href="gujarat-pin-code.html" class="l1">Gujarat</a>
+<a href="haryana-pin-code.html" class="l1">Haryana</a>
+<a href="himachal-pradesh-pin-code.html" class="l1">Himachal Pradesh</a>
+<a href="jammu-%26-kashmir-pin-code.html" class="l1">Jammu & Kashmir</a>
+<a href="jharkhand-pin-code.html" class="l1">Jharkhand</a>
+<a href="karnataka-pin-code.html" class="l1">Karnataka</a>
+<a href="kerala-pin-code.html" class="l1">Kerala</a>
+<a href="madhya-pradesh-pin-code.html" class="l1">Madhya Pradesh</a>
+<a href="maharashtra-pin-code.html" class="l1">Maharashtra</a>
+<a href="manipur-pin-code.html" class="l1">Manipur</a>
+<a href="meghalaya-pin-code.html" class="l1">Meghalaya</a>
+<a href="mizoram-pin-code.html" class="l1">Mizoram</a>
+<a href="nagaland-pin-code.html" class="l1">Nagaland</a>
+<a href="odisha-pin-code.html" class="l1">Odisha</a>
+<a href="pondicherry-pin-code.html" class="l1">Pondicherry</a>
+<a href="punjab-pin-code.html" class="l1">Punjab</a>
+<a href="rajasthan-pin-code.html" class="l1">Rajasthan</a>
+<a href="tamil-nadu-pin-code.html" class="l1">Tamil Nadu</a>
+<a href="tripura-pin-code.html" class="l1">Tripura</a>
+<a href="uttar-pradesh-pin-code.html" class="l1">Uttar Pradesh</a>
+<a href="uttarakhand-pin-code.html" class="l1">Uttarakhand</a>
+<a href="west-bengal-pin-code.html" class="l1">West Bengal</a>
+</div>
+<table id="leftad">
+<tr><td>
+<img src="../../images/wh.jpg" alt="space" />
+</td></tr>
+<tr><td>
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</td></tr></table>
+</div>
+<div class="onlycontent" style="margin-left:10px;margin-top:15px;width:65%;margin-auto;float:left;">
+<div class="right1024" style="">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1219987637"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="margin-left:0px;">
+
+<div id="city">
+<table><tr><td>
+<h1 class="h1">Kerala Pin Code</h1>
+<p>Kerala Pin Code: Postal Index Number or PIN or Pin Code of Kerala is a <strong>six digit number</strong> provided by Indian Post Administration.</p>
+<p>The <em>last three</em> digit of Kerala Pin Code is the actual digit provided to the individual post offices. The 1st digit of Kerala Pin Code represents <em>region</em>, 2nd digit represents <em>sub-region</em> and the 3rd digit represents <em>sorting district</em>.</p>
+<p>KERALA has total <strong>14 districts</strong> and <strong>4926 post offices</strong> in the state.</p>
+
+<div class="ifscbox">
+<h2 class="h2" style="margin-left:7%">Pin Code Office Search Tool</h2>
+<form name="dummy">
+<table style="margin-left: 3em;">
+<tr>
+<td>
+<select id="statedrop" name="sele2" onchange="state()">
+<option value="home">--State--</option>
+<option>ANDHRA PRADESH</option>
+<option>PONDICHERRY</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHATTISGARH</option>
+<option>DELHI</option>
+<option>GUJARAT</option>
+<option>DAMAN & DIU</option>
+<option>DADRA & NAGAR HAVELI</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU & KASHMIR</option>
+<option>JHARKHAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>LAKSHADWEEP</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASHTRA</option>
+<option>GOA</option>
+<option>MANIPUR</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>TRIPURA</option>
+<option>ARUNACHAL PRADESH</option>
+<option>MEGHALAYA</option>
+<option>ODISHA</option>
+<option>PUNJAB</option>
+<option>CHANDIGARH</option>
+<option>RAJASTHAN</option>
+<option>TAMIL NADU</option>
+<option>UTTAR PRADESH</option>
+<option>UTTARAKHAND</option>
+<option>WEST BENGAL</option>
+<option>ANDAMAN & NICOBAR ISLANDS</option>
+<option>SIKKIM</option>
+</select>
+</td></tr>
+<tr><td>
+<select id="districtdrop" name="sele3" onchange="district()">
+<option>--District--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="alphabetdrop" name="sele4" onchange="alphabet()">
+<option>--Alphabet--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<select id="officedrop" name="sele5" onchange="office()">
+<option>--Pin Code Office--</option>
+</select>
+</td>
+</tr>
+<tr><td>
+<span style="color:grey;font-weight:bold;" id="data"></span>
+</td> </tr>
+</table>
+</form>
+<button class="refbtn" onclick="location.reload()">Refresh Tool</button>
+</div>
+
+<h2 class='h2'>Kerala Pin Code List</h2><table class='alt'><tr><th>Office</th><th>Taluk</th><th>District</th><th>State</th><th>Pincode</th></tr><tr><td><a href='../kozhikode/anakampoyil-pin-code.html'>ANAKAMPOYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673603</td></tr><tr><td><a href='../kozhikode/arakinar-pin-code.html'>ARAKINAR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673028</td></tr><tr><td><a href='../wayanad/arambatta-kunnu-pin-code.html'>ARAMBATTA KUNNU</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673575</td></tr><tr><td><a href='../malappuram/azhinjilam-pin-code.html'>AZHINJILAM</a></td><td>Ernad</td><td> Malappuram</td><td>KERALA</td><td> 673632</td></tr><tr><td><a href='../kozhikode/calicut-city-pin-code.html'>CALICUT CITY</a></td><td>NA</td><td> Kozhikode</td><td>KERALA</td><td> 673004</td></tr><tr><td><a href='../kozhikode/calicut-civil-station-pin-code.html'>CALICUT CIVIL STATION</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673020</td></tr><tr><td><a href='../wayanad/chennalode-pin-code.html'>CHENNALODE</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/chennamangallur-pin-code.html'>CHENNAMANGALLUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../wayanad/choothupara-pin-code.html'>CHOOTHUPARA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../kozhikode/chulur-pin-code.html'>CHULUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673601</td></tr><tr><td><a href='../wayanad/cottanad-pin-code.html'>COTTANAD</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../kozhikode/eranhipalam-pin-code.html'>ERANHIPALAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673006</td></tr><tr><td><a href='../kozhikode/guruvayurappan-college-pin-code.html'>GURUVAYURAPPAN COLLEGE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673014</td></tr><tr><td><a href='../kozhikode/kadalundi-pin-code.html'>KADALUNDI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673302</td></tr><tr><td><a href='../wayanad/kambalakkad-pin-code.html'>KAMBALAKKAD</a></td><td>Vythiti</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../malappuram/karad-paramba-pin-code.html'>KARAD PARAMBA</a></td><td>Ernad</td><td> Malappuram</td><td>KERALA</td><td> 673632</td></tr><tr><td><a href='../wayanad/kidanganad-pin-code.html'>KIDANGANAD</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/kommeri-pin-code.html'>KOMMERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673007</td></tr><tr><td><a href='../wayanad/kunnambetta-pin-code.html'>KUNNAMBETTA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673123</td></tr><tr><td><a href='../wayanad/muthanga-pin-code.html'>MUTHANGA</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../wayanad/nenmeni-kunnu-pin-code.html'>NENMENI KUNNU</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673595</td></tr><tr><td><a href='../kozhikode/parambil-pin-code.html'>PARAMBIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673012</td></tr><tr><td><a href='../kozhikode/parappanpoyil-pin-code.html'>PARAPPANPOYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../kozhikode/parappil-pin-code.html'>PARAPPIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673001</td></tr><tr><td><a href='../wayanad/pariyaram-wynad-pin-code.html'>PARIYARAM WYNAD</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/paropadi-pin-code.html'>PAROPADI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673009</td></tr><tr><td><a href='../wayanad/perikallur-pin-code.html'>PERIKALLUR</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/pokkunnu-pin-code.html'>POKKUNNU</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673007</td></tr><tr><td><a href='../wayanad/poomulla-pin-code.html'>POOMULLA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/poovattu-paramba-pin-code.html'>POOVATTU PARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../malappuram/puducode-feroke-pin-code.html'>PUDUCODE FEROKE</a></td><td>Eranad</td><td> Malappuram</td><td>KERALA</td><td> 673633</td></tr><tr><td><a href='../wayanad/pulpalli-pin-code.html'>PULPALLI</a></td><td>Sulthan Bathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/puthiyangadi-pin-code.html'>PUTHIYANGADI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673021</td></tr><tr><td><a href='../wayanad/sulthan-bathery-east-pin-code.html'>SULTHAN BATHERY EAST</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../wayanad/sulthan-bathery-pin-code.html'>SULTHAN BATHERY</a></td><td>Sulthan Bathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/thiruthiyad-pin-code.html'>THIRUTHIYAD</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673004</td></tr><tr><td><a href='../kozhikode/vavad-pin-code.html'>VAVAD</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673572</td></tr><tr><td><a href='../malappuram/vazhayur-pin-code.html'>VAZHAYUR</a></td><td>Ernad</td><td> Malappuram</td><td>KERALA</td><td> 673633</td></tr><tr><td><a href='../kozhikode/venappara-pin-code.html'>VENAPPARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673582</td></tr><tr><td><a href='../kozhikode/alli-pin-code.html'>ALLI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../wayanad/amara-kuni-pin-code.html'>AMARA KUNI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../wayanad/athirattu-kunnu-pin-code.html'>ATHIRATTU KUNNU</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../kozhikode/calicut-courts-pin-code.html'>CALICUT COURTS</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673032</td></tr><tr><td><a href='../wayanad/cheeral-pin-code.html'>CHEERAL</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673595</td></tr><tr><td><a href='../wayanad/chellangode-pin-code.html'>CHELLANGODE</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673581</td></tr><tr><td><a href='../kozhikode/cheruvannur-pin-code.html'>CHERUVANNUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673655</td></tr><tr><td><a href='../kozhikode/kakkatampoyil-pin-code.html'>KAKKATAMPOYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673604</td></tr><tr><td><a href='../kozhikode/kakkoti-pin-code.html'>KAKKOTI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673611</td></tr><tr><td><a href='../kozhikode/kallai-kozhikode-pin-code.html'>KALLAI KOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673003</td></tr><tr><td><a href='../kozhikode/koombara-bazar-pin-code.html'>KOOMBARA BAZAR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673604</td></tr><tr><td><a href='../kozhikode/kotancheri-tamaracheri-pin-code.html'>KOTANCHERI TAMARACHERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../wayanad/kottathara-pin-code.html'>KOTTATHARA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/kudathai-bazar-pin-code.html'>KUDATHAI BAZAR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../wayanad/kuppadi-pin-code.html'>KUPPADI</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/manasseri-pin-code.html'>MANASSERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../wayanad/maniyangode-pin-code.html'>MANIYANGODE</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/mayanad-pin-code.html'>MAYANAD</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../wayanad/mookuthi-kunnu-pin-code.html'>MOOKUTHI KUNNU</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673595</td></tr><tr><td><a href='../kozhikode/mundur-kozhikode-pin-code.html'>MUNDUR KOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../kozhikode/muttancheri-pin-code.html'>MUTTANCHERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../kozhikode/nellicode-pin-code.html'>NELLICODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673016</td></tr><tr><td><a href='../wayanad/palakolli-pin-code.html'>PALAKOLLI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../wayanad/pallikunnu-wynad-pin-code.html'>PALLIKUNNU WYNAD</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/puthiyara-pin-code.html'>PUTHIYARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673004</td></tr><tr><td><a href='../kozhikode/thachampoyil-pin-code.html'>THACHAMPOYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../wayanad/thariote-north-pin-code.html'>THARIOTE NORTH</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673575</td></tr><tr><td><a href='../wayanad/thovari-mala-pin-code.html'>THOVARI MALA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/tiruvannur-pin-code.html'>TIRUVANNUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673029</td></tr><tr><td><a href='../wayanad/vala-vayal-pin-code.html'>VALA VAYAL</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../wayanad/vallarmala-pin-code.html'>VALLARMALA</a></td><td>Sulthan Bathery</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../wayanad/valluvadi-pin-code.html'>VALLUVADI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/vrindavan-colony-pin-code.html'>VRINDAVAN COLONY</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673017</td></tr><tr><td><a href='../wayanad/bhoodanam-colony-pin-code.html'>BHOODANAM COLONY</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/chamal-pin-code.html'>CHAMAL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../wayanad/chedalath-pin-code.html'>CHEDALATH</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../wayanad/chettapalam-pin-code.html'>CHETTAPALAM</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/feroke-pettah-pin-code.html'>FEROKE PETTAH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673631</td></tr><tr><td><a href='../kozhikode/iim-kozhikode-campus-pin-code.html'>IIM KOZHIKODE CAMPUS</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673570</td></tr><tr><td><a href='../wayanad/kalpetta-north-pin-code.html'>KALPETTA NORTH</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/kannancheri-pin-code.html'>KANNANCHERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673003</td></tr><tr><td><a href='../kozhikode/kannoth-pin-code.html'>KANNOTH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../wayanad/kenichira-pin-code.html'>KENICHIRA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../kozhikode/kumaranellur-pin-code.html'>KUMARANELLUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../kozhikode/kunnamangalam-pin-code.html'>KUNNAMANGALAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673571</td></tr><tr><td><a href='../kozhikode/maikavu-pin-code.html'>MAIKAVU</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../kozhikode/morikkara-pin-code.html'>MORIKKARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673611</td></tr><tr><td><a href='../kozhikode/narikkuni-pin-code.html'>NARIKKUNI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../wayanad/nenmeni-pin-code.html'>NENMENI</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/nit-campus-pokozhikode-pin-code.html'>NIT CAMPUS POKOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673601</td></tr><tr><td><a href='../kozhikode/nooramthode-pin-code.html'>NOORAMTHODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673586</td></tr><tr><td><a href='../wayanad/nulpuzha-pin-code.html'>NULPUZHA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/omasseri-pin-code.html'>OMASSERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673582</td></tr><tr><td><a href='../kozhikode/palath-pin-code.html'>PALATH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673611</td></tr><tr><td><a href='../kozhikode/pannicode-pin-code.html'>PANNICODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../kozhikode/parannur-pin-code.html'>PARANNUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../kozhikode/pavandur-pin-code.html'>PAVANDUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673613</td></tr><tr><td><a href='../kozhikode/perumpally-pin-code.html'>PERUMPALLY</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673586</td></tr><tr><td><a href='../wayanad/pinangode-pin-code.html'>PINANGODE</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/ponnamkayam-pin-code.html'>PONNAMKAYAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673603</td></tr><tr><td><a href='../kozhikode/punnakkal-pin-code.html'>PUNNAKKAL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673603</td></tr><tr><td><a href='../wayanad/puzhamutti-pin-code.html'>PUZHAMUTTI</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/theyyappara-pin-code.html'>THEYYAPPARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../kozhikode/vengalam-pin-code.html'>VENGALAM</a></td><td>Quilandy</td><td> Kozhikode</td><td>KERALA</td><td> 673303</td></tr><tr><td><a href='../kozhikode/west-hill-beach-pin-code.html'>WEST HILL BEACH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673005</td></tr><tr><td><a href='../kozhikode/west-hill-pin-code.html'>WEST HILL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673005</td></tr><tr><td><a href='../kozhikode/calicut-pin-code.html'>CALICUT</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673001</td></tr><tr><td><a href='../kozhikode/calicut-rs-pin-code.html'>CALICUT RS</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673001</td></tr><tr><td><a href='../kozhikode/chaliyam-pin-code.html'>CHALIYAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673301</td></tr><tr><td><a href='../kozhikode/chembu-kadavu-pin-code.html'>CHEMBU KADAVU</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../kozhikode/cherukulathur-pin-code.html'>CHERUKULATHUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../kozhikode/cheruvadi-pin-code.html'>CHERUVADI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../wayanad/chulliote-pin-code.html'>CHULLIOTE</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/elathur-kozhikode-pin-code.html'>ELATHUR KOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673303</td></tr><tr><td><a href='../kozhikode/elettil-pin-code.html'>ELETTIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673572</td></tr><tr><td><a href='../kozhikode/eranhikkal-pin-code.html'>ERANHIKKAL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673303</td></tr><tr><td><a href='../kozhikode/eravannur-pin-code.html'>ERAVANNUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../kozhikode/feroke-pin-code.html'>FEROKE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673631</td></tr><tr><td><a href='../wayanad/kalanadi-kolli-pin-code.html'>KALANADI KOLLI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../wayanad/kalathu-vayal-pin-code.html'>KALATHU VAYAL</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673593</td></tr><tr><td><a href='../wayanad/kalpetta-pin-code.html'>KALPETTA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673121</td></tr><tr><td><a href='../wayanad/kaniyambetta-pin-code.html'>KANIYAMBETTA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/kanni-paramba-pin-code.html'>KANNI PARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../kozhikode/karuvanthuruthy-pin-code.html'>KARUVANTHURUTHY</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673631</td></tr><tr><td><a href='../kozhikode/kilakkoth-pin-code.html'>KILAKKOTH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673572</td></tr><tr><td><a href='../kozhikode/kodiyathur-pin-code.html'>KODIYATHUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673602</td></tr><tr><td><a href='../wayanad/kolagapara-pin-code.html'>KOLAGAPARA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673591</td></tr><tr><td><a href='../wayanad/koleri-pin-code.html'>KOLERI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../kozhikode/kudathai-pin-code.html'>KUDATHAI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673573</td></tr><tr><td><a href='../kozhikode/kythapoyil-pin-code.html'>KYTHAPOYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673586</td></tr><tr><td><a href='../wayanad/madakkimala-pin-code.html'>MADAKKIMALA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/madavoor-pin-code.html'>MADAVOOR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../kozhikode/manha-kadavu-pin-code.html'>MANHA KADAVU</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673604</td></tr><tr><td><a href='../kozhikode/mankavu-pin-code.html'>MANKAVU</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673007</td></tr><tr><td><a href='../kozhikode/mannur-kozhikode-pin-code.html'>MANNUR KOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673328</td></tr><tr><td><a href='../kozhikode/mavoor-kozhikode-pin-code.html'>MAVOOR KOZHIKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../wayanad/moolan-kavu-pin-code.html'>MOOLAN KAVU</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../wayanad/mundakai-pin-code.html'>MUNDAKAI</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../wayanad/muttil-pin-code.html'>MUTTIL</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/nanminda-pin-code.html'>NANMINDA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673613</td></tr><tr><td><a href='../kozhikode/neeleswaram-pin-code.html'>NEELESWARAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673582</td></tr><tr><td><a href='../wayanad/pakkom-pin-code.html'>PAKKOM</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../wayanad/pambra-pin-code.html'>PAMBRA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/pilasseri-pin-code.html'>PILASSERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673571</td></tr><tr><td><a href='../kozhikode/punnur-cherupalam-pin-code.html'>PUNNUR CHERUPALAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../wayanad/puthur-vayal-pin-code.html'>PUTHUR VAYAL</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../wayanad/seetha-mount-pin-code.html'>SEETHA MOUNT</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../wayanad/thariote-pin-code.html'>THARIOTE</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673575</td></tr><tr><td><a href='../wayanad/thekkumthara-pin-code.html'>THEKKUMTHARA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../wayanad/trikai-petta-pin-code.html'>TRIKAI PETTA</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../wayanad/vatuvanchal-pin-code.html'>VATUVANCHAL</a></td><td>Sulthan Bathery</td><td> Wayanad</td><td>KERALA</td><td> 673581</td></tr><tr><td><a href='../malappuram/vazhayur-east-pin-code.html'>VAZHAYUR EAST</a></td><td>Ernad</td><td> Malappuram</td><td>KERALA</td><td> 673633</td></tr><tr><td><a href='../kozhikode/velliparamba-pin-code.html'>VELLIPARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../wayanad/beenachi-pin-code.html'>BEENACHI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../wayanad/bibleland-pin-code.html'>BIBLELAND</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673575</td></tr><tr><td><a href='../kozhikode/chalapuram-pin-code.html'>CHALAPURAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673002</td></tr><tr><td><a href='../kozhikode/chelannur-pin-code.html'>CHELANNUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673616</td></tr><tr><td><a href='../wayanad/chembra-pin-code.html'>CHEMBRA</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../kozhikode/chevarambalam-pin-code.html'>CHEVARAMBALAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673017</td></tr><tr><td><a href='../kozhikode/east-hill-pin-code.html'>EAST HILL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673005</td></tr><tr><td><a href='../wayanad/kakka-vayal-pin-code.html'>KAKKA VAYAL</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673122</td></tr><tr><td><a href='../kozhikode/kannan-kara-pin-code.html'>KANNAN KARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673616</td></tr><tr><td><a href='../kozhikode/karaparamba-pin-code.html'>KARAPARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673010</td></tr><tr><td><a href='../kozhikode/kayal-pin-code.html'>KAYAL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../kozhikode/kolathara-pin-code.html'>KOLATHARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673655</td></tr><tr><td><a href='../kozhikode/koombara-pin-code.html'>KOOMBARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673604</td></tr><tr><td><a href='../kozhikode/kottamparamba-pin-code.html'>KOTTAMPARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../kozhikode/kotuvalli-pin-code.html'>KOTUVALLI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673572</td></tr><tr><td><a href='../wayanad/krishna-giri-pin-code.html'>KRISHNA GIRI</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673591</td></tr><tr><td><a href='../wayanad/kumbaleri-pin-code.html'>KUMBALERI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673591</td></tr><tr><td><a href='../kozhikode/kuppayakode-pin-code.html'>KUPPAYAKODE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673580</td></tr><tr><td><a href='../kozhikode/kuthiravattom-pin-code.html'>KUTHIRAVATTOM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673016</td></tr><tr><td><a href='../kozhikode/malayamma-pin-code.html'>MALAYAMMA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673601</td></tr><tr><td><a href='../wayanad/nambiar-kunnu-pin-code.html'>NAMBIAR KUNNU</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673595</td></tr><tr><td><a href='../kozhikode/payimbra-pin-code.html'>PAYIMBRA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673571</td></tr><tr><td><a href='../kozhikode/pazhur-pin-code.html'>PAZHUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../kozhikode/perumukham-pin-code.html'>PERUMUKHAM</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673631</td></tr><tr><td><a href='../kozhikode/peruvayal-pin-code.html'>PERUVAYAL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../kozhikode/puduppadi-pin-code.html'>PUDUPPADI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673586</td></tr><tr><td><a href='../kozhikode/pulluram-para-pin-code.html'>PULLURAM PARA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673603</td></tr><tr><td><a href='../kozhikode/punnasseri-pin-code.html'>PUNNASSERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673585</td></tr><tr><td><a href='../wayanad/ripon-wynad-pin-code.html'>RIPON WYNAD</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673577</td></tr><tr><td><a href='../kozhikode/sreerama-krishna-mission-pin-code.html'>SREERAMA KRISHNA MISSION</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673003</td></tr><tr><td><a href='../wayanad/thazha-munda-pin-code.html'>THAZHA MUNDA</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673596</td></tr><tr><td><a href='../wayanad/thazhathur-pin-code.html'>THAZHATHUR</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673595</td></tr><tr><td><a href='../wayanad/vakeri-pin-code.html'>VAKERI</a></td><td>Sulthan Batheri</td><td> Wayanad</td><td>KERALA</td><td> 673592</td></tr><tr><td><a href='../kozhikode/valiyaparamba-pin-code.html'>VALIYAPARAMBA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673572</td></tr><tr><td><a href='../wayanad/veliyambam-pin-code.html'>VELIYAMBAM</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/vellalasseri-pin-code.html'>VELLALASSERI</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673601</td></tr><tr><td><a href='../kozhikode/vellayil-pin-code.html'>VELLAYIL</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673011</td></tr><tr><td><a href='../wayanad/achooranam-pin-code.html'>ACHOORANAM</a></td><td>Vythiri</td><td> Wayanad</td><td>KERALA</td><td> 673575</td></tr><tr><td><a href='../wayanad/ambalavayal-pin-code.html'>AMBALAVAYAL</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673593</td></tr><tr><td><a href='../kozhikode/beypore-north-pin-code.html'>BEYPORE NORTH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673015</td></tr><tr><td><a href='../kozhikode/calicut-beach-pin-code.html'>CALICUT BEACH</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673032</td></tr><tr><td><a href='../kozhikode/calicut-medical-college-pin-code.html'>CALICUT MEDICAL COLLEGE</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673008</td></tr><tr><td><a href='../wayanad/cheengeri-pin-code.html'>CHEENGERI</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673593</td></tr><tr><td><a href='../wayanad/cheeyambam-pin-code.html'>CHEEYAMBAM</a></td><td>Sulthanbathery</td><td> Wayanad</td><td>KERALA</td><td> 673579</td></tr><tr><td><a href='../kozhikode/cherooppa-pin-code.html'>CHEROOPPA</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673661</td></tr><tr><td><a href='../kozhikode/iringallur-pin-code.html'>IRINGALLUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673014</td></tr><tr><td><a href='../kozhikode/irivallur-pin-code.html'>IRIVALLUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673616</td></tr><tr><td><a href='../kozhikode/karanthur-pin-code.html'>KARANTHUR</a></td><td>Kozhikode</td><td> Kozhikode</td><td>KERALA</td><td> 673571</td></tr></table>
+</td></tr></table>
+</div>
+
+</div>
+<br />
+<div id="mobilemenu" style="clear:both">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="1236815518" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+<div id="right">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="4476401222"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br /><br /><br /><br />
+</div>
+<div id="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-4699858549023382" data-ad-slot="2180118716"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="0e667c4e646f786f7a7e6167607a206d6163">[email&#160;protected]</a>, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="4c243e0c262d3a2d383c23252238622f232162">[email&#160;protected]</a> <br>Duration: 1 week to 2 week<br></p></div><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/rss1.png" alt="RSS Feed" /></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="../../../static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts" /></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="../../../static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page" /></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="../../../static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page" /></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="../../../static.javatpoint.com/images/youtube32.png" alt="YouTube" /></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="../../../static.javatpoint.com/images/social/blog.png" alt="Blog Page" /></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="../../java-tutorial.html">Learn Java</a><a href="../../data-structure-tutorial.html">Learn Data Structures</a><a href="../../c-programming-language-tutorial.html">Learn C Programming</a><a href="../../cpp-tutorial.html">Learn C++ Tutorial</a><a href="../../c-sharp-tutorial.html">Learn C# Tutorial</a><a href="../../php-tutorial.html">Learn PHP Tutorial</a><a href="../../html-tutorial.html">Learn HTML Tutorial</a><a href="../../javascript-tutorial.html">Learn JavaScript Tutorial</a><a href="../../jquery-tutorial.html">Learn jQuery Tutorial</a><a href="../../spring-tutorial.html">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="../../index.html">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="../../contact-us.html">Contact Us</a> <a href="../../subscribe.html">Subscribe Us</a> <a href="../../privacy-policy.html">Privacy Policy</a><a href="../../sitemap.xml">Sitemap</a><br><a href="../../sonoo-jaiswal.html">About Me</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = '../../../app.pushbrothers.com/js/notification-bot5e39.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+</div></div>
+</body>
+</html>
